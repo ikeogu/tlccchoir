@@ -1,0 +1,93 @@
+
+
+                            <div class="tab-content">
+                                <div class="tab-pane" id="location">
+                                    <div class="row">
+                                        <div class="parallax-pro">
+                                            <div class="img-src" style="background-image: url('https://get-shit-done-pro.herokuapp.com/assets/img/bg6.jpg');"></div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center">
+                                                        <h1>
+                                                            <small>
+                                                            Don't forget to Bring this to Camp:<a>
+                                                            </a></small><a>
+                                                        </a></h1><a>
+                                                    </a></div><a>
+                                                    </a><div class="col-md-6 col-md-offset-3 col-md-12 text-center"><a>
+                                                        </a><h1 class="hello text-center"><a>
+                                                        </a><p>Very Important <span class="label label-warning">Note </span></p>
+                                                        <small>
+                                                            <ul class="list-unstyled">
+                                                                <li>Bible and Song Book</li>
+                                                                <li>Prayer Points</li>
+                                                                <li>Polish, cream, Soap and ToothPaste</li>
+                                                                <li>Sweater, Stalkings, Wrappers</li>
+                                                                <li>Plates, Spoon and Cup</li>
+                                                            </ul>
+                                                            </small>
+                                                        </h1>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                <div class="tab-pane" id="payment">
+                                        <div class="row">
+                                            <div class="parallax-pro">
+                                                <div class="img-src" style="background-image: url('https://get-shit-done-pro.herokuapp.com/assets/img/bg6.jpg');"></div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-12 text-center">
+                                                            <h1>
+                                                                <small>
+                                                                Fees You Have to Pay:<a>
+                                                                </a></small><a>
+                                                            </a></h1><a>
+                                                        </a></div><a>
+                                                        </a><div class="col-md-6 col-md-offset-3 col-md-12 text-center"><a>
+                                                            </a><h1 class="hello text-center"><a>
+                                                            </a><p>Very Important <span class="label label-warning">Note </span></p>
+                                                            <small>
+                                                                <ul class="list-unstyled">
+                                                                    <li>Bus Project</li>
+                                                                    <li>Camp Fee</li>
+                                                                    <li>State Fees</li>
+                                                                    <li>Others</li>
+                                                                    
+                                                                </ul>
+                                                                </small>
+                                                            </h1>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </DIV>    
+                                </div>    
+                            
+                                <div class="tab-pane" id="description">
+                                    <div class="row">
+                                        <h4 class="info-text"> Drop us a small Note. </h4>
+                                        <div class="col-sm-6 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>Place Your Note</label>
+                                                <textarea class="form-control" placeholder="" rows="9" name="note">
+
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Example</label>
+                                                <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
