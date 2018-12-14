@@ -101,7 +101,11 @@
                                 @endif
                 </div>
                 <div class="input-group">
-                  
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">sex</i>
+                    </span>
+                  </div>
                   
                   <input type="hidden" class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}" name="gender" value="{{ old('gender') }}" required autofocus placeholder="gender...">
                   <select name='gender' class='form-control'>
@@ -131,23 +135,28 @@
                 
                 
                   
-                
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">key</i>
+                        </span>
+                      </div>
+                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password">
 
-                <div class="form-group row">
-                   <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password">
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                    </div>
-                    <div class="col-md-6">
-                           
-
-                            
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                    @endif
+                      
+                    </div>  
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">key</i>
+                        </span>
+                      </div>
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
                     </div>
                 </div>
                
