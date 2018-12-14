@@ -92,7 +92,7 @@ class MgbidiController extends Controller
         $mgbidi->save();
          
            
-        return redirect(route('homepage'))->with('success', 'Welcome to Mgbidi2019. Registration is completed');
+        return redirect(route('homepage'))->with('success', 'Welcome to Mgbidi2019.Your  Registration was successful.');
     }
 
     /**
