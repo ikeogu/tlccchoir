@@ -20,7 +20,7 @@ class SongPresentationCOntroller extends Controller
         $songPresentation = SongPresentation::all();
         
         return view('songs.index')->with('songs',$songPresentation);
-        dd('songs');
+       
        
        
     }
