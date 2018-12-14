@@ -102,9 +102,7 @@
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">gender</i>
-                    </span>
+                    
                   </div>
                   
                   <input type="hidden" class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}" name="gender" value="{{ old('gender') }}" required autofocus placeholder="gender...">
@@ -121,9 +119,7 @@
                           @endif
 
                    <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">phone</i>
-                    </span>
+                    
                   </div>
                   <input type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required autofocus placeholder="Phone...">
                       @if ($errors->has('phone'))
@@ -137,9 +133,7 @@
                   
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">key</i>
-                        </span>
+                       
                       </div>
                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password">
 

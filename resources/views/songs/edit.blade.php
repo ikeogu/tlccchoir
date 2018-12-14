@@ -2,10 +2,10 @@
 
 @section('content')
 
-    <div class="" style="background-image: url('img/bg7.jpg'); background-size: cover; background-position: ; ">
+    <div class="" style="background-image: url('../img/bg7.jpg'); background-size: cover; background-position: ; ">
         <div class="container" >
              <div class="row">
-                <div class="col-lg-6 col-md-6 ml-auto mr-auto" style="padding-top:6px; padding-bottom:100px;">
+                <div class="col-lg-6 col-md-6 ml-auto mr-auto" style="padding-top:60px; padding-bottom:100px;">
                     <div class="card card-login" >
                         <div class="card-header card-header-primary text-center">
                             <h4 class="card-title">{{ __('Update Song') }}</h4>
