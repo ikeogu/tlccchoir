@@ -103,7 +103,7 @@
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="material-icons">sex</i>
+                      <i class="material-icons">gender</i>
                     </span>
                   </div>
                   

@@ -80,19 +80,5 @@
 </div>
 </div>
     
-           
+ @endsection          
 
-</body>
-
-<!--   core js files    -->
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
-
-<!--  js library for devices recognition -->
-<script type="text/javascript" src="assets/js/modernizr.js"></script>
-
-
-<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
-<script type="text/javascript" src="js/gaia.js"></script>
-
-</html>
