@@ -22,7 +22,7 @@ Route::get('/home','HomeController@index');
 Route::resource('mgbidi-2019', 'MgbidiController');
 Route::resource('songs', 'SongPresentationCOntroller');
 
-Route::get('/about_us', 'AboutController@index')->name('about');
+Route::get('/about_us', 'AboutCOntroller@index')->name('about');
 
 Route::get('profile', 'UserController@profile')->name('profile');
 Route::get('mysongs', 'SongPresentationCOntroller@mysongs')->name('withsonginprofile');
