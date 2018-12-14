@@ -15,8 +15,8 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 
 	<!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
 
 	
 </head>
