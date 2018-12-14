@@ -128,11 +128,11 @@
         </ul>
       </nav>
       <div class="copyright float-right">
-        &copy;
+        Campus Choir &copy;
         <script>
-          document.write(new Date().getFullYear())
+           document.write(new Date().getFullYear())
         </script>, made with <i class="material-icons">favorite</i> by
-        <a href="#" target="_blank">Creative Tim</a> for a better web.
+        <a href="#" target="_blank">Creative Tim</a> 
       </div>
     </div>
   </footer>
