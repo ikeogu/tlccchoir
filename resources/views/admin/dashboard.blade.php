@@ -15,7 +15,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">access_time</i>  updated
-                    {{ App\User::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}}
+                    {{ App\User::orderBy('updated_at', 'desc')->first()->updated_at}}
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">access_time</i> updated 
-                    {{ App\Mgbidi::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}}
+                    {{ App\Mgbidi::orderBy('updated_at', 'desc')->first()->updated_at}}
 
                   </div>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">access_time</i> updated
-                    {{ App\SongPresentation::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}}
+                    {{ App\SongPresentation::orderBy('updated_at', 'desc')->first()->updated_at}}
 
                   </div>
                 </div>
