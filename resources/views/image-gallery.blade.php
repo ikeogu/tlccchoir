@@ -153,14 +153,7 @@
                             <img src="/storage/public/images/{{ $image->image }}" />
                             <div class="titleBox">{{ $image->title }}</div>
                     </div>
-                    @if(auth()->user()->isAdmin == 1)
-                    <form action="{{ url('image-gallery',$image->id) }}" method="POST">
-
-                    <input type="hidden" name="_method" value="delete">
-                    {!! csrf_field() !!}
-                    <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i>Delete</button>
-                    </form>
-                    @endif
+                   
                 </div> <!-- col-6 / end -->
                 @endforeach
             @endif
