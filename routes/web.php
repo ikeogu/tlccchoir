@@ -21,6 +21,7 @@ Route::get('/home','HomeController@index');
 
 Route::resource('mgbidi-2019', 'MgbidiController');
 Route::resource('songs', 'SongPresentationCOntroller');
+Route::get('/write_song', 'SongPresentationCOntroller@creat')->name('create');
 
 Route::get('/about_us', 'AboutCOntroller@index')->name('about');
 

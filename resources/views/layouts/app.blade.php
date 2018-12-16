@@ -71,7 +71,7 @@
                           <i class="material-icons">person</i> User Profile
                       </a>
 
-                      <a href="songs/create" class="dropdown-item">
+                      <a href="create" class="dropdown-item">
                               <i class="material-icons">music_note</i>Present  a Song
                       </a>
                       <a href="{{route('withsonginprofile')}}" class="dropdown-item">
