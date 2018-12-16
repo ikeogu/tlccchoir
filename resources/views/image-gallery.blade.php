@@ -150,7 +150,7 @@
                
                     <div class="box">
                         <div class="boxInner">
-                            <img src="storage/public/imageg-gallery/{{ $image->image }}" />
+                            <img src="{{ url('storage/public/images/'. $image->image }}" />
                             <div class="titleBox">{{ $image->title }}</div>
                     </div>
                    
