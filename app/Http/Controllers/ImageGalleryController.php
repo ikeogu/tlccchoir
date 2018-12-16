@@ -55,7 +55,7 @@ class ImageGalleryController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('image')->storeAs('public/', $fileNameToStore);
+            $path = $request->file('image')->storeAs('images-gallery/', $fileNameToStore);
             
            
         }else{
