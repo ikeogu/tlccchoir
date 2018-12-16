@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ImageGallery;
 
+
+
+
 class ImageGalleryController extends Controller
 {
     /**
@@ -52,7 +55,9 @@ class ImageGalleryController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
+            $path = $request->file('image')->storeAs('public/', $fileNameToStore);
+            
+           
         }else{
             $fileNameToStore = 'noimage.jpg';
         }
