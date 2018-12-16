@@ -144,14 +144,35 @@
       </div>
     </div>
     <div class="section text-center">
-      <h2 class="title">Here is our team</h2>
+      <h2 class="title">Meet our Leaders</h2>
         <div class="team">
           <div class="row">
-            <div class="col-md-4">
+            <div class="team-player">
+                  <div class="card card-plain">
+                    <div class="col-md-6 ml-auto mr-auto">
+                      <img src="img/li.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                    </div>
+                    <h4 class="card-title">National Cordinator 
+                      <br>
+                      <small class="card-description text-muted">Professor Linus Okoro</small>
+                    </h4>
+                    <div class="card-body">
+                      <p class="card-description">National Pastor of the Lord's Chosen Campus Fellowship</p>
+                    </div>
+                    <div class="card-footer justify-content-center">
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/ch.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="img/ch.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
                   </div>
                   <h4 class="card-title">National Choir Master
                     <br>
@@ -168,13 +189,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/em.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="img/m2.jpg" alt="Thumbnail Image" class="rounded img-fluid">
                   </div>
-                  <h4 class="card-title">National Teno Leader
+                  <h4 class="card-title">Campus Choir Admin
                     <br>
                     <small class="card-description text-muted">Brother Nester</small>
                   </h4>
@@ -188,15 +209,36 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/3.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="img/m7.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
-                  <h4 class="card-title">
+                  <h4 class="card-title"> Among the National Cordinator
                     <br>
-                    <small class="card-description text-muted">Sister</small>
+                    <small class="card-description text-muted"> Pastor Chiyaka</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m3.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title"> Choir Supervisor
+                    <br>
+                    <small class="card-description text-muted"> Bro Solomon</small>
                   </h4>
                   <div class="card-body">
                     <p class="card-description"></p>
@@ -210,6 +252,287 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m5.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title">South East Choir Master
+                    <br>
+                    <small class="card-description text-muted">Brother CJ</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m1.jpg" alt="Thumbnail Image" class="rounded img-fluid">
+                  </div>
+                  <h4 class="card-title"> South South Choir Master
+                    <br>
+                    <small class="card-description text-muted">Brother Wisdom</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/co.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title"> Imo State Choir Master
+                    <br>
+                    <small class="card-description text-muted"> Bro Clinton</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m3.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title"> Benue State Choir Master
+                    <br>
+                    <small class="card-description text-muted"> </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f1.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">
+                    <br>
+                    <small class="card-description text-muted">Sister Marvelous</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f4.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">National SRC
+                    <br>
+                    <small class="card-description text-muted">Sister Jecinter</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f7.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title"> National Treasurer
+                    <br>
+                    <small class="card-description text-muted"> Sister Ella</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f6.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Assistant National Choir Mistress
+                    <br>
+                    <small class="card-description text-muted">Sister Joy </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m6.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title">Ebonyi State Choir Master
+                    <br>
+                    <small class="card-description text-muted">Brother Smile</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Edo State Choir Mistress
+                    <br>
+                    <small class="card-description text-muted">Sister Success</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f2.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title"> South West choir Mistress 
+                    <br>
+                    <small class="card-description text-muted"> Sister Chioma J</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f5.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Anambra State Choir Mistress
+                    <br>
+                    <small class="card-description text-muted">Sister Blessing </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f8.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Northern Choir Mistress
+                    <br>
+                    <small class="card-description text-muted">Sister Amara </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="section section-contacts">
