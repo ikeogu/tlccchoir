@@ -45,7 +45,7 @@ class SongPresentationCOntroller extends Controller
        
                
         
-        return view('songs.create');
+        return view('create');
     }
 
     /**
