@@ -28,9 +28,7 @@
                                     <tr><th>
                                       ID
                                     </th>
-                                    <th>
-                                      Passport
-                                    </th>
+                                    
                                     <th>
                                       Name
                                     </th>
