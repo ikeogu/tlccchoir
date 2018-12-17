@@ -56,7 +56,7 @@
                 <div class="card card-profile">
                   <div class="card-avatar">
                     <a href="#pablo">
-                      <img class="img" src="/storage/avatars/{{Auth::user()->avatar }" />
+                      <img class="img" src="/storage/avatars/{{Auth::user()->avatar }}" />
                     </a>
                   </div>
                   <div class="row justify-content-center" style="padding-top:60px;">

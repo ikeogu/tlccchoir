@@ -39,6 +39,10 @@ class AdminController extends Controller
 
     }
 
+    public function user(){
+        $user = Auth::user();
+        return view('admin/user',compact('user',$user));
+    }
 
 
     /**

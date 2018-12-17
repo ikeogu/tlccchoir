@@ -147,7 +147,7 @@
       <h2 class="title">Meet our Leaders</h2>
         <div class="team">
           <div class="row">
-              <div class="team-player">
+            <div class="team-player">
                 <div class="card card-plain">
                     <div class="col-md-6 ml-auto mr-auto">
                       <img src="img/li.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
@@ -165,8 +165,8 @@
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
                     </div>
                   </div>
-              </div>
-              <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
                 <div class="team-player">
                   <div class="card card-plain">
                     <div class="col-md-6 ml-auto mr-auto">
@@ -184,30 +184,30 @@
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
                     </div>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card card-plain">
-                    <div class="col-md-6 ml-auto mr-auto">
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
                       <img src="img/m3.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
-                    </div>
-                    <h4 class="card-title"> Choir Supervisor
+                  </div>
+                  <h4 class="card-title"> Choir Supervisor
                       <br>
                       <small class="card-description text-muted"> Bro Solomon</small>
-                    </h4>
-                    <div class="card-body">
+                  </h4>
+                  <div class="card-body">
                       <p class="card-description"></p>
-                    </div>
-                    <div class="card-footer justify-content-center">
+                  </div>
+                  <div class="card-footer justify-content-center">
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
                       <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
           <div class="row">
             <div class="col-md-3">
@@ -322,7 +322,7 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/m3.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                    <img src="img/m4.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
                   <h4 class="card-title"> Benue State Choir Master
                     <br>
