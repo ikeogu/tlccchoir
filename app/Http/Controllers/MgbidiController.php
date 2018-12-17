@@ -54,6 +54,7 @@ class MgbidiController extends Controller
             'ties' => 'required','string',
            
             'email' => 'required','string',
+            'comment'=>'required','string',
             
         ]);
        
