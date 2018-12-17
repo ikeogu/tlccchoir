@@ -29,9 +29,7 @@
                                     <tr><th>
                                       ID
                                     </th>
-                                    <th>
-                                      Passport
-                                    </th>
+                                    
                                     <th>
                                       Name
                                     </th>
@@ -55,9 +53,7 @@
                                       <td>
                                          {{$my->id}}
                                       </td>
-                                      <td>
-                                         {{  $my->passport}}
-                                      </td>
+                                      
                                       <td>
                                           {{$my->firstname . $my->lastname}}
                                       </td>
