@@ -47,28 +47,28 @@
                                     </th>
                                     
                                   </tr></thead>
-                                  @foreach($user as $my)
+                                  
                                   <tbody>
                                     <tr>
                                       <td>
-                                         {{$my->id}}
+                                         {{$user->id}}
                                       </td>
                                       
                                       <td>
-                                          {{$my->firstname . $my->lastname}}
+                                          {{$user->firstname . $user->lastname}}
                                       </td>
                                       <td>
-                                      {{$my->state}}
+                                      {{$user->state}}
                                       </td>
                                       
                                       <td >
-                                      {{ $my->school }}
+                                      {{ $user->school }}
                                       </td>
                                       <td >
-                                      {{ $my->gender }}
+                                      {{ $user->gender }}
                                       </td>
                                       <td>
-                                      {{ $my->created_at->diffForHumans()}}
+                                      {{ $user->created_at->diffForHumans()}}
                                       </td>
                                     
                                    
@@ -78,7 +78,6 @@
                                   </tbody>
                                     
 
-                                  @endforeach
                                 </table>
                               </div>
                             </div>
@@ -116,33 +115,33 @@
                                       Ties
                                     </th>
                                   </tr></thead>
-                                  @foreach($user as $my)
+                                  
                                   <tbody>
                                     <tr>
                                       <td>
-                                         {{$my->health_status}}
+                                         {{$user->health_status}}
                                       </td>
                                       <td>
-                                         {{  $my->p_uniform}}
+                                         {{  $user->p_uniform}}
                                       </td>
                                       <td>
-                                          {{$my->w_uniform}}
+                                          {{$user->w_uniform}}
                                       </td>
                                       <td>
-                                      {{$my->m_uniform}}
+                                      {{$user->m_uniform}}
                                       </td>
                                       <td>
-                                      {{$my->o_uniform}}
+                                      {{$user->o_uniform}}
                                       </td>
                                       
                                       <td >
-                                      {{ $my->b_uniform }}
+                                      {{ $user->b_uniform }}
                                       </td>
                                       <td >
-                                      {{ $my->n_uniform }}
+                                      {{ $user->n_uniform }}
                                       </td>
                                       <td>
-                                      {{ $my->ties}}
+                                      {{ $user->ties}}
                                       </td>
                                     
                                    
@@ -153,7 +152,7 @@
                                   </tbody>
                                     
 
-                                  @endforeach
+                                 
                                 </table>
                               </div>
                             </div>

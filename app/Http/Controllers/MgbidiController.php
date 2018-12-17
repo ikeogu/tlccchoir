@@ -148,9 +148,8 @@ class MgbidiController extends Controller
       $user = Mgbidi::find($id);
         
         
-      $pdf = PDF::loadView('pdf')->with('user', $user);
-      
-      return $pdf->download('pdf.pdf');
+      $pdf = PDF::loadView('pdf', compact('user'));
+      return $pdf->download('mgbidi_2019_registration.pdf');
 
     }
 }
