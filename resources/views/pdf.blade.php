@@ -43,9 +43,7 @@
                                     <tr><th>
                                       ID
                                     </th>
-                                    <th>
-                                      Passport
-                                    </th>
+                                    
                                     <th>
                                       Name
                                     </th>
@@ -94,7 +92,7 @@
                                   </tbody>
                                     
 
-                                  @endforeach
+                                
                                 </table>
                               </div>
                             </div>
@@ -169,7 +167,7 @@
                                   </tbody>
                                     
 
-                                  @endforeach
+                                 
                                 </table>
                               </div>
                             </div>
