@@ -146,8 +146,8 @@ class MgbidiController extends Controller
      public function downloadPDF($id){
       $user = Mgbidi::find($id);
         
-      $data = ['user'=>$user];
-      $pdf = PDF::loadView('pdf', $data)->setPaper('a4')->setOrientation('portrait');
+        
+      $pdf = PDF::loadView('pdf', compact('user'))->setPaper('a4')->setOrientation('portrait');
       
       return $pdf->download('pdf.pdf');
 
