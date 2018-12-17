@@ -33,7 +33,7 @@
                                     </th>
                       </thead>
                       <tbody>
-                        @foreach($users as $user)
+                        @foreach($users->sortBy('state')  as $user)
                         <tr>
                                       
                                       
@@ -41,7 +41,7 @@
                                           {{$user->firstname .' '. $user->lastname}}
                                       </td>
                                       <td>
-                                      {{$user->state}}
+                                      {{$user->state->sortBy}}
                                       </td>
                                       
                                       <td >
