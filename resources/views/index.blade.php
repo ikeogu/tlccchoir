@@ -174,7 +174,7 @@
                     <div class="col-md-6 ml-auto mr-auto">
                       <img src="img/m7.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                     </div>
-                    <h4 class="card-title"> Among the National Cordinator
+                    <h4 class="card-title"> Among the National Cordinators
                       <br>
                       <small class="card-description text-muted"> Pastor Chiyaka</small>
                     </h4>

@@ -7,6 +7,7 @@ use App\User;
 use App\SongPresentation;
 use App\Mgbidi;
 
+use App\Auth;
 class AdminController extends Controller
 {
     /**
