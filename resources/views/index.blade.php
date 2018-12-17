@@ -370,7 +370,7 @@
                   <div class="col-md-6 ml-auto mr-auto">
                     <img src="img/ma.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
-                  <h4 class="card-title">   Rivier State Choir Master
+                  <h4 class="card-title">   River State Choir Master
                     <br>
                     <small class="card-description text-muted">  Brother Anelechi Marvelous</small>
                   </h4>
