@@ -8,16 +8,20 @@
 <body>
 <div class="white-bg">
 		    <div class="container">
-		      <div class="section-top-border">
-
+		      <div class="section-top-border" style="padding-top:60px;">
+              <div>
+               <h2> Welcome To Mgbidi 2019</h2>
+               <h4>Your Are Cleared for Now!</h4>
+               <h3>Please come with this invoice to the camp for clearance.</h3>
+              </div>
             <div class="content">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header card-header-primary" style="background-color: #cc66ff">
-                        <h4 class="card-title ">Reg Details</h4>
-                        <p class="card-category"> All registrations so far</p>
+                        <h4 class="card-title ">Your Registration Details</h4>
+                        <p class="card-category"> </p>
                       </div>
                       <div class="card-body">
                         <div class="table-responsive">
