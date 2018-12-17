@@ -33,7 +33,7 @@
                                     </th>
                       </thead>
                       <tbody>
-                        @foreach($users->sortBy('state')  as $user)
+                        @foreach($users  as $user)
                         <tr>
                                       
                                       
