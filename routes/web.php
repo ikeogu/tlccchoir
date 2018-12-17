@@ -20,6 +20,8 @@ Route::get('/home','HomeController@index');
 
 
 Route::resource('mgbidi-2019', 'MgbidiController');
+Route::get('/mgbidi-registration','MgbidiController@index')->name('regmem');
+Route::get('/downloadPDF/{id}','MgbidiController@downloadPDF')->name('download');
 Route::resource('songs', 'SongPresentationCOntroller');
 Route::get('/write_song', 'SongPresentationCOntroller@create')->name('create');
 

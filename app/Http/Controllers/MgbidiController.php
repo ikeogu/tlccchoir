@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mgbidi;
 use file;
+use PDF;
 
 
 class MgbidiController extends Controller
@@ -16,7 +17,9 @@ class MgbidiController extends Controller
      */
     public function index()
     {
-        
+        $users = Mgbidi::all();
+
+        return view('mgbidi-2019/index', compact('users'));
     }
 
     /**
@@ -138,5 +141,15 @@ class MgbidiController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+     public function downloadPDF($id){
+      $user = Mgbidi::find($id);
+        
+      $data = ['user'=>$user];
+      $pdf = PDF::loadView('pdf', $data)->setPaper('a4')->setOrientation('portrait');
+      
+      return $pdf->download('pdf.pdf');
+
     }
 }

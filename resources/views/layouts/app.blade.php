@@ -44,6 +44,9 @@
                     <a href="mgbidi-2019/create" class="dropdown-item">
                         <i class="material-icons">content_paste</i> Mgbidi Registration
                     </a>
+                    <a href="{{route('regmem')}}" class="dropdown-item">
+                        <i class="material-icons">content_paste</i> Mgbidi Reg Choristers 2019
+                    </a>
                     <a href="songs" class="dropdown-item">
                       <i class="material-icons">music_note</i>View Songs
                     </a>
