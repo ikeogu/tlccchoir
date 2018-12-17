@@ -160,11 +160,7 @@
                     <div class="card-body">
                       <p class="card-description">National Pastor of the Lord's Chosen Campus Fellowship</p>
                     </div>
-                    <div class="card-footer justify-content-center">
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                    </div>
+                    
                   </div>
               </div>
             </div>  
@@ -181,11 +177,7 @@
                     <div class="card-body">
                       <p class="card-description"></p>
                     </div>
-                    <div class="card-footer justify-content-center">
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                    </div>
+                    
                 </div>
               </div>
             </div>    
@@ -226,11 +218,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -247,10 +235,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -268,11 +253,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -313,11 +294,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -334,11 +311,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -356,11 +329,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -377,11 +346,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -400,11 +365,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -421,10 +382,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -441,11 +399,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -487,10 +441,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -507,11 +458,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -528,11 +475,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -550,11 +493,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>  
