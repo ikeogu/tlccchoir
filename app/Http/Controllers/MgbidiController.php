@@ -147,7 +147,7 @@ class MgbidiController extends Controller
       $user = Mgbidi::find($id);
         
         
-      $pdf = PDF::loadView('pdf', compact('user'))->setPaper('a4')->setOrientation('portrait');
+      $pdf = PDF::loadView('pdf')->with('user', $user);
       
       return $pdf->download('pdf.pdf');
 
