@@ -56,11 +56,9 @@
                                       <td>
                                          {{$user->id}}
                                       </td>
+                                      
                                       <td>
-                                         {{  $user->passport}}
-                                      </td>
-                                      <td>
-                                          {{$user->firstname . $user->lastname}}
+                                          {{$user->firstname .' '. $user->lastname}}
                                       </td>
                                       <td>
                                       {{$user->state}}
