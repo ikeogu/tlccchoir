@@ -15,7 +15,7 @@
                   <table class="table table-bordered table-responsive table-striped col-md-6 ml-auto mr-auto">
                                 <tr>
                                     <td><h3 class="name">Name:</h3></td>
-                                    <td> <h3>{{ Auth::user()->name }}</h3></td>
+                                    <td> <h3>{{ App\Auth::user()->name }}</h3></td>
                                 </tr>
                                 <tr>
                                     <td> <h6>Tag :</h6> </td>
@@ -23,27 +23,27 @@
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">Email: </h3></td>
-                                    <td>  <h3>{{Auth::user()->email}}  </h3></td>
+                                    <td>  <h3>{{  App\Auth::user()->email}}  </h3></td>
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">Institution: </h3></td>
-                                    <td> <h3> {{Auth::user()->institution }}</h3> </td>
+                                    <td> <h3> {{  App\Auth::user()->institution }}</h3> </td>
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">Discipline: </h3></td>
-                                    <td> <h3> {{Auth::user()->discipline}}</h3> </td>
+                                    <td> <h3> {{  App\Auth::user()->discipline}}</h3> </td>
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">State: </h3></td>
-                                    <td>  <h3> {{Auth::user()->state}} </h3></td>
+                                    <td>  <h3> {{  App\Auth::user()->state}} </h3></td>
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">Gendex: </h3></td>
-                                    <td>  <h3> {{Auth::user()->gender}}</h3></td>
+                                    <td>  <h3> {{  App\Auth::user()->gender}}</h3></td>
                                 </tr>
                                 <tr>
                                     <td> <h3 class="name">Phone: </h3></td>
-                                    <td>  <h3> {{Auth::user()->phone}} </h3></td>
+                                    <td>  <h3> {{  App\Auth::user()->phone}} </h3></td>
                                 </tr>
                             </table>
                         </div>
