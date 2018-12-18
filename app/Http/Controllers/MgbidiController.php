@@ -17,24 +17,7 @@ class MgbidiController extends Controller
      */
     public function index()
     {
-        $users =  [];
-
-        Mgbidi::all()
-                ->filter(function(Mgbidi $mgbidi) use (&$users) {
-                    $details = sprintf("%s.%s.%s",
-                        $mgbidi->phone,
-                        $mgbidi->email,
-                        $mgbidi->firstname);
-
-                    if (in_array($details, $users)) {
-                        // details is a duplicate
-                        return $mgbidi;
-                    }
-
-                    $users[] = $details;
-                })->map(function(Mgbidi $mgbidi) {
-                    $mgbidi->delete();
-                });
+       
         $users=  Mgbidi::all();
         return view('mgbidi-2019/index', compact('users'));
     }
