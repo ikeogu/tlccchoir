@@ -39,7 +39,7 @@
                                     
 
                 
-                                    <form action="{{ url('image-gallery',$image->id) }}" method="POST">
+                                    <form action="{{ url('admin/deleteuploadedimages',$image->id) }}" method="POST">
 
                                     <input type="hidden" name="_method" value="delete">
                                     {!! csrf_field() !!}

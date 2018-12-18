@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\SongPresentation;
 use App\Mgbidi;
+use App\ImageGallery;
 
 use App\Auth;
 class AdminController extends Controller
@@ -41,9 +42,9 @@ class AdminController extends Controller
     }
 
     public function delup(){
-      
-        return view('admin/deleteuploadedimages');
-       
+        $images = ImageGallery::get();
+    	return view('admin/deleteuploadedimages',compact('images'));
+        
 
     }
 
@@ -112,7 +113,11 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
+    { 
+       
+            ImageGallery::find($id)->delete();
+            return back()
+                ->with('success','Image removed successfully.');
+       
     }
 }
