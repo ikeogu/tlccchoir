@@ -45,7 +45,7 @@
                 <div class="card-body ">
                   <div class="tab-content text-center">
                     <div class="tab-pane active" id="profile">
-                      <p> {{$songs->body}} </p>
+                      <p> {!! nl2br($songs->body) !!} </p>
                     </div>
                     <div class="tab-pane" id="messages">
                       <p>This song was written by {{$songs->author}}.</p>

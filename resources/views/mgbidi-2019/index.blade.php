@@ -35,30 +35,39 @@
                       </thead>
                       <tbody>
                         @foreach($users->sortBy('state')  as $user)
+                        
+                        $same_data = DB::table('mgbidis')->where('phone', '0000000000');
+
+                            @if ($same_data->count() > 1) {
+                                $same_data_before = clone $same_data;
+                                $top = $same_data->first();
+                                $same_data_before->where('id', '!=', $top->id)->delete();
+                            }
+                          @endif  
                         <tr>
                                       
-                                      
-                                      <td>
-                                          {{$user->firstname .' '. $user->lastname}}
-                                      </td>
-                                      <td>
-                                      {{$user->state}}
-                                      </td>
-                                      
-                                      <td >
-                                      {{ $user->school }}
-                                      </td>
-                                      <td >
-                                      {{ $user->gender }}
-                                      </td>
-                                      <td>
-                                      {{ $user->created_at->diffForHumans()}}
-                                      </td>
-                                    
-                                   
-                                      <td><a href="{{action('MgbidiController@downloadPDF', $user->id)}}"> Download PDF</a></td>
-                                      
-                                    </tr>   
+                          
+                          <td>
+                              {{$user->firstname .' '. $user->lastname}}
+                          </td>
+                          <td>
+                          {{$user->state}}
+                          </td>
+                          
+                          <td >
+                          {{ $user->school }}
+                          </td>
+                          <td >
+                          {{ $user->gender }}
+                          </td>
+                          <td>
+                          {{ $user->created_at->diffForHumans()}}
+                          </td>
+                        
+                        
+                          <td><a href="{{action('MgbidiController@downloadPDF', $user->id)}}"> Download PDF</a></td>
+                          
+                        </tr>   
                        @endforeach 
                       </tbody>
                     </table>
