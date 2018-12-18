@@ -101,7 +101,7 @@
             </div>
         </nav>
 
-<div class="container">
+<div class="container" style="padding-top:200px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -203,7 +203,7 @@
   <script src="../js/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="../js/moment.min.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src=" ../js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <script src="../js/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="../js/nouislider.min.js" type="text/javascript"></script>
   
