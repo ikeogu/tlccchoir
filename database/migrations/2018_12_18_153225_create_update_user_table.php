@@ -13,7 +13,7 @@ class CreateUpdateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('mgbidis', function (Blueprint $table) {
+        Schema::table('mgbidis', function (Blueprint $table) {
             $table->string('email')->unique();
             $table->string('phone')->unique();
         });
