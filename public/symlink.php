@@ -1,2 +1,2 @@
 <?php
-symlink('/storage/app/public','/public/storage');
+symlink('//image-gallery/storage/app/public','/public/storage');
