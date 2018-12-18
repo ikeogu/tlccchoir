@@ -42,7 +42,7 @@ class AdminController extends Controller
 
     public function delup(){
       
-        return view('admin/delectuploadedimages');
+        return view('admin/deleteuploadedimages');
        
 
     }
