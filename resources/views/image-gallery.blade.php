@@ -49,92 +49,11 @@
     body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
        margin-bottom: 0;
     }
-    @media only screen and (max-width : 480px) {
-       /* Smartphone view: 1 tile */
-       .box {
-          width: 100%;
-          padding-bottom: 100%;
-       }
-    }
-    @media only screen and (max-width : 650px) and (min-width : 481px) {
-       /* Tablet view: 2 tiles */
-       .box {
-          width: 50%;
-          padding-bottom: 50%;
-       }
-    }
-    @media only screen and (max-width : 1050px) and (min-width : 651px) {
-       /* Small desktop / ipad view: 3 tiles */
-       .box {
-          width: 33.3%;
-          padding-bottom: 33.3%;
-       }
-    }
-    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-       /* Medium desktop: 4 tiles */
-       .box {
-          width: 25%;
-          padding-bottom: 25%;
-       }
-    }
-    
-    .selectableImageContainer {
-    border: 1px solid #CCC;
-    padding: 5px;
-    margin: 7px;
-    float: left;
-    width: 212px;
-    text-align: center;
-}
+   
 
-.zoom_toolbar_button {
-    height: 32px;
-    width: 32px;
-    float: right;
-    border-radius: 4px;
-    margin-left: 2px;
-    margin-top: 8px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    padding: 6px 0 0 3px;
-}
 
-.approved_image_toolbar_button {
-    background-color: #8bc249;
-    height: 32px;
-    width: 32px;
-    float: right;
-    border-radius: 4px;
-    margin-left: 2px;
-    margin-top: 8px;
-    cursor: pointer;
-    padding: 6px 0 0 3px;
-}
 
-.disapproved_image_toolbar_button {
-    background-color: #bb232a;
-    height: 32px;
-    width: 32px;
-    float: right;
-    border-radius: 4px;
-    margin-left: 2px;
-    margin-top: 8px;
-    cursor: pointer;
-    padding: 6px 0 0 1px;
-}
 
-.reviewIssuesButton {
-    margin-left: 20px;
-    color: #ffffff;
-    background-color: #00aeef;
-}
-
-.markAllReviewed {
-    background-color: #00aeef;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    color: #ffffff;
-}
 
 .white {
     color: purple;
@@ -142,9 +61,9 @@
 </style>
 
 <div class="no-touch body" style="padding-top:60px;">
-    <div class="wrap">
+    
 
-
+         <div class="wrap">
             @if($images->count())
                 @foreach($images as $image)
                
@@ -152,21 +71,15 @@
                         <div class="boxInner">
                             <img src="{{ url('images/'. $image->image) }}" />
                             <div class="titleBox">{{ $image->title }}</div>
+                        </div>    
                     </div>
                    
-                    @if(auth()->user()->isAdmin == 1)
-                    <form action="{{ url('image-gallery',$image->id) }}" method="POST">
-
-                    <input type="hidden" name="_method" value="delete">
-                    {!! csrf_field() !!}
-                    <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i>Delete</button>
-                    </form>
-                    @endif
+                   
                 @endforeach
             @endif
 
-
-        </div> <!-- list-group / end -->
+         </div>  
+       <!-- list-group / end -->
     </div> <!-- row / end -->
 </div> <!-- container / end -->
 
