@@ -68,7 +68,7 @@ class MgbidiController extends Controller
             //file name to store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('passport')->storeAs('public/passport', $fileNameToStore);
+            $path = $request->file('passport')->storeAs('public/', $fileNameToStore);
         }else{
             $fileNameToStore = 'noimage.jpg';
         }
