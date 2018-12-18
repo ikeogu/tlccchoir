@@ -115,9 +115,6 @@ class AdminController extends Controller
     public function destroy($id)
     { 
        
-            ImageGallery::find($id)->delete();
-            return back()
-                ->with('success','Image removed successfully.');
        
     }
 }

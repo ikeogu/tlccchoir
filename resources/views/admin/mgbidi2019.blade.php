@@ -5,6 +5,7 @@
                 <div class="card-header card-header-primary">
                   <h4 class="card-title mt-0"> All Registered Members of the Campus Choir</h4>
                   <p class="card-category">From Various state</p>
+                  <p class="card-category"><span class="text-success">{{App\Mgbidi::count()}} </span>Registered</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
