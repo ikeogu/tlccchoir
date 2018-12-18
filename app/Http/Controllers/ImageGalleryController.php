@@ -17,8 +17,8 @@ class ImageGalleryController extends Controller
      */
     public function index()
     {
-        ImageGallery::get();
-        $images =ImageGallery::truncate();
+        $images = ImageGallery::get();
+        
     	return view('image-gallery',compact('images'));
     }
 
