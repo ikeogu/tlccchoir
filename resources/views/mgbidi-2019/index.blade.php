@@ -8,6 +8,7 @@
                 <div class="card-header card-header-primary">
                   <h4 class="card-title mt-0"> All Registered Choristers For Mgbidi 2019 Camp</h4>
                   <p class="card-category">From Various state</p>
+                  <h3 class="card-category"><span text="class-success"> {{App\Mgbidi::count()}} Registered </span></h3>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
