@@ -1,2 +1,7 @@
 <?php
-symlink('//image-gallery/storage/app/public','/public/storage');
+
+$target = '/storage/app/public/public/images';
+$link = '/public/storage';
+symlink($target, $link);
+
+echo readlink($link);
