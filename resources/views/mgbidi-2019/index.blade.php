@@ -36,14 +36,7 @@
                       <tbody>
                         @foreach($users->sortBy('state')  as $user)
                         
-                        $same_data = DB::table('mgbidis')->where('phone', '0000000000');
-
-                            @if ($same_data->count() > 1) {
-                                $same_data_before = clone $same_data;
-                                $top = $same_data->first();
-                                $same_data_before->where('id', '!=', $top->id)->delete();
-                            }
-                          @endif  
+                        
                         <tr>
                                       
                           
