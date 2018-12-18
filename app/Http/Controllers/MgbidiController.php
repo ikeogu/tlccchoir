@@ -17,7 +17,7 @@ class MgbidiController extends Controller
      */
     public function index()
     {
-        $users = Mgbidi::where('firstname', 1)->first();
+        $users = Mgbidi::all();
         
         return view('mgbidi-2019/index', compact('users'));
     }
