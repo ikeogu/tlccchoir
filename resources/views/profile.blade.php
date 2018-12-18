@@ -59,7 +59,7 @@
 
                                 <div class="profile-header-container">
                                     <div class="profile-header-img">
-                                        <img class="rounded-circle" src="/storage/avatars/{{Auth::user()->avatar }}" style="max-width:50%; max-height:50%;"/>
+                                        <img class="rounded-circle" src="avatars/{{Auth::user()->avatar }}" style="max-width:50%; max-height:50%;"/>
                                         <!-- badge -->
                                         <div class="rank-label-container">
                                             <span class="label label-default rank-label">{{Auth::user()->name}}</span>
