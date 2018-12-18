@@ -20,7 +20,7 @@
                                 
                                     <div class="col-lg-3 col-md-4 col-sm-4">
                                         <div class="boxInner">
-                                            <img src="{{ url('images/'. $image->image) }}" />
+                                            <img src="{{ url('images/'. $image->image) }}" width="100%"/>
                                             <div class="titleBox">{{ $image->title }}</div>
                                         </div>    
                                     </div>
