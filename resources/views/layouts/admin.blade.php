@@ -87,9 +87,9 @@
                   </a>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="./notifications.html">
+                  <a class="nav-link" href="{{route('delup')}}">
                   <i class="material-icons">notifications</i>
-                  <p>Notifications</p>
+                  <p>Delect uploaded images</p>
                   </a>
               </li>
               

@@ -40,6 +40,13 @@ class AdminController extends Controller
 
     }
 
+    public function delup(){
+      
+        return view('admin/delectuploadedimages');
+       
+
+    }
+
    
 
 
