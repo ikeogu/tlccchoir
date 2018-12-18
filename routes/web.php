@@ -19,6 +19,7 @@ Auth::routes();
 Route::get('/home','HomeController@index');
 
 
+
 Route::resource('mgbidi-2019', 'MgbidiController');
 Route::get('/mgbidi-registration','MgbidiController@index')->name('regmem');
 Route::get('/downloadPDF/{id}','MgbidiController@downloadPDF')->name('download');
