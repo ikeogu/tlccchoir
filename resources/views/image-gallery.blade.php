@@ -9,12 +9,12 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-primary">
-                        <h4 class="card-title ">song Details</h4>
-                        <p class="card-category"> All songs so far</p>
+                        <h4 class="card-title ">Our Gallery</h4>
+                        <p class="card-category"> Are we not cute enough??</p>
                     </div>
                     <div class="card-body">  
                         <div class="row">
-                            <div class="wrap ">
+                            
                             @if($images->count())
                                 @foreach($images as $image)
                                 
@@ -29,7 +29,7 @@
                                 @endforeach
                             @endif
 
-                            </div>  
+                           
                         
                         </div> <!-- row / end -->
                     </div> 
