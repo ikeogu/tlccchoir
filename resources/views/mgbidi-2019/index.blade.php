@@ -34,33 +34,36 @@
                                     </th>
                       </thead>
                       <tbody>
-                        @foreach($users->sortBy('state')  as $user)
+
+                        @foreach($users->sortBy('firstname') as $user)
                         
-                        
-                        <tr>
-                                      
-                          
-                          <td>
-                              {{$user->firstname .' '. $user->lastname}}
-                          </td>
-                          <td>
-                          {{$user->state}}
-                          </td>
-                          
-                          <td >
-                          {{ $user->school }}
-                          </td>
-                          <td >
-                          {{ $user->gender }}
-                          </td>
-                          <td>
-                          {{ $user->created_at->diffForHumans()}}
-                          </td>
-                        
-                        
-                          <td><a href="{{action('MgbidiController@downloadPDF', $user->id)}}"> Download PDF</a></td>
-                          
-                        </tr>   
+                       
+      
+                              <tr>
+                                            
+                                
+                                <td>
+                                    {{$user->firstname .' '. $user->lastname}}
+                                </td>
+                                <td>
+                                {{$user->state}}
+                                </td>
+                                
+                                <td >
+                                {{ $user->school }}
+                                </td>
+                                <td >
+                                {{ $user->gender }}
+                                </td>
+                                <td>
+                                {{ $user->created_at->diffForHumans()}}
+                                </td>
+                              
+                              
+                                <td><a href="{{action('MgbidiController@downloadPDF', $user->id)}}"> Download PDF</a></td>
+                                
+                              </tr>   
+                            
                        @endforeach 
                       </tbody>
                     </table>
