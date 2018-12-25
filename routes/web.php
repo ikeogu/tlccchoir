@@ -39,7 +39,7 @@ Route::get('/dashboard','AdminController@index')->name('adminhome');
 Route::get('/admin/allmembers','AdminController@allmembers')->name('allmembers');
 Route::get('/admin/allsongs','AdminController@allsongs')->name('allsongs');
 Route::get('/admin/mgbidi2019','AdminController@mgbidi2019')->name('mgbidi2019');
-Route::get('/admin/user','AdminController@user')->name('user');
+
 Route::get('/admin/deleteuploadedimages','AdminController@delup')->name('delup');
 
 

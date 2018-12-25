@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d660b1acf457d742342f328dac81db5b",
+    "content-hash": "bdcf7e219df91adb5d2e280c7ff3d535",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -1079,6 +1079,53 @@
             "time": "2018-10-12T19:39:35+00:00"
         },
         {
+            "name": "laravelhungary/announcement",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravelhungary/announcement.git",
+                "reference": "0ddd5fe305758df26c293523c9ce4bc49f8ca377"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravelhungary/announcement/zipball/0ddd5fe305758df26c293523c9ce4bc49f8ca377",
+                "reference": "0ddd5fe305758df26c293523c9ce4bc49f8ca377",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "predis/predis": "^1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelHungary\\Announcement\\": "src/Package"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jozsef Hocza",
+                    "email": "jozsef@hocza.com"
+                }
+            ],
+            "description": "A simple way of announcements with Laravel",
+            "homepage": "http://hocza.com",
+            "keywords": [
+                "Announcement",
+                "hocza",
+                "laravel",
+                "redis"
+            ],
+            "time": "2016-12-06T14:20:29+00:00"
+        },
+        {
             "name": "lcobucci/jwt",
             "version": "3.2.5",
             "source": {
@@ -1803,6 +1850,56 @@
                 "promise"
             ],
             "time": "2016-01-26T13:27:02+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/container",

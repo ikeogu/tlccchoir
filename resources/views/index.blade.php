@@ -3,11 +3,11 @@
 @section('content')
 
 
-  <div class="page-header header-filter clear-filter purple-filter" style="background-image: url('img/1.jpg');">
+  <div class="page-header header-filter clear-filter purple-filter" style="background-image: url('img/1.jpg');" >
     <div class="container">
       <div class="row">
       
-        <div class="col-md-6">
+        <div class="col-md-6" >
           <h3>Welcome to</h3>
           <h2 class="title">The Lord's Chosen.</h2>
           <h1 class="title">Campus Choir</h1>
@@ -147,7 +147,25 @@
       <h2 class="title">Meet our Leaders</h2>
         <div class="team">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                    <div class="col-md-6 ml-auto mr-auto">
+                      <img src="img/go.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                    </div>
+                    <h4 class="card-title">Our Big Daddy
+                      <br>
+                      <small class="card-description text-muted">G.O Lord's Chosen</small>
+                    </h4>
+                    <div class="card-body">
+                      <p class="card-description">The General pastor of the Lord'chosen CRM</p>
+                    </div>
+                    
+                  
+                </div>
+              </div>
+            </div>  
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                     <div class="col-md-6 ml-auto mr-auto">
@@ -161,16 +179,16 @@
                       <p class="card-description">National Pastor of the Lord's Chosen Campus Fellowship</p>
                     </div>
                     
-                  </div>
+                </div>
               </div>
             </div>  
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                     <div class="col-md-6 ml-auto mr-auto">
                       <img src="img/m7.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                     </div>
-                    <h4 class="card-title"> Among the National Cordinators
+                    <h4 class="card-title"> One of our National Cordinators
                       <br>
                       <small class="card-description text-muted"> Pastor Chiyaka</small>
                     </h4>
@@ -181,7 +199,7 @@
                 </div>
               </div>
             </div>    
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
@@ -194,11 +212,7 @@
                   <div class="card-body">
                       <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -226,6 +240,40 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/ify.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title">National Assistant Choir Master
+                    <br>
+                    <small class="card-description text-muted">Brother Ifeanyi Emmanuel</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f1.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">
+                    <br>
+                    <small class="card-description text-muted"> Sister Marvelous</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
                     <img src="img/m2.jpg" alt="Thumbnail Image" class="rounded img-fluid">
                   </div>
                   <h4 class="card-title">Campus Choir Admin
@@ -239,12 +287,14 @@
                 </div>
               </div>
             </div>
+          </div>  
             
+          <div class="row">
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/m5.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                    <img src="img/cj2.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
                   <h4 class="card-title"> South East Choir Master
                     <br>
@@ -256,7 +306,7 @@
                   
                 </div>
               </div>
-            </div>
+            </div>  
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -270,17 +320,10 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
-            
-          </div>
-       
-          <div class="row">
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -315,7 +358,8 @@
                 </div>
               </div>
             </div>
-          
+          </div>
+          <div class="row">
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -352,23 +396,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/f1.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">
-                    <br>
-                    <small class="card-description text-muted"> Sister Marvelous</small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description"></p>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
+           
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -416,11 +444,7 @@
                   <div class="card-body">
                     <p class="card-description"></p>
                   </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
+                  >
                 </div>
               </div>
             </div>
