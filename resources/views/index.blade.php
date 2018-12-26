@@ -294,7 +294,7 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/cj2.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                    <img src="img/cj2.JPG" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
                   <h4 class="card-title"> South East Choir Master
                     <br>
