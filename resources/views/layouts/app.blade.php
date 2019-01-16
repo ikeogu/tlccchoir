@@ -18,7 +18,7 @@
   <link href="css/material-kit.css" rel="stylesheet" />
   
 </head>
-<body class="index-page">  
+<body class="">  
     <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
