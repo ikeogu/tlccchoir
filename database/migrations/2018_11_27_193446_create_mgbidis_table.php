@@ -18,8 +18,8 @@ class CreateMgbidisTable extends Migration
             $table->string('passport');
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('email');
-            $table->string('phone');
+            $table->string('email')->unique();
+            $table->string('phone')->unique();
             $table->string('school');
             $table->string('state');
             $table->string('gender');

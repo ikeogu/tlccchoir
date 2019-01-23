@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="nav-open">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,10 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="css/material-kit.css" rel="stylesheet" />
+  <link href="{{ asset('css/material-kit.css')}}" rel="stylesheet" />
   
 </head>
-<body class="">  
+<body class="index-page sidebar-collapse">  
     <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
@@ -33,6 +33,11 @@
             </div>
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="{{route('blog')}}" class=" nav-link" data-toggle="dropdown">
+                      <i class="material-icons">apps</i> Blog
+                </a>
+              </li>
                 <li class="dropdown nav-item">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                     <i class="material-icons">apps</i> Join Us
@@ -70,8 +75,11 @@
                       <i class="material-icons">dashboard</i> Dashboard
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                      <a href="/profile" class="dropdown-item">
+                      <a href="/home" class="dropdown-item">
                           <i class="material-icons">person</i> User Profile
+                      </a>
+                      <a href="{{route('users.edit',[Auth::user()->id])}}" class="dropdown-item">
+                          <i class="material-icons">person</i> Edit Profile
                       </a>
 
                       <a href="/write_song" class="dropdown-item">
@@ -119,8 +127,8 @@
             </a>
           </li>
           <li>
-            <a href="">
-             
+            <a href="{{route('blog')}}">
+             Blog
             </a>
           </li>
           <li>
@@ -140,16 +148,15 @@
     </div>
   </footer>
     </div>    
-  <script src=" js/jquery.min.js" type="text/javascript"></script>
-  <script src="js/popper.min.js" type="text/javascript"></script>
-  <script src="js/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="js/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src=" js/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="js/nouislider.min.js" type="text/javascript"></script>
+  <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/moment.min.js')}}"></script>
+ 
+  
+  <script src="{{asset('js/nouislider.min.js')}}" type="text/javascript"></script>
   
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="js/material-kit.js" type="text/javascript"></script>      
+  <script src="{{asset('js/material-kit.js')}}" type="text/javascript"></script>      
 </body>
 </html>

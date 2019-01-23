@@ -23,6 +23,10 @@ class CreateUsersTable extends Migration
             $table->string('state');
             $table->string('discipline');
             $table->string('institution');
+            $table->integer('role_id')->default(3);
+            $table->boolean('isAdmin')->nullable();
+
+
             $table->string('avatar')->default('user.png');
             $table->string('gender');
             $table->string('phone');

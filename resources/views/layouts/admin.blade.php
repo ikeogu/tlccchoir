@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="nav-open">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 
   <head>
     <meta charset="utf-8" />
@@ -17,21 +17,18 @@
     <!-- CSS Files -->
     <!-- Core Js FIle-->
     <link href="{{asset('css/material-dashboard.css')}}" rel="stylesheet" />
-    <script src=" js/core/jquery.min.js"></script>
-    <script src=" js/core/popper.min.js"></script>
-    <script src=" js/core/bootstrap-material-design.min.js"></script>
+    <script src="{{asset('js/core/jquery.min.js')}}"></script>
+    <script src="{{asset('js/core/popper.min.js')}}"></script>
+    <script src="{{asset('js/core/bootstrap-material-design.min.js')}}"></script>
     <script src="https://unpkg.com/default-passive-events"></script>
-    <script src=" js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <!-- Chartist JS -->
-    <script src=" js/plugins/chartist.min.js"></script>
+    <script src="{{asset('js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+    
+    
+    <script src="{{asset('js/plugins/chartist.min.js')}}"></script>
     <!--  Notifications Plugin    -->
-    <script src=" js/plugins/bootstrap-notify.js"></script>
+    <script src="{{asset('js/plugins/bootstrap-notify.js')}}"></script>
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src=" js/material-dashboard.js"></script>
+    <script src="{{asset('js/material-dashboard.js')}}"></script>
     
     </head>
 
@@ -67,6 +64,22 @@
                   <i class="material-icons">content_paste</i>
                   <p>List of Members</p>
                   </a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="{{route('gzone')}}">
+                  <i class="material-icons">content_paste</i>
+                  <p>Geopolitical Zones</p>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a  class="nav-link" href="{{route('makeblog')}}">
+                        <i class="material-icons">apps</i> Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{route('blog')}}" class="nav-link" >
+                        <i class="material-icons">apps</i>View Blog
+                </a>
               </li>
               <li class="nav-item ">
                   <a class="nav-link" href="{{route('allsongs')}}">
@@ -119,25 +132,7 @@
                       </button>
                   </div>
                   </form>
-                  <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0)">
-                      <i class="material-icons">dashboard</i>
-                      <p class="d-lg-none d-md-block">
-                          Stats
-                      </p>
-                      </a>
-                  </li>
-                  
-                  <li class="nav-item">
-                      <a class="nav-link" href="javascript:void(0)">
-                      <i class="material-icons">person</i>
-                      <p class="d-lg-none d-md-block">
-                          Account
-                      </p>
-                      </a>
-                  </li>
-                  </ul>
+                 
               </div>
               </div>
           </nav>
@@ -182,22 +177,22 @@
           <li class="header-title">Images</li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src=" img/sidebar-1.jpg" alt="">
+              <img src="{{asset('img/sidebar-1.jpg')}}" alt="">
             </a>
           </li>
           <li class="active">
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src=" img/sidebar-2.jpg" alt="">
+              <img src="{{asset('img/sidebar-2.jpg')}}" alt="">
             </a>
           </li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src=" img/sidebar-3.jpg" alt="">
+              <img src="{{ asset('img/sidebar-3.jpg') }}" alt="">
             </a>
           </li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src=" img/sidebar-4.jpg" alt="">
+              <img src="{{asset('img/sidebar-4.jpg')}}" alt="">
             </a>
           </li>
           <li class="button-container">

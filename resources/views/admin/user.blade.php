@@ -84,7 +84,7 @@
                                     </form>
                                 </div>
                   <div class="card-body">
-                    <h6 class="card-category">Adminr</h6>
+                    <h6 class="card-category">Admin</h6>
                     <h4 class="card-title">Chorister</h4>
                     <p class="card-description">
                       Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...

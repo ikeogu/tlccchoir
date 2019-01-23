@@ -162,6 +162,16 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+       
+        Toplan\PhpSms\PhpSmsServiceProvider::class,
+        Toplan\Sms\SmsManagerServiceProvider::class,
+        
+        Intervention\Image\ImageServiceProvider::class,
+       
+        willvincent\Feeds\FeedsServiceProvider::class,
+
+
+        /*
         
 
 
@@ -227,6 +237,13 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
+        
+        'PhpSms' => Toplan\PhpSms\Facades\Sms::class,
+        'SmsManager' => Toplan\Sms\Facades\SmsManager::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        
+        'Feeds'    => willvincent\Feeds\Facades\FeedsFacade::class,
+
        
 
 

@@ -65,7 +65,48 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                    <input type="text" class="form-control{{ $errors->has('state') ? ' is-invalid' : '' }}" name="state" value="{{ old('state') }}" required autofocus placeholder="State...">
+                    <input type="hidden" class="form-control{{ $errors->has('state') ? ' is-invalid' : '' }}" name="state" value="{{ old('state') }}" required autofocus>
+                    <select name="state" class='form-control'>
+                      <option value="" selected="selected">- State-</option>
+                      <option value="Abuja FCT">Abuja FCT</option>
+                      <option value="Abia">Abia</option>
+                      <option value="Adamawa">Adamawa</option>
+                      <option value="Akwa Ibom">Akwa Ibom</option>
+                      <option value="Anambra">Anambra</option>
+                      <option value="Bauchi">Bauchi</option>
+                      <option value="Bayelsa">Bayelsa</option>
+                      <option value="Benue">Benue</option>
+                      <option value="Borno">Borno</option>
+                      <option value="Cross River">Cross River</option>
+                      <option value="Delta">Delta</option>
+                      <option value="Ebonyi">Ebonyi</option>
+                      <option value="Edo">Edo</option>
+                      <option value="Ekiti">Ekiti</option>
+                      <option value="Enugu">Enugu</option>
+                      <option value="Gombe">Gombe</option>
+                      <option value="Imo">Imo</option>
+                      <option value="Jigawa">Jigawa</option>
+                      <option value="Kaduna">Kaduna</option>
+                      <option value="Kano">Kano</option>
+                      <option value="Katsina">Katsina</option>
+                      <option value="Kebbi">Kebbi</option>
+                      <option value="Kogi">Kogi</option>
+                      <option value="Kwara">Kwara</option>
+                      <option value="Lagos">Lagos</option>
+                      <option value="Nassarawa">Nassarawa</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Ogun">Ogun</option>
+                      <option value="Ondo">Ondo</option>
+                      <option value="Osun">Osun</option>
+                      <option value="Oyo">Oyo</option>
+                      <option value="Plateau">Plateau</option>
+                      <option value="Rivers">Rivers</option>
+                      <option value="Sokoto">Sokoto</option>
+                      <option value="Taraba">Taraba</option>
+                      <option value="Yobe">Yobe</option>
+                      <option value="Zamfara">Zamfara</option>
+            <option value="Outside Nigeria">Outside Nigeria</option>
+                    </select>
                       @if ($errors->has('state'))
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $errors->first('state') }}</strong>
@@ -102,7 +143,9 @@
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    
+                    <span class="input-group-text">
+                      <i class="material-icons">person</i>
+                    </span>
                   </div>
                   
                   <input type="hidden" class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}" name="gender" value="{{ old('gender') }}" required autofocus placeholder="gender...">
@@ -119,7 +162,9 @@
                   @endif
 
                   <div class="input-group-prepend">
-                    
+                  <span class="input-group-text">
+                      <i class="material-icons">phone</i>
+                    </span>
                   </div>
                   <input type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required autofocus placeholder="Phone...">
                       @if ($errors->has('phone'))
@@ -133,7 +178,9 @@
                   
                     <div class="input-group">
                       <div class="input-group-prepend">
-                       
+                        <span class="input-group-text">
+                        <i class="material-icons">lock</i>
+                      </span>
                       </div>
                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password">
 
@@ -147,16 +194,17 @@
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
-                          <i class="material-icons">key</i>
+                          <i class="material-icons">lock</i>
                         </span>
                       </div>
                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
                     </div>
+                    <div class="footer text-center">
+                      <button class="btn btn-primary btn-round">Register</button>
+                    </div>
                 </div>
                
-              <div class="footer text-center">
-              <button class="btn btn-primary btn-round">Register</button>
-              </div>
+              
             </form>
           </div>
         </div>
