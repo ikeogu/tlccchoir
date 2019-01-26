@@ -134,7 +134,7 @@ Route::post('/podcast/mark-all-prev-read', 'PodcastItemsController@markAllPrevAs
 Route::get('/posts', 'PostsController@index');
 Route::get('/posts/create', 'PostsController@create')->name('makeblog');
 Route::post('/posts', 'PostsController@store');
-Route::get('/posts/{post}', 'PostsController@show')->names('blog');
+Route::get('/posts/{post}', 'PostsController@show')->name('blog');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
