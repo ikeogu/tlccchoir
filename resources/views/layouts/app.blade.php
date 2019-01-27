@@ -58,7 +58,7 @@
                 </li>
                 <li class="nav-item">
                 <a href="{{route('blog')}}" class=" nav-link" >
-                      <i class="material-icons">blog</i> Blog
+                      <i class="material-icons">blogs</i> Blog
                 </a>
               </li>
               <li class="nav-item">
