@@ -23,9 +23,9 @@
                             </div>
                             <div class="card-body">
                               <div class="table-responsive">
-                                <table class="table">
-                                  <thead class=" text-primary">
-                                    <tr><th>
+                                <table class="table table-hover">
+                                  <thead class="text-primary">
+                                    <th>
                                       ID
                                     </th>
                                     <th>
@@ -46,7 +46,7 @@
                                     <th>
                                       Action
                                     </th>
-                                  </tr></thead>
+                                  </thead>
                                   @foreach($songs as $songPresentation)
                                   <tbody>
                                     <tr>
