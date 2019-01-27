@@ -63,7 +63,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class=" nav-link" >
-                      <i class="material-icons">podcasts</i>Podcast
+                      <i class="material-icons">podcasts</i> Podcast
                 </a>
               </li>
                 @if(Auth::user())
