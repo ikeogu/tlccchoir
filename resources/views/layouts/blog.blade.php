@@ -46,7 +46,7 @@
             </div>
             
         </nav>
-
+        
 
     <!-- Page Header -->
     <header class="masthead" style="background-image: url('img/home-bg.jpg')" >
@@ -62,13 +62,19 @@
         </div>
       </div>
     </header>
+    <div class="row">
+      <div class="col-md-9 col-sm-9">
         <div class="py-4">
                 @yield('title')
         </div>
         <main class="py-4">
             @yield('content')
         </main>
-        
+       </div>
+       </div>
+       <div class="col-md-9 col-sm-9">
+       @include('layouts.sidebar')
+       </div> 
 
     <!-- Footer -->
     <footer>
