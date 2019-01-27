@@ -26,7 +26,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        return view('blog.posts.create');
     }
 
     /**
@@ -77,7 +77,7 @@ class PostsController extends Controller
     public function show(Post $id)
     {
         $post =Post::find($id);
-        return view('posts.show')->with('post', $post);
+        return view('blog.posts.show')->with('post', $post);
     }
 
     /**
@@ -90,7 +90,7 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
     
-        return view('blog.edit', ['post'=>$post]);
+        return view('blog.posts.edit', ['post'=>$post]);
     }
 
     /**
@@ -112,7 +112,7 @@ class PostsController extends Controller
         ]);
 
         if($postupdate){
-            return redirect()->route('blog.show', ['post'=> $postupdate])
+            return redirect()->route('blog.posts.show', ['post'=> $postupdate])
             ->with('success', 'your Song has been updated Successfully');
         }
         return back()->withInput();
