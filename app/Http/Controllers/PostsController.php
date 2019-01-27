@@ -53,7 +53,7 @@ class PostsController extends Controller
         $post->title = request('title');
         $post->body = request('body');
         $post->type = request('type');
-        $post->user_id = Auth::user()->id;
+        $post->user_id = auth()->user()->id;
         $post->author = request('author');
 
         // Save it to the database

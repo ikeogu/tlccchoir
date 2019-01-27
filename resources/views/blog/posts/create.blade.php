@@ -18,6 +18,10 @@
             <label for="title">Author:</label>
             <input id="title" type="text" name="author" class="form-control">
         </div>
+        <div class="form-group">
+            <label for="title">Category:</label>
+            <input id="title" type="text" name="type" class="form-control">
+        </div>
 
         <div class="form-group">
             <label for="body">Body:</label>

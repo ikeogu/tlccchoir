@@ -8,6 +8,7 @@
             <a href="/posts/{{ $post->id }}">
                 {{ $post->title }}
             </a>
+            {{ $post->type }}
         </h2>
         <h4 class="blog-post-title">  {{ $post->author }} </h4>
         <p class="blog-post-meta">
