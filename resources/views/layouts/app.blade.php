@@ -57,13 +57,13 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                <a href="{{route('blog')}}" class=" nav-link" data-toggle="dropdown">
-                      <i class="material-icons">apps</i> Blog
+                <a href="{{route('blog')}}" class=" nav-link" >
+                      <i class="material-icons">blog</i> Blog
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('podcasts.index')}}" class=" nav-link" data-toggle="dropdown">
-                      <i class="material-icons">apps</i>Podcast
+                <a href="{{route('podcasts.index')}}" class=" nav-link" >
+                      <i class="material-icons">podcasts</i>Podcast
                 </a>
               </li>
                 @if(Auth::user())
