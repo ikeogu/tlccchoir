@@ -19,10 +19,7 @@ class PodcastsController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    
     /**
      * Show the application dashboard.
      *
@@ -31,7 +28,7 @@ class PodcastsController extends Controller
 
     public function show($id) {
 
-        $user = Auth::user();
+       
 
         $podcast_items = DB::table('podcast_items')
             ->where('user_id', '=', $user->id)
@@ -54,7 +51,7 @@ class PodcastsController extends Controller
 
     public function index() {
 
-        $user = Auth::user();
+       
 
         $podcast_items = DB::table('podcast_items')
             ->where('user_id', '=', $user->id)
@@ -81,7 +78,7 @@ class PodcastsController extends Controller
      */
     public function manage() {
 
-        $user = Auth::user();
+        
 
         $podcasts = DB::table('podcasts')
             ->where('user_id', '=', $user->id)
@@ -135,7 +132,7 @@ class PodcastsController extends Controller
         //     File::makeDirectory(public_path() . '/images');
         // }
 
-        $user = Auth::user();
+        
 
         if ($request->feed_url) {
 

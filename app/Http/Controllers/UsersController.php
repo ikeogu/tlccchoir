@@ -158,7 +158,7 @@ class UsersController extends Controller
 	{
 		$data['user'] = User::find($id);
 		if (!$data['user'])
-			return redirect('/');
+			return redirect('/home');
 
 		if ($request -> user() && $data['user'] -> id == $request -> user() -> id) {
 			$data['author'] = true;

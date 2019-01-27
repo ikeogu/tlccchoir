@@ -13,6 +13,7 @@ use App\NorthernStates;
 use App\EasthernStates;
 use App\WesthernStates;
 use App\SouthernStates;
+
 class AdminController extends Controller
 {
     /**

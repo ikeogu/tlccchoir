@@ -13,9 +13,9 @@
 
 
 	Route::get('/', function () {
-		return view('i');
+		return view('index');
 	})->name('homepage');
-Route::group(['middleware' => ['web']], function(){
+
 	Auth::routes();
 	Route::get('/home','HomeController@index');
 	
@@ -100,11 +100,6 @@ Route::get('/admin/rivers','AdminController@rivers')->name('rivers');
 
 
 //users profile
-Route::get('user/{id}','UsersController@profile')->where('id', '[0-9]+');
-
-// display list of posts
-Route::get('user/{id}/posts','UsersController@user_posts')->where('id', '[0-9]+');
-
 
 
 
@@ -163,4 +158,3 @@ Route::resource('image-gallery', 'ImageGalleryController');
 //for User Controller
 Route::resource('users','UsersController');
 
-});

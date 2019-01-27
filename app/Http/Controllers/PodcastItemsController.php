@@ -15,10 +15,7 @@ class PodcastItemsController extends Controller
      *
      * @return void
      */
-    public function __construct() {
-        $this->middleware('auth');
-    }
-
+   
     /**
      * [markAsRead mark a podcast item as read]
      * @return array
