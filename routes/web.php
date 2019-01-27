@@ -10,11 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['middleware' => ['web']], function(){
+
 
 	Route::get('/', function () {
-		return view('index');
+		return view('i');
 	})->name('homepage');
+Route::group(['middleware' => ['web']], function(){
 	Auth::routes();
 	Route::get('/home','HomeController@index');
 	
