@@ -55,6 +55,7 @@ class PostsController extends Controller
         $post->body = request('body');
         $post->type = request('type');
         $post->slug = request('slug');
+        $post->active = 1;
         $post->user_id = auth()->user()->id;
         $post->author = request('author');
 
