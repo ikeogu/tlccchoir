@@ -394,6 +394,23 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/dera.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title">   Assist Choir Admim
+                    <br>
+                    <small class="card-description text-muted">  Brother Emmanuel </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description">Developer</p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
            
