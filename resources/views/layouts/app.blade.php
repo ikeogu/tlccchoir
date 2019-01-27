@@ -62,7 +62,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('podcasts.index')}}" class=" nav-link" >
+                <a href="#" class=" nav-link" >
                       <i class="material-icons">podcasts</i>Podcast
                 </a>
               </li>
