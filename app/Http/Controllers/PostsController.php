@@ -41,6 +41,7 @@ class PostsController extends Controller
         // Validate data
         $this->validate(request(), [
             'title' => 'required',
+            'slug' => 'required',
             'body' => 'required|min:10'
         ]);
 
@@ -53,6 +54,7 @@ class PostsController extends Controller
         $post->title = request('title');
         $post->body = request('body');
         $post->type = request('type');
+        $post->slug = request('slug');
         $post->user_id = auth()->user()->id;
         $post->author = request('author');
 
