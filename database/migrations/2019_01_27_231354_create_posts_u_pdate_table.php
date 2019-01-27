@@ -26,6 +26,6 @@ class CreatePostsUPdateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts_u_pdate');
+        Schema::dropIfExists('posts');
     }
 }
