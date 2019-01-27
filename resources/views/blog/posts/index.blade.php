@@ -17,5 +17,5 @@
         <p> {{ str_limit($post->body, $limit = 50, $end = '...') }}</p>
       </a>  
     </div>
-      
+     @endforeach 
 @endsection
