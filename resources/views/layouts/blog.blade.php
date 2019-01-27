@@ -23,7 +23,7 @@
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="/">
-                <h4> <strong>Choir Blog</strong></h4> </a>
+                <h4> <strong>Campus Choir Blog</strong></h4> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="navbar-toggler-icon"></span>
@@ -55,8 +55,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h4>Get Insight</h4>
+              <span class="subheading">A word of Knowledge can change your attitude</span>
             </div>
           </div>
         </div>
