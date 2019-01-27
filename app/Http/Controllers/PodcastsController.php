@@ -54,7 +54,7 @@ class PodcastsController extends Controller
        
 
         $podcast_items = DB::table('podcast_items')
-            ->where('user_id', '=', Auth::user()->id)
+            
             ->where('is_mark_as_read', '!=', 1)
             ->orderBy('published_at', 'desc')->paginate(15);
 
