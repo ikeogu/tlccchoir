@@ -131,10 +131,10 @@ Route::post('/podcast/mark-as-favorite', 'PodcastItemsController@markAsFavorite'
 Route::post('/podcast/mark-all-prev-read', 'PodcastItemsController@markAllPrevAsRead');
 
 //for blog
-Route::get('/posts', 'PostsController@index');
+Route::get('/posts', 'PostsController@index')->name('blog');
 Route::get('/posts/create', 'PostsController@create')->name('makeblog');
 Route::post('/posts', 'PostsController@store');
-Route::get('/posts/{post}', 'PostsController@show')->name('blog');
+Route::get('/posts/{post}', 'PostsController@show');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 

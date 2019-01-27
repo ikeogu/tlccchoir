@@ -33,11 +33,7 @@
             </div>
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="{{route('blog')}}" class=" nav-link" data-toggle="dropdown">
-                      <i class="material-icons">apps</i> Blog
-                </a>
-              </li>
+             
                 <li class="dropdown nav-item">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                     <i class="material-icons">apps</i> Join Us
@@ -60,7 +56,16 @@
                     </a>
                     </div>
                 </li>
-
+                <li class="nav-item">
+                <a href="{{route('blog')}}" class=" nav-link" data-toggle="dropdown">
+                      <i class="material-icons">apps</i> Blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('podcasts.index')}}" class=" nav-link" data-toggle="dropdown">
+                      <i class="material-icons">apps</i>Podcast
+                </a>
+              </li>
                 @if(Auth::user())
                 
                     @if (session('status'))

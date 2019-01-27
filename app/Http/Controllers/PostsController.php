@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \App\Post;
+use App\Post;
 
 class PostsController extends Controller
 {
@@ -14,9 +14,9 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->get();
+        $post = Post::latest()->get();
 
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('post'));
     }
 
     /**
@@ -65,7 +65,7 @@ class PostsController extends Controller
         // Post::create(request(['title', 'body']));
 
         // And then redirect to the home page
-        return redirect('/');
+        return redirect('admin/blog')->with('success','Blog Post was succesful');
     }
 
     /**
@@ -74,9 +74,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Post $id)
     {
-        return view('posts.show', compact('post'));
+        $post =Post::find($id);
+        return view('posts.show')->with('post', $post);
     }
 
     /**
@@ -87,7 +88,9 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+    
+        return view('blog.edit', ['post'=>$post]);
     }
 
     /**
@@ -99,7 +102,20 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $postupdate = Post::findOrFail('id', $id)
+        ->update([
+            'title'=> $request->input('title'),
+            'author' => $request->input('author'),
+            'type' => $request->input('type'),
+            'body' => $request->input('body'),
+                            
+        ]);
+
+        if($postupdate){
+            return redirect()->route('blog.show', ['post'=> $postupdate])
+            ->with('success', 'your Song has been updated Successfully');
+        }
+        return back()->withInput();
     }
 
     /**
