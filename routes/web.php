@@ -13,7 +13,7 @@
 Route::group(['middleware' => ['web']], function(){
 
 Route::get('/', function () {
-    return view('index')->name('index');
+    return view('index');
 });
 Auth::routes();
 Route::get('/home','HomeController@index' );
