@@ -10,13 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::group(['middleware' => ['web']], function(){
 
 Route::get('/', function () {
     return view('index');
 });
 Auth::routes();
-Route::get('/home','HomeController@index' )->name('home');
+Route::get('/home','HomeController@index' );
 
 
 
@@ -159,3 +159,5 @@ Route::get('/admin/deleteuploadedimages','AdminController@delup')->name('delup')
 Route::resource('image-gallery', 'ImageGalleryController');
 //for User Controller
 Route::resource('users','UsersController');
+
+});
