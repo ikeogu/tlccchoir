@@ -1,15 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script type="text/javascript">
-  function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
+
 <div class="" style="background-image: url('img/bg7.jpg'); background-size: cover; background-position: ; ">
     <div class="container" >
     
@@ -43,8 +35,8 @@
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                         <div class="col-md-8">
-                         <input id="password myInput" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-                         <input type="checkbox" onclick="myFunction()">Show Password
+                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                         
 
                             @if ($errors->has('password'))
                                                     <span class="invalid-feedback" role="alert">
@@ -52,6 +44,17 @@
                                                     </span>
                             @endif
                          </div>
+                         <input type="checkbox" onclick="myFunction()">Show Password
+                            <script type="text/javascript">
+                                function myFunction() {
+                                var x = document.getElementById("password");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                                }
+                            </script>   
                     </div>
 
                      

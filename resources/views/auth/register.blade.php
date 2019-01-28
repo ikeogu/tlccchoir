@@ -1,16 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script type="text/javascript">
-  function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
+
 <div class="" style="background-image: url('img/bg7.jpg'); background-size: cover; background-position: ; ">
     <div class="container" >
     
@@ -192,7 +183,7 @@
                         <i class="material-icons">lock</i>
                       </span>
                       </div>
-                        <input id="password myInput" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password" >
+                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password" >
 
                           @if ($errors->has('password'))
                               <span class="invalid-feedback" role="alert">
@@ -208,7 +199,7 @@
                         </span>
                       </div>
                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
-                     <input type="checkbox" onclick="myFunction()"> Show Password
+                    
                     </div>
                     <div class="footer text-center">
                       <button class="btn btn-primary btn-round">Register</button>
