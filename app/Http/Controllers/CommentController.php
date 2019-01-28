@@ -43,13 +43,13 @@ class CommentController extends Controller {
         );
         $validator = Validator::make(Input::all(), $rules);
         if ($validator->fails()) {
-            return Redirect::to('/blog/comment/'.$id)
+            return Redirect::to('/blog/'.$id)
                 ->withErrors($validator)
                 ->withInput(Input::except('password'));
         } else {
             // store
-            $comment = new Comment;
-            $comment->post_id       = $id;
+            $comment = new Comment();
+            $comment->post_id     = Posts::find($post->id);
             $comment->name       = Input::get('name');
             $comment->comment      = Input::get('comment');
             $comment->save();
