@@ -295,7 +295,7 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/m10.JPG" alt="Thumbnail Image" class=" rounded img-fluid">
+                    <img src="img/m10.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
                   <h4 class="card-title"> National Choir Soloist
                     <br>
