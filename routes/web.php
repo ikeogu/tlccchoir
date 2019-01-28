@@ -99,12 +99,8 @@ Route::get('/admin/rivers','AdminController@rivers')->name('rivers');
 
 
 
-//users profile
-
-
-
-
 //for blog
+Route::resource('post','PostsController');
 Route::get('/posts', 'PostsController@index')->name('blog');
 Route::get('/posts/create', 'PostsController@create')->name('makeblog');
 Route::post('/posts', 'PostsController@store');

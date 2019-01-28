@@ -253,23 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/f1.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">
-                    <br>
-                    <small class="card-description text-muted"> Sister Marvelous</small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description"></p>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
+            
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -287,9 +271,43 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/dera.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title">   Assist Choir Admim
+                    <br>
+                    <small class="card-description text-muted">  Brother Emmanuel </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description">Developer</p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
           </div>  
             
           <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/m10.JPG" alt="Thumbnail Image" class=" rounded img-fluid">
+                  </div>
+                  <h4 class="card-title"> National Choir Soloist
+                    <br>
+                    <small class="card-description text-muted"> Brother Enoch</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -341,22 +359,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/m4.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
-                  </div>
-                  <h4 class="card-title"> Benue State Choir Master
-                    <br>
-                    <small class="card-description text-muted"> </small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description"></p>
-                  </div>
-                  
-                </div>
-              </div>
+            
             </div>
           </div>
           <div class="row">
@@ -398,31 +401,65 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/dera.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
+                    <img src="img/m4.jpg" alt="Thumbnail Image" class=" rounded img-fluid">
                   </div>
-                  <h4 class="card-title">   Assist Choir Admim
+                  <h4 class="card-title"> Benue State Choir Master
                     <br>
-                    <small class="card-description text-muted">  Brother Emmanuel </small>
+                    <small class="card-description text-muted"> </small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Developer</p>
+                    <p class="card-description"></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f1.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title"> National Choir Mistress
+                    <br>
+                    <small class="card-description text-muted"> Sister Marvelous</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
                   </div>
                  
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-           
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/f4.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                    <img src="img/f6.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title"> National SRC
+                  <h4 class="card-title">  Assistant National Choir Mistress
                     <br>
-                    <small class="card-description text-muted"> Sister Jecinter</small>
+                    <small class="card-description text-muted"> Sister Joy </small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/s10.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title"> National Secretary
+                    <br>
+                    <small class="card-description text-muted"> Sister Veronica</small>
                   </h4>
                   <div class="card-body">
                     <p class="card-description"></p>
@@ -448,36 +485,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/f6.jpg" alt="Thumbnail Image" class=" rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">  Assistant National Choir Mistress
-                    <br>
-                    <small class="card-description text-muted"> Sister Joy </small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description"></p>
-                  </div>
-                  >
-                </div>
-              </div>
-            </div>
+            
           </div>
         
           <div class="row">
-           
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="img/f3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                    <img src="img/f4.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title"> Edo State Choir Mistress
+                  <h4 class="card-title"> National SRC
                     <br>
-                    <small class="card-description text-muted">Sister Success</small>
+                    <small class="card-description text-muted"> Sister Jecinter</small>
                   </h4>
                   <div class="card-body">
                     <p class="card-description"></p>
@@ -486,6 +506,7 @@
                 </div>
               </div>
             </div>
+            
             <div class="col-md-3">
               <div class="team-player">
                 <div class="card card-plain">
@@ -538,6 +559,25 @@
                 </div>
               </div>
             </div>  
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="img/f3.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title"> Edo State Choir Mistress
+                    <br>
+                    <small class="card-description text-muted">Sister Success</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description"></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
           </div>
         </div>  
       </div>

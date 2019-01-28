@@ -1,11 +1,14 @@
 @extends('layouts.blog')
 
 @section('content')
+
+<div class="col-sm-8 blog-main ">
   @foreach($post as $post)
+  <a href="/posts/{{$post->id}}">
     <div class="blog-post">
-      <a href="/posts/{{ $post->id }}">
+      
         <h2 class="blog-post-title">
-            <a href="/posts/{{ $post->id }}">
+            <a href="/posts/{{$post->id}}">
                 {{ $post->title }}
             </a>
             {{ $post->type }}
@@ -16,7 +19,10 @@
         </p>
 
         <p> {{ str_limit($post->body, $limit = 50, $end = '...') }}</p>
-      </a>  
+     
+      <hr> 
     </div>
+    </a> 
      @endforeach 
+  </div>   
 @endsection

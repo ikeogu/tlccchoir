@@ -1,11 +1,25 @@
 @extends('layouts.blog')
 
 @section('content')
-    <div class="col-sm-8 blog-main">
+         
+    
+    <article class="col-sm-8 blog-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+          
+                <h2 class="section-heading">{{$post->title}}</h2>
 
-      <h2>{{ $post->title}}</h2>
+                <h4> {{$post->author}}</h4>
 
-      {{ $post->body }}
+                <p>{{$post->type}}</p>
+
+                <blockquote class="blockquote">{{$post->body}}</blockquote>
+
+                 </div>
+            </div>
+        </div>
+    </article>
 
 
       @if (count($post->comments))

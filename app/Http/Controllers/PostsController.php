@@ -72,7 +72,7 @@ class PostsController extends Controller
         // Post::create(request(['title', 'body']));
 
         // And then redirect to the home page
-        return redirect('admin/blog')->with('success','Blog Post was succesful');
+        return back()->with('success','Blog Post was succesful');
     }
 
     /**
@@ -81,7 +81,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $id)
+    public function show($id)
     {
         $post =Post::find($id);
         return view('blog.posts.show')->with('post', $post);
