@@ -13,17 +13,30 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         App\User::insert([
-            'name' => 'Ikeogu Emmanuel ',
-            'email' => 'ikeogu322@gmail.com',
+            'name' => 'Marvelous Analechi ',
+            'email' => 'marvelousanelechi@gmail.com',
             'password' => bcrypt('password'),
             'state' => 'Rivers State',
-            'discipline' => 'Computer Science',
+            'discipline' => 'Electrical Engineer',
             'institution' => 'University of Port Harcourt',
             'avatar' => 'user.png',
             'gender' => 'Male',
-            'phone' => ' 08133627610',
+            'phone' => ' 08167931124',
             'isAdmin' => '1',
         ]);
+        App\User::insert([
+            'name' => 'Offor Nesta Emeka',
+            'email' => 'obinestaemeka@gmail.com',
+            'password' => bcrypt('password'),
+            'state' => 'Lagos State',
+            'discipline' => 'Business Administration',
+            'institution' => 'University of Benin',
+            'avatar' => 'user.png',
+            'gender' => 'Male',
+            'phone' => ' 08076162791',
+            'isAdmin' => '1',
+        ]);
+       
 
        
        
