@@ -77,6 +77,7 @@ Route::get('/admin/kastina','AdminController@kastina')->name('Katsina');
 Route::get('/admin/kebbi','AdminController@kebbi')->name('Kebbi');
 Route::get('/admin/sokoto','AdminController@sokoto')->name('Sokoto');
 Route::get('/admin/zamfara','AdminController@zamfara')->name('Zamfara');
+Route::get('/admin/illorin','AdminController@illorin')->name('illorin');
 
 // for western states
 

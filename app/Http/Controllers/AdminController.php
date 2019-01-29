@@ -123,7 +123,7 @@ class AdminController extends Controller
     // for south south
     public function akwaibom(){
         $user= User::where('state', '=','Akwa-ibom')->get();
-        return view('admin/akwa-ibom',['auser'=>$user]);
+        return view('admin/akwaibom',['auser'=>$user]);
     }
     public function bayelsa(){
         $user= User::where('state','=','Bayelsa')->get();
@@ -131,7 +131,7 @@ class AdminController extends Controller
     }
     public function crossriver(){
         $user= User::where('state', '=','Cross-River')->get();
-        return view('admin/cross-river',['auser'=>$user]);
+        return view('admin/crossriver',['auser'=>$user]);
     }
     public function delta(){
         $user= User::where('state', '=','Delta')->get();
@@ -183,6 +183,10 @@ class AdminController extends Controller
     public function kwara(){
         $user= User::where('state','=','Kwara')->get();
         return view('admin/kwara',['auser'=>$user]);
+    }
+    public function illorin(){
+        $user= User::where('state','=','Illorin')->get();
+        return view('admin/illorin',['auser'=>$user]);
     }
     public function nassarawa(){
         $user= User::where('state','=','Nassarawa')->get();
