@@ -24,7 +24,7 @@
 
              
 
-      <hr>
+      
       @if (count($post->comments))
           <hr>
 
@@ -32,7 +32,7 @@
               <ul class="list-group">
                   @foreach ($post->comments as $comment)
 
-                  <h5>{{$comment->user}}</h5>
+                  
                     <li class="list-group-item">
                         <strong>
                             {{ $comment->created_at->diffForHumans() }}: &nbsp;
@@ -42,6 +42,7 @@
                   @endforeach
               </ul>
           </div>
+          <hr>
       @endif
 
       <hr>
@@ -57,7 +58,7 @@
                   </div>
 
                   <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Add</button>
+                      <button type="submit" class="btn btn-primary">Comment</button>
                   </div>
               </form>
 

@@ -36,7 +36,7 @@
               
                 <li class="dropdown nav-item">
                     <a href="/" class=" nav-link" >
-                    <i class="material-icons">apps</i> Home
+                    <i class="material-icons">home</i> Home
                     </a>
                   
                 </li>
@@ -49,7 +49,7 @@
         
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post-bg.jpg')" >
+    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
