@@ -1,7 +1,7 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
+<div class="offset-sm-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <blockquote>Our Blog posts serves as water to quench the thirst of good ethics and attitude in our society and to build a home of good attitude and character so peace can reign! </blockquote>
   </div>
   <div class="sidebar-module">
     <h4>Archives</h4>
@@ -13,11 +13,7 @@
       <li><a href="#">November 2013</a></li>
       <li><a href="#">October 2013</a></li>
       <li><a href="#">September 2013</a></li>
-      <li><a href="#">August 2013</a></li>
-      <li><a href="#">July 2013</a></li>
-      <li><a href="#">June 2013</a></li>
-      <li><a href="#">May 2013</a></li>
-      <li><a href="#">April 2013</a></li>
+     
     </ol>
   </div>
   <div class="sidebar-module">

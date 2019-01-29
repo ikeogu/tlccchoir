@@ -49,7 +49,7 @@
         
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')" >
+    <header class="masthead" style="background-image: url('img/post-bg.jpg')" >
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -70,12 +70,12 @@
         <main class="py-4">
             @yield('content')
         </main>
-       </div>
-       </div>
-       <div class="col-md-3 col-sm-3 col-lg-4">
+      </div>
+      
+      <div class="col-md-3 col-sm-3 col-lg-4">
        @include('layouts.sidebar')
-       </div> 
-
+      </div> 
+    </div>
     <!-- Footer -->
     <footer>
       <div class="container">

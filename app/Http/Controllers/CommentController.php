@@ -49,9 +49,9 @@ class CommentController extends Controller {
         } else {
             // store
             $comment = new Comment();
-            $comment->post_id     = Posts::find($post->id);
-            $comment->name       = Input::get('name');
-            $comment->comment      = Input::get('comment');
+            $comment->on_post     = Posts::find($post->id);
+            $comment->from_user      = Input::get('from_user');
+            $comment->body      = Input::get('body');
             $comment->save();
             // redirect
             return Redirect::to('/blog/'.$id);
