@@ -73,7 +73,7 @@ Route::get('/admin/yobe','AdminController@yobe')->name('Yobe');
 Route::get('/admin/jigawa','AdminController@jigawa')->name('Jigawa');
 Route::get('/admin/kaduna','AdminController@kaduna')->name('Kaduna');
 Route::get('/admin/kano','AdminController@kano')->name('Kano');
-Route::get('/admin/kastina','AdminController@kastina')->name('Kastina');
+Route::get('/admin/kastina','AdminController@kastina')->name('Katsina');
 Route::get('/admin/kebbi','AdminController@kebbi')->name('Kebbi');
 Route::get('/admin/sokoto','AdminController@sokoto')->name('Sokoto');
 Route::get('/admin/zamfara','AdminController@zamfara')->name('Zamfara');
