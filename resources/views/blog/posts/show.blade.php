@@ -22,19 +22,7 @@
     </article>
       <hr>
 
-          <div class="comments">
-              <ul class="list-group">
-                  @foreach ($post->comment as $comments)
-                    <li class="list-group-item">
-                        <strong>
-                            {{ $comments->created_at->diffForHumans() }}: &nbsp;
-                        </strong>
-                        {{ $comments->body }}
-                    </li>
-                  @endforeach
-              </ul>
-          </div>
-      
+             
 
       <hr>
 

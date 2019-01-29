@@ -15,10 +15,10 @@ class CommentController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($id)
 	{
-		$comment = Comment::find($comment->post)->get();
-		dd($comment);
+		$comment = Comment::find($post->id)->get();
+		
 
 		return view('blog.posts.show',['comment'=>$comment]);
 		
