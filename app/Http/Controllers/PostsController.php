@@ -88,7 +88,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        $user = Auth::user();
+         Auth::user();
         $post =Post::find($id);
         return view('blog.posts.show')->with('post', $post);
     }
