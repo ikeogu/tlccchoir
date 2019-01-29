@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Posts;
-use App\Comments;
+
 use Redirect;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -35,11 +35,11 @@ class CommentController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function comment($id)
+	public function store($id)
 	{
 		$rules = array(
-            'name'     => 'required',
-            'comment'      => 'required',
+            'from_user'     => 'required',
+            'body'      => 'required',
         );
         $validator = Validator::make(Input::all(), $rules);
         if ($validator->fails()) {
