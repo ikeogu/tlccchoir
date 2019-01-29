@@ -20,15 +20,11 @@
             </div>
         </div>
     </article>
-
-    
-
-        
-          <hr>
+      <hr>
 
           <div class="comments">
               <ul class="list-group">
-                  @foreach ($comment as $comments)
+                  @foreach ($post->comment as $comments)
                     <li class="list-group-item">
                         <strong>
                             {{ $comments->created_at->diffForHumans() }}: &nbsp;
