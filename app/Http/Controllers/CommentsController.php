@@ -12,11 +12,12 @@ class CommentsController extends Controller
         // Validate data
         $this->validate(request(), [
             'body' => 'required',
+            'user' => 'required',
             
         ]);
 
         // Add a comment to a post
-        $post->addComment(request('body'));
+        $post->addComment(request(['body','user']));
 
         return back();
     }

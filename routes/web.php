@@ -46,54 +46,54 @@ Route::get('/admin/allsongs','AdminController@allsongs')->name('allsongs');
 Route::get('/admin/mgbidi2019','AdminController@mgbidi2019')->name('mgbidi2019');
 //For Geopolitical REgion
 Route::get('/admin/allzone','AdminController@geopoliticalzone')->name('gzone');
-Route::get('/admin/northstate','AdminController@north')->name('north');
-Route::get('/admin/eaststate','AdminController@east')->name('east');
-Route::get('/admin/weststate','AdminController@west')->name('west');
-Route::get('/admin/southstate','AdminController@south')->name('south');
+Route::get('/admin/northstate','AdminController@north')->name('northern_zone');
+Route::get('/admin/eaststate','AdminController@east')->name('south_east');
+Route::get('/admin/weststate','AdminController@west')->name('south_west');
+Route::get('/admin/southstate','AdminController@south')->name('south_south');
 //For Eastern States
-Route::get('/admin/abia','AdminController@abia')->name('abia');
-Route::get('/admin/ebonyi','AdminController@ebonyi')->name('ebonyi');
-Route::get('/admin/enugu','AdminController@enugu')->name('enugu');
-Route::get('/admin/anambra','AdminController@anambra')->name('anambra');
-Route::get('/admin/imo','AdminController@imo')->name('imo');
+Route::get('/admin/abia','AdminController@abia')->name('Abia');
+Route::get('/admin/ebonyi','AdminController@ebonyi')->name('Ebonyi');
+Route::get('/admin/enugu','AdminController@enugu')->name('Enugu');
+Route::get('/admin/anambra','AdminController@anambra')->name('Anambra');
+Route::get('/admin/imo','AdminController@imo')->name('Imo');
 //For Northern States
-Route::get('/admin/benue','AdminController@benue')->name('benue');
-Route::get('/admin/kogi','AdminController@kogi')->name('kogi');
-Route::get('/admin/kwara','AdminController@kwara')->name('kwara');
-Route::get('/admin/nassarawa','AdminController@nassarawa')->name('nassarawa');
-Route::get('/admin/niger','AdminController@niger')->name('niger');
-Route::get('/admin/plateau','AdminController@plateau')->name('plateau');
-Route::get('/admin/abuja','AdminController@abuja')->name('abuja');
-Route::get('/admin/adamawa','AdminController@adamawa')->name('adamawa');
-Route::get('/admin/bauchi','AdminController@bauchi')->name('bauchi');
-Route::get('/admin/borno','AdminController@borno')->name('borno');
-Route::get('/admin/gombe','AdminController@gombe')->name('gombe');
-Route::get('/admin/taraba','AdminController@taraba')->name('taraba');
-Route::get('/admin/yobe','AdminController@yobe')->name('yobe');
-Route::get('/admin/jigawa','AdminController@jigawa')->name('jigawa');
-Route::get('/admin/kaduna','AdminController@kaduna')->name('kaduna');
-Route::get('/admin/kano','AdminController@kano')->name('kano');
-Route::get('/admin/kastina','AdminController@kastina')->name('kastina');
-Route::get('/admin/kebbi','AdminController@kebbi')->name('kebbi');
-Route::get('/admin/sokoto','AdminController@sokoto')->name('sokoto');
-Route::get('/admin/zamfara','AdminController@zamfara')->name('zamfara');
+Route::get('/admin/benue','AdminController@benue')->name('Benue');
+Route::get('/admin/kogi','AdminController@kogi')->name('Kogi');
+Route::get('/admin/kwara','AdminController@kwara')->name('Kwara');
+Route::get('/admin/nassarawa','AdminController@nassarawa')->name('Nassarawa');
+Route::get('/admin/niger','AdminController@niger')->name('Niger');
+Route::get('/admin/plateau','AdminController@plateau')->name('Plateau');
+Route::get('/admin/abuja','AdminController@abuja')->name('Abuja');
+Route::get('/admin/adamawa','AdminController@adamawa')->name('Adamawa');
+Route::get('/admin/bauchi','AdminController@bauchi')->name('Bauchi');
+Route::get('/admin/borno','AdminController@borno')->name('Borno');
+Route::get('/admin/gombe','AdminController@gombe')->name('Gombe');
+Route::get('/admin/taraba','AdminController@taraba')->name('Taraba');
+Route::get('/admin/yobe','AdminController@yobe')->name('Yobe');
+Route::get('/admin/jigawa','AdminController@jigawa')->name('Jigawa');
+Route::get('/admin/kaduna','AdminController@kaduna')->name('Kaduna');
+Route::get('/admin/kano','AdminController@kano')->name('Kano');
+Route::get('/admin/kastina','AdminController@kastina')->name('Kastina');
+Route::get('/admin/kebbi','AdminController@kebbi')->name('Kebbi');
+Route::get('/admin/sokoto','AdminController@sokoto')->name('Sokoto');
+Route::get('/admin/zamfara','AdminController@zamfara')->name('Zamfara');
 
 // for western states
 
-Route::get('/admin/lagos','AdminController@lagos')->name('lagos');
-Route::get('/admin/ekiti','AdminController@ekiti')->name('ekiti');
-Route::get('/admin/ogun','AdminController@ogun')->name('ogun');
-Route::get('/admin/ondo','AdminController@ondo')->name('ondo');
-Route::get('/admin/osun','AdminController@osun')->name('osun');
-Route::get('/admin/oyo','AdminController@oyo')->name('oyo');
+Route::get('/admin/lagos','AdminController@lagos')->name('Lagos');
+Route::get('/admin/ekiti','AdminController@ekiti')->name('Ekiti');
+Route::get('/admin/ogun','AdminController@ogun')->name('Ogun');
+Route::get('/admin/ondo','AdminController@ondo')->name('Ondo');
+Route::get('/admin/osun','AdminController@osun')->name('Osun');
+Route::get('/admin/oyo','AdminController@oyo')->name('Oyo');
 
 // for South South states
-Route::get('/admin/akwa-ibom','AdminController@akwaibom')->name('akwaibom');
-Route::get('/admin/bayelsa','AdminController@bayelsa')->name('bayelsa');
-Route::get('/admin/cross-river','AdminController@crossriver')->name('crossriver');
-Route::get('/admin/delta','AdminController@delta')->name('delta');
-Route::get('/admin/edo','AdminController@edo')->name('edo');
-Route::get('/admin/rivers','AdminController@rivers')->name('rivers');
+Route::get('/admin/akwa-ibom','AdminController@akwaibom')->name('Akwa-ibom');
+Route::get('/admin/bayelsa','AdminController@bayelsa')->name('Bayelsa');
+Route::get('/admin/cross-river','AdminController@crossriver')->name('Cross-River');
+Route::get('/admin/delta','AdminController@delta')->name('Delta');
+Route::get('/admin/edo','AdminController@edo')->name('Edo');
+Route::get('/admin/rivers','AdminController@rivers')->name('Rivers');
 
 
 
