@@ -143,6 +143,13 @@
         </div>
       </div>
     </div>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1162890160760540",
+          enable_page_level_ads: true
+        });
+      </script>
     <div class="section text-center">
       <h2 class="title">Meet our Leaders</h2>
         <div class="team">
@@ -581,6 +588,13 @@
           </div>
         </div>  
       </div>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1162890160760540",
+          enable_page_level_ads: true
+        });
+      </script>
       <div class="section section-contacts">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
