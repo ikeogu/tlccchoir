@@ -23,7 +23,7 @@
 
     
 
-      @if (count($comment))
+        <h4>{{ App\Comment::findOrFail($comment->post)->count()}}</h4>
           <hr>
 
           <div class="comments">
@@ -38,7 +38,7 @@
                   @endforeach
               </ul>
           </div>
-      @endif
+      
 
       <hr>
 

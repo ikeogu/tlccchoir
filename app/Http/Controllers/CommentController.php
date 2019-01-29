@@ -17,7 +17,7 @@ class CommentController extends Controller {
 	 */
 	public function index()
 	{
-		$comment = Comment::all();
+		$comment = Comment::find($comment->post);
 		return view('blog/post/index',['comment'=>$comment]);
 		
 	}
