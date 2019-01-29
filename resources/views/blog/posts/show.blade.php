@@ -21,18 +21,19 @@
         </div>
     </article>
 
+    
 
-      @if (count($post->comments))
+      @if (count($comment))
           <hr>
 
           <div class="comments">
               <ul class="list-group">
-                  @foreach ($post->comments as $comment)
+                  @foreach ($comment as $comments)
                     <li class="list-group-item">
                         <strong>
-                            {{ $comment->created_at->diffForHumans() }}: &nbsp;
+                            {{ $comments->created_at->diffForHumans() }}: &nbsp;
                         </strong>
-                        {{ $comment->body }}
+                        {{ $comments->body }}
                     </li>
                   @endforeach
               </ul>

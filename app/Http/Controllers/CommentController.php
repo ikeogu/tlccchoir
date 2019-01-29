@@ -17,7 +17,9 @@ class CommentController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$comment = Comment::all();
+		return view('blog/post/index',['comment'=>$comment]);
+		
 	}
 
 	/**
@@ -51,8 +53,9 @@ class CommentController extends Controller {
             $comment = new Comment();
             $comment->on_post     = Posts::find($post->id);
             $comment->from_user      = Input::get('from_user');
-            $comment->body      = Input::get('body');
-            $comment->save();
+			$comment->body      = Input::get('body');
+			$post = Posts::find($comment->post);
+            $post->post()->save($comment);
             // redirect
             return Redirect::to('/blog/'.$id);
         }
