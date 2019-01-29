@@ -25,13 +25,32 @@
              
 
       <hr>
+      @if (count($post->comments))
+          <hr>
 
+          <div class="comments">
+              <ul class="list-group">
+                  @foreach ($post->comments as $comment)
+
+                  <h5>{{$comment->user}}</h5>
+                    <li class="list-group-item">
+                        <strong>
+                            {{ $comment->created_at->diffForHumans() }}: &nbsp;
+                        </strong>
+                        {{ $comment->body }}
+                    </li>
+                  @endforeach
+              </ul>
+          </div>
+      @endif
+
+      <hr>
       <div class="card">
           <div class="card-block">
               <form method="POST" action="/posts/{{$post->id}}/comments">
                   @csrf
                   <div class="form-group">
-                      <input name="from_user"   class="form-control" required value="{{Auth::user()->name}}">
+                      <input name="user"   class="form-control" required value="{{Auth::user()->name}}">
                   </div>
                   <div class="form-group">
                       <textarea name="body" rows="4" placeholder="Your comment here." class="form-control" required></textarea>
