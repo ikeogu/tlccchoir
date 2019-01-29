@@ -13,6 +13,10 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $post = Post::latest()->get();
@@ -83,6 +87,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
+        $user = Auth::user();
         $post =Post::find($id);
         return view('blog.posts.show')->with('post', $post);
     }

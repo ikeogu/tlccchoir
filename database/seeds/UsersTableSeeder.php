@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder
         ]);
         App\User::insert([
             'name' => 'Offor Nesta Emeka',
-            'email' => 'obinestaemeka@gmail.com',
+            'email' => 'offornestaemeka@gmail.com',
             'password' => bcrypt('password'),
             'state' => 'Lagos State',
             'discipline' => 'Business Administration',

@@ -17,7 +17,7 @@ class CommentsController extends Controller
         ]);
 
         // Add a comment to a post
-        $post->addComment(request('body','user'));
+        $post->addComment(request('body'));
 
         return back();
     }
