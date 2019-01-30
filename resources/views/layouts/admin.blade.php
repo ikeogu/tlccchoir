@@ -67,7 +67,7 @@
               </li>
               <li class="nav-item ">
                   <a class="nav-link" href="{{route('gzone')}}">
-                  <i class="material-icons">content_paste</i>
+                  <i class="material-icons">location</i>
                   <p>Geopolitical Zones</p>
                   </a>
               </li>
@@ -81,6 +81,12 @@
                         <i class="material-icons">apps</i>View Blog
                 </a>
               </li>
+              <li class="nav-item">
+                  <a href="{{route('managepodcast')}}" class="nav-link" >
+                        <i class="material-icons">apps</i>View Blog
+                </a>
+              </li>
+              
               <li class="nav-item ">
                   <a class="nav-link" href="{{route('allsongs')}}">
                   <i class="material-icons">music_note</i>

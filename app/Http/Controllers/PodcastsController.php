@@ -43,10 +43,6 @@ class PodcastsController extends Controller
     }
     public function index() {
 
-        
-        return view('podcasts.list');
-    }
-    public function podcastlist(){
         $user = Auth::user();
         $podcast_items = DB::table('podcast_items')
             ->where('user_id', '=', $user->id)
@@ -61,7 +57,9 @@ class PodcastsController extends Controller
             'user'              => $user,
         );
         return view('podcasts.list', $data);
+        return view('podcasts.list');
     }
+    
     /**
      * Return a view to manage podcasts
      * @return view

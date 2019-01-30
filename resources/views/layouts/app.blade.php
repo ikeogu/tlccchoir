@@ -70,7 +70,7 @@
               </li>
               <li class="nav-item">
                 <a href="podcast" class="nav-link">
-                      <i class="material-icons">podcast</i> Podcast
+                      <i class="material-icons"></i> Podcast
                 </a>
               </li>
                 @if(Auth::user())
