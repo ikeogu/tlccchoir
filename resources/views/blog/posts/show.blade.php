@@ -46,8 +46,8 @@
       @endif
 
       <hr>
-      <div class="card">
-          <div class="card-block">
+      <div class="card" >
+          <div class="card-block" style="border:2px solid black">
               <form method="POST" action="/posts/{{$post->id}}/comments">
                   @csrf
                   <div class="form-group">
