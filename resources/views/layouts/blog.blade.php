@@ -49,14 +49,14 @@
         
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('img/post-bg.jpg'); height:80px;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h4>Get Insight</h4>
-              <span class="subheading">A word of Knowledge can change your attitude</span>
+              <span class="subheading">A word of Knowledge can change you</span>
             </div>
           </div>
         </div>
@@ -72,9 +72,7 @@
         </main>
       </div>
       
-      <div class="col-md-3 col-sm-3 col-lg-4">
-       @include('layouts.sidebar')
-      </div> 
+       
     </div>
     <!-- Footer -->
     <footer>

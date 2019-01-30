@@ -5,9 +5,9 @@
 
 <div class="col-sm-8 blog-main ">
   @foreach($post as $post)
-    <a href="/posts/{{$post->id}}">
-        <div class="blog-post">
-        
+    
+     <div class="blog-post">
+        <a href="/posts/{{$post->id}}">
             <h2 class="blog-post-title">
                 <a href="/posts/{{$post->id}}">
                     {{ $post->title }}
@@ -21,11 +21,11 @@
             </h5>
 
             <p> {{ str_limit($post->body, $limit = 50, $end = '...') }}</p>
+        </a> 
         
-        
-        </div>
-    </a> 
+    </div>
+    
     <hr> 
     @endforeach 
-  </div>   
+</div>   
 @endsection

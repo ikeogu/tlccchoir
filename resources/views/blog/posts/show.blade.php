@@ -20,13 +20,13 @@
             </div>
         </div>
     </article>
-      <hr>
+    <strong> <hr > </strong>
 
              
 
       
       @if (count($post->comments))
-          <hr>
+         
 
           <div class="comments">
               <ul class="list-group">
