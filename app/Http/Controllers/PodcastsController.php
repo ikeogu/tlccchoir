@@ -42,6 +42,11 @@ class PodcastsController extends Controller
         return view('podcasts.list', $data);
     }
     public function index() {
+
+        
+        return view('podcasts.list');
+    }
+    public function podcastlist(){
         $user = Auth::user();
         $podcast_items = DB::table('podcast_items')
             ->where('user_id', '=', $user->id)
@@ -62,7 +67,7 @@ class PodcastsController extends Controller
      * @return view
      */
     public function manage() {
-        $user = Auth::user();
+        $user = Auth::user()->isadmin;
         $podcasts = DB::table('podcasts')
             ->where('user_id', '=', $user->id)
             ->get();

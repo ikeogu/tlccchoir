@@ -113,9 +113,9 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 
 // APP Routes Below
-Route::get('/', 'PodcastsController@index');
-Route::get('/podcast', 'PodcastsController@index');
-Route::get('/podcasts/player', 'PodcastsController@index');
+
+Route::get('/podcast', 'PodcastsController@index')->name('podcast');
+Route::get('/podcasts/player', 'PodcastsController@podcastlist');
 Route::get('/podcasts/manage', 'PodcastsController@manage');
 Route::get('/podcasts/favorites', 'PodcastsController@favorites');
 Route::get('/podcasts/settings', 'PodcastsController@settings');

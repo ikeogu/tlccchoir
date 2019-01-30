@@ -64,12 +64,12 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                <a href="{{route('blog')}}" class=" nav-link" >
-                      <i class="material-icons">books</i> Blog
+                <a href="{{route('blog')}}" class="nav-link" >
+                      <i class="material-icons"></i> Blog
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class=" nav-link" >
+                <a href="podcast" class="nav-link">
                       <i class="material-icons">podcast</i> Podcast
                 </a>
               </li>
