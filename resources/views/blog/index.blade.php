@@ -15,7 +15,7 @@
     <div class="col-md-8 col-md-offset-2">
         <h3>{{ $post->title }}</h3><br/>
         <h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5><br/>
-        <h5>Author: {{ $post->author }}</h5><br/>
+        <h5>Author: {{ $post->name}}</h5><br/>
         <p>{{ substr($post->body, 0, 50) }}{{ strlen($post->body) >50 ? '...' : "" }}</p>
 
         <a href="{{ url('blog/'.$post->slug) }}" class="btn btn-primary">Read More</a>

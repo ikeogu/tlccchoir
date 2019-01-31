@@ -63,7 +63,7 @@ class PostController extends Controller
         // Store in the database
         $post = new Post;
         $post->user_id = auth()->user()->id;
-        $post->author = $request->author;
+        $post->name = $request->name;
         $post->title = $request->title;
         $post->slug = $request->slug;
         $post->category_id = $request->category_id;
