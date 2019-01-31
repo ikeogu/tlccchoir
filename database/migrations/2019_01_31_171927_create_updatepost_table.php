@@ -14,7 +14,7 @@ class CreateUpdatepostTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->dropColumn('author');
             
         });
