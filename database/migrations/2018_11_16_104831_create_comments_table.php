@@ -27,7 +27,7 @@ class CreateCommentsTable extends Migration
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
         });
     }
-    }
+   
 
     /**
      * Reverse the migrations.
@@ -36,7 +36,7 @@ class CreateCommentsTable extends Migration
      */
     public function down()
     {
-        
+        //
        
     }
 }
