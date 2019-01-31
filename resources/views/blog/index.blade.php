@@ -1,52 +1,35 @@
-@extends('layouts.blog')
+@extends('layout.blog')
 
-@section('title')
-{{$title}}
-@endsection
+@section('title', '| Blog')
 
 @section('content')
 
-
-<div class="container">
-@if ( !$posts->count() )
-<strong>There is no post till now. Login and write a new post now!!!</strong>
-@else
-    <div class="row">
-       
-                    
-         @foreach( $posts as $post )
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="post-preview">
-                    <a href="{{ url('/'.$post->slug) }}">
-                        <h2 class="post-title">
-                        <a href="{{ url('/'.$post->slug) }}">{{ $post->title }}</a>
-                            @if(!Auth::guest() && ($post->author_id == Auth::user()->id || Auth::user()->is_admin()))
-                                @if($post->active == '1')
-                                <button class="btn" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit Post</a></button>
-                                @else
-                                <button class="btn" style="float: right"><a href="{{ url('edit/'.$post->slug)}}">Edit Draft</a></button>
-                                @endif
-                            @endif
-                        </h2>
-                        
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="{{ url('/user/'.$post->author_id)}}">{{ $post->author->name }}</a>
-                        {{ $post->created_at->format('M d,Y \a\t h:i a') }}
-                    </p>
-                    <div class="list-group-item">
-                        <article>
-                            {!! str_limit($post->body, $limit = 150, $end = '....... <a href='.url("/".$post->slug).'>Read More</a>') !!}
-                        </article>
-                    </div>
-                </div>
-                <hr>
-
-                
-            </div>
-        @endforeach
-        {!! $posts->render() !!}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>Blog</h1>
     </div>
-    @endif
+</div>
+
+@foreach ($posts as $post)
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h3>{{ $post->title }}</h3><br/>
+        <h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5><br/>
+        <h5>Author: {{ $post->name }}</h5><br/>
+        <p>{{ substr($post->body, 0, 50) }}{{ strlen($post->body) >50 ? '...' : "" }}</p>
+
+        <a href="{{ url('blog/'.$post->slug) }}" class="btn btn-primary">Read More</a>
+        
+        <hr>
+    </div>
+</div>
+@endforeach
+
+<div class="row">
+    <div class="col-md-12">
+    <div class="text-cen">
+        {!! $posts->links() !!}
+    </div>
+    </div>
 </div>
 @endsection

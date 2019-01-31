@@ -99,16 +99,30 @@ Route::get('/admin/rivers','AdminController@rivers')->name('Rivers');
 
 
 
+//blog
+Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])
+        ->where('slug', '[\w\d\-\_]+');
 
-//for blog
-Route::resource('post','PostsController');
-Route::get('/posts', 'PostsController@index')->name('blog');
-Route::get('/posts/create', 'PostsController@create')->name('makeblog');
-Route::post('/posts', 'PostsController@store');
-Route::get('/posts/{post}', 'PostsController@show');
 
-Route::post('/posts/{post}/comments', 'CommentsController@store');
+Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);
 
+
+//home page
+Route::get('/blog', 'PagesController@getIndex')->name('blog');
+
+//posts
+Route::resource('posts', 'PostController');
+Route::get('/posts/create', 'PostController@create')->name('makeblog');
+
+//categories
+Route::resource('categories', 'CategoryController');
+
+
+//tags
+Route::resource('tags', 'TagController');
+
+//Comments
+Route::post('comment/{post_id}', ['uses' => 'CommentController@store', 'as' => 'comment.store']);
 
 
 
@@ -131,7 +145,9 @@ Route::post('/podcast/mark-as-read', 'PodcastItemsController@markAsRead');
 Route::post('/podcast/mark-as-favorite', 'PodcastItemsController@markAsFavorite');
 Route::post('/podcast/mark-all-prev-read', 'PodcastItemsController@markAllPrevAsRead');
 
-
+// contact us form
+Route::get('/contact', 'ContactController@show')->name('show');
+Route::post('/contacts',  'ContactController@mailToAdmin')->name('postmessage');
 
 
 

@@ -1,42 +1,46 @@
 @extends('layouts.admin')
 
 @section('content')
+
 <div class="col-sm-8 blog-main">
 
     <h2>Create a Post</h2>
 
     <hr>
 
-    <form method="POST" action="/posts">
-        @csrf
+    {!! Form::open(array('route' => 'posts.store', 'data-parsley-validate' => '', 'files' => true)) !!}
+                {{ Form::label('title', 'Title:', ['class' => 'form-spacing-top']) }}
+                
+                {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3', 'maxlength' => '100')) }}
 
-        <div class="form-group">
-            <label for="title">Title:</label>
-            <input id="title" type="text" name="title" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="title">Slug:</label>
-            <input id="title" type="text" name="slug" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="title">Author:</label>
-            <input id="title" type="text" name="author" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="title">Category:</label>
-            <input id="title" type="text" name="type" class="form-control">
-        </div>
+                {{ Form::label('name', 'Author:', ['class' => 'form-spacing-top']) }}
+                {{ Form::text('name', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3', 'maxlength' => '20')) }}
+                
+                {{ Form::label('slug', 'Slug:') }}
+                {{ Form::text('slug', null, ['class' => 'form-control', 'required' => '', 'minlength' => '5', 'maxlength' => '255']) }}
+               
+                {{ Form::label('category_id', 'Category:') }}
+                <select class="form-control" name="category_id">
+                    @foreach($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
 
-        <div class="form-group">
-            <label for="body">Body:</label>
-            <textarea name="body" id="body" rows="6" class="form-control" required></textarea>
-        </div>
+                {{ Form::label('tags', 'Tag:') }}
+                <select class="form-control select2-multi" name="tags[]" multiple="multiple">
+                    @foreach($tags as $tag)
+                    <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                    @endforeach
+                </select>
 
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Create</button>
-        </div>
-    </form>
+                {{ Form::label('featured_image', 'Upload Featured Image') }}
+                {{ Form::file ('featured_image') }}
 
+                {{ Form::label('body', 'Post Body:', ['class' => 'form-spacing-top']) }}
+                {{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3')) }}
+                
+                {{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block')) }}
+            {!! Form::close() !!}
     @include('layouts.errors')
 
 </div><!-- /.blog-main -->

@@ -5,13 +5,13 @@ Edit Post
 @endsection
 
 @section('content')
-@include('layout.adminnav')
+
 
 	<div class="container">
 		<div class="col-md-12">
 			<h1>Edit {{ $post->title }}</h1>
       
-      {{ Form::model($post, array('route' => array('blog.posts.update', $post->id), 'method' => 'PUT')) }}
+      {{ Form::model($post, array('route' => array('posts.update', $post->id), 'method' => 'PUT')) }}
   				<div class="form-group">
   					@if(!empty($errors->first('title')))
   						<div class="alert alert-danger">{{ $errors->first('title') }}</div>

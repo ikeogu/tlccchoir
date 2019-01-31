@@ -2,69 +2,59 @@
 
 @section('content')
          
-    
-    <article class="col-sm-8 blog-main">
-        <div class="container">
+
+@section('title', '| View Post')
+
+@section('content')
+
+<div class="row">
+    <div class="col-md-8">
+        <img src="{{ asset('images/'.$post->image) }}" height="400" width="100%" alt="Image not working." />
+        <hr>
+        <h1>{{ $post->title }}</h1>
+        <p class="lead">{{ $post->body  }}</p>
+        <hr>
+        <div class="tags">
+            @foreach ($post->tags as $tag)
+                <button class="btn btn-md btn-primary">{{ $tag->name }}</button>
+            @endforeach
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="well">
+            <dl class="dl-horizontal">
+                <dt>Url Slug<dt>
+                <dd><a href="{{ url('blog/'.$post->slug) }}">{{ url('blog/'.$post->slug) }}</a></dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <label>Category</label>
+                <p>{{ $post->category->name }}</p>
+            </dl>
+            <dl class="dl-horizontal">
+                <label>Created At:</label>
+                <p>{{ date('M j, Y H:i', strtotime($post->created_at)) }}</p>
+            </dl>
+            <dl class="dl-horizontal">
+                <label>Last Updated:</label>
+                <p>{{ date('M j, Y H:i', strtotime($post->updated_at)) }}</p>
+            </dl>
+            <hr>
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-          
-                <h2 class="section-heading">{{$post->title}}</h2>
-
-                <h4> {{$post->author}}</h4>
-
-                <p>{{$post->type}}</p>
-
-                <blockquote class="blockquote">{{$post->body}}</blockquote>
-
-                 </div>
+                <div class="col-sm-6">
+                    {!! Html::linkRoute('posts.edit', 'Edit', array($post->id), array('class' => 'btn btn-primary ')) !!}
+                </div>
+                <div class="col-sm-6">
+                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
+                    {!! Form::submit('Delete', ['class' => 'btn btn-danger ']) !!}
+                    {!! Form::close() !!}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ Html::linkRoute('posts.index', 'See all Posts', [], ['class' => 'btn btn-secondary  btn-h1-spacing']) }}
+                </div>
             </div>
         </div>
-    </article>
-    <strong> <hr > </strong>
-
-             
-
-      
-      @if (count($post->comments))
-         
-
-          <div class="comments">
-              <ul class="list-group">
-                  @foreach ($post->comments as $comment)
-
-                  
-                    <li class="list-group-item">
-                        <strong>
-                            {{ $comment->created_at->diffForHumans() }}: &nbsp;
-                        </strong>
-                        {{ $comment->body }}
-                    </li>
-                  @endforeach
-              </ul>
-          </div>
-          <hr>
-      @endif
-
-      <hr>
-      <div class="card" >
-          <div class="card-block" style="border:2px solid black">
-              <form method="POST" action="/posts/{{$post->id}}/comments">
-                  @csrf
-                  <div class="form-group">
-                      <input name="user"   class="form-control" required value="{{Auth::user()->name}}">
-                  </div>
-                  <div class="form-group">
-                      <textarea name="body" rows="4" placeholder="Your comment here." class="form-control" required></textarea>
-                  </div>
-
-                  <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Comment</button>
-                  </div>
-              </form>
-
-              @include('layouts.errors')
-          </div>
-      </div>
-
-    </div><!-- /.blog-main -->
+    </div>
+</div>
 @endsection

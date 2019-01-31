@@ -19,7 +19,7 @@ class Posts extends Migration {
 			$table->increments('id');
 			$table ->integer('user_id')->unsigned();
 			$table->string('title')->unique();
-			$table->string('author');
+			$table->string('name');
 			$table->text('body');
 			$table->string('slug')->unique();
 			$table->boolean('active');

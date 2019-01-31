@@ -14,7 +14,7 @@
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link href="{{asset('css/material-kit.css')}}" rel="stylesheet" />
-  <link href="asset('css/clean-blog.min.css')}}" rel="stylesheet">
+  <link href="{{asset('css/clean-blog.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   
 </head>
@@ -49,7 +49,7 @@
         
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post-bg.jpg'); height:80px;">
+    <header class="masthead" style="background-image: url('{{asset('img/post-bg.jpg')}}'); ">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -62,21 +62,49 @@
         </div>
       </div>
     </header>
-    <div class="row">
-      <div class="col-md-8 col-sm-8 col-lg-8">
-        <div class="py-4">
-                @yield('title')
-        </div>
-        <main class="py-4">
-            @yield('content')
-        </main>
+    <section class="feature-area pt-100 pb-100  relative" >
+      <div class="main ">
+        <div class="row white-bg">
+          <div class="col-md-8 col-sm-8 col-lg-8">
+            <div class="py-4 container">
+                    @yield('title')
+                
+            </div>
+            <main class="py-4 container">
+                @yield('content')
+            </main>
+          </div>
+          
+        </div>  
       </div>
-      
-       
-    </div>
+    </section>
     <!-- Footer -->
-    <footer>
-      <div class="container">
+    
+    <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="http://tlccrmofficial.blogspot.com/">
+              The Lord's Chosen blog
+            </a>
+          </li>
+          <li>
+            <a href="{{ route('about')}}">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="{{route('blog')}}">
+             Blog
+            </a>
+          </li>
+          <li>
+            <a href="/image-gallery ">
+              our Gallery
+            </a>
+          </li>
+        </ul>
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
@@ -98,11 +126,18 @@
               </li>
               
             </ul>
-            <p class="m-0 text-center text-white">Copyright &copy; {{ config('app.name') }} {{ date('Y') }}</p>
+            
           </div>
         </div>
+      </nav>
+      <div class="copyright float-right">
+        Campus Choir &copy;
+        <script>
+           document.write(new Date().getFullYear())
+        </script>
       </div>
-    </footer>
+    </div>
+  </footer>
 
    <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
   <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
