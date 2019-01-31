@@ -18,7 +18,7 @@
                     @foreach ($posts as $post)
                         <tr>
                             <th>{{ $post->id }}
-                            <td>{{ $post->author }}</td>
+                            <td>{{ $post->name }}</td>
                             <td>{{ $post->title }}</td>
                             <td>{{ substr($post->body, 0, 50) }}{{ strlen($post->body) > 50 ? "..." : "" }}</td>
                             <td>{{ date('M j, Y H:i', strtotime($post->created_at)) }}</td>
