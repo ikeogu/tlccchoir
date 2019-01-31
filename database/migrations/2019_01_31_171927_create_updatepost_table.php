@@ -15,7 +15,7 @@ class CreateUpdatepostTable extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->string('name');
-            $table->string('author')->nullable();
+            $table->dropColumn('author');
             
         });
     }
@@ -27,6 +27,7 @@ class CreateUpdatepostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('updatepost');
+        Schema::dropIfExists('posts');
+
     }
 }
