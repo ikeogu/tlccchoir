@@ -13,7 +13,7 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
-        Schema::drop('comments')
+        Schema::drop('comments');
     }
 
     /**
