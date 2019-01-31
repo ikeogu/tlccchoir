@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class DropCommentTable extends Migration
+class AddCategoryIdToPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,9 @@ class DropCommentTable extends Migration
      */
     public function up()
     {
-        Schema::drop('comments');
+        Schema::table('posts', function (Blueprint $table) {
+            $table->integer('category_id')->nullable()->after('slug')->unsigned();
+        });
     }
 
     /**
@@ -23,6 +25,8 @@ class DropCommentTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dropColumn('category_id');
+        });
     }
 }

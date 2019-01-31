@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class DropCommentTable extends Migration
+class CreatePostsUpdate extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,9 @@ class DropCommentTable extends Migration
      */
     public function up()
     {
-        Schema::drop('comments');
+        Schema::table('posts', function($table){
+            $table->foreign('user_id')->references('id')->on('users');
+        });
     }
 
     /**
@@ -23,6 +25,6 @@ class DropCommentTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('posts');
     }
 }
