@@ -13,8 +13,8 @@
                 
                 {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3', 'maxlength' => '100')) }}
 
-                {{ Form::label('name', 'Author:', ['class' => 'form-spacing-top']) }}
-                {{ Form::text('name', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3', 'maxlength' => '20')) }}
+                {{ Form::label('author', 'Author:', ['class' => 'form-spacing-top']) }}
+                {{ Form::text('author', null, array('class' => 'form-control', 'required' => '', 'minlength' => '3', 'maxlength' => '20')) }}
                 
                 {{ Form::label('slug', 'Slug:') }}
                 {{ Form::text('slug', null, ['class' => 'form-control', 'required' => '', 'minlength' => '5', 'maxlength' => '255']) }}
