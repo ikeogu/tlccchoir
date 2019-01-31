@@ -13,19 +13,7 @@ class Posts extends Migration {
 	public function up()
 	{
 		// blog table
-		Schema::create('posts', function(Blueprint $table)
-		{
-			$table->engine = 'InnoDB';
-			$table->increments('id');
-			$table ->integer('user_id')->unsigned();
-			$table->string('title')->unique();
-			$table->string('name');
-			$table->text('body');
-			$table->string('slug')->unique();
-			$table->boolean('active');
-			$table->timestamps();
-			
-		});
+		Schema::drop('posts');
 		
 		
 	}
