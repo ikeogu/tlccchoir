@@ -134,7 +134,7 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-10 col-sm-offset-1">
-                                                <div class="form-group">
+                                            <div class="form-group">
                                                     <label>Gender</label><br>
                                                     <select name="gender" class="form-control">
                                                         <option value="Female">Female </option>
@@ -144,7 +144,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                    </div>
+                                        </div>
                                 </div>
 
                                 <div class="tab-pane" id="account">

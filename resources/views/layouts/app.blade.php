@@ -112,8 +112,7 @@
                           </form>
                       </div>  
                     </div>  
-                  </li>  
-                      
+                  </li>                        
                
                @endif         
             </ul>

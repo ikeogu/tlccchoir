@@ -8,7 +8,7 @@
                 <div class="card-header card-header-primary">
                   <h4 class="card-title mt-0"> All Registered Choristers For Mgbidi 2019 Camp</h4>
                   <p class="card-category">From Various state</p>
-                  <h3 class="card-category"><span text="class-success"> {{App\Mgbidi::count()}} Registered. </h3><h4></span> Last Update <span text="class-success"> {{ App\Mgbidi::orderBy('updated_at', 'desc')->first()->updated_at->diffForHumans()}} </span> By <span text="class-success"> {{ App\Mgbidi::orderBy('lastname', 'desc')->first()->lastname}}</span> 
+                  <h3 class="card-category"><span text="class-success"> {{App\Mgbidi::count()}} Registered. </h3><h4></span> Last Update <span text="class-success"> {{ App\Mgbidi::orderBy('updated_at', 'desc')->first()->updated_at}} </span> By <span text="class-success"> {{ App\Mgbidi::orderBy('lastname', 'desc')->first()->lastname}}</span> 
                 </h4>
                 </div>
                 <div class="card-body">
