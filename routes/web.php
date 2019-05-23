@@ -15,6 +15,9 @@
 	Route::get('/', function () {
 		return view('index');
 	})->name('homepage');
+	Route::get('/noe_2019', function () {
+		return view('Noe2019.index');
+	})->name('noe');
 
 	Auth::routes();
 	Route::get('/home','HomeController@index');

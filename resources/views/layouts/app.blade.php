@@ -6,14 +6,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1162890160760540",
-        enable_page_level_ads: true
-      });
-    </script>
-
+    
     <title>{{ config('app.name', 'Campus Choir') }}</title>
 
     <!-- Scripts -->
@@ -22,7 +15,9 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="{{ asset('css/material-kit.css')}}" rel="stylesheet" />
+  <link href="{{ secure_asset('css/material-kit.css')}}" rel="stylesheet" />
+  
+  
   
 </head>
 <body class="index-page sidebar-collapse">  
@@ -71,6 +66,11 @@
               <li class="nav-item">
                 <a href="podcast" class="nav-link">
                       <i class="material-icons"></i> Podcast
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('noe')}}" class="nav-link">
+                      <i class="material-icons"></i> NOE 2019
                 </a>
               </li>
                 @if(Auth::user())
@@ -159,15 +159,15 @@
     </div>
   </footer>
     </div>    
-  <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/moment.min.js')}}"></script>
+  <script src="{{secure_asset('js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/moment.min.js')}}"></script>
  
   
-  <script src="{{asset('js/nouislider.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/nouislider.min.js')}}" type="text/javascript"></script>
   
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('js/material-kit.js')}}" type="text/javascript"></script>      
+  <script src="{{secure_asset('js/material-kit.js')}}" type="text/javascript"></script>      
 </body>
 </html>

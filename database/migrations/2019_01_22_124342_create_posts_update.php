@@ -14,7 +14,7 @@ class CreatePostsUpdate extends Migration
     public function up()
     {
         Schema::table('posts', function($table){
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->nullable();
         });
     }
 

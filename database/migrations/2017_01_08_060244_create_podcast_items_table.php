@@ -14,7 +14,7 @@ class CreatePodcastItemsTable extends Migration
     public function up()
     {
         Schema::create('podcast_items', function(Blueprint $table)
-        {
+         {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->longText('title');
@@ -22,11 +22,11 @@ class CreatePodcastItemsTable extends Migration
             $table->string('url');
             $table->string('audio_url');
             $table->date('published_at');
-            $table->boolean('is_mark_as_read')->default(0);
-            $table->boolean('is_mark_as_favorite')->default(0);
-            $table->integer('podcast_id')->unsigned();
-            $table->foreign('podcast_id')->references('id')->on('podcasts')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->boolean('is_mark_as_read')->default(0)->nullable();
+            $table->boolean('is_mark_as_favorite')->default(0)->nullable();
+            $table->integer('podcast_id')->unsigned()->nullable();
+            $table->foreign('podcast_id')->references('id')->on('podcasts')->onDelete('cascade')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
