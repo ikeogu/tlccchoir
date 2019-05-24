@@ -26,12 +26,12 @@
     </section>
 
    
-    <section id="our-services"  class="container-fluid">
+    <section id="our-services" >
         <h1>Info</h1>
        
         <section>
             
-                    <div class="card">
+                    <div class="cad">
                         <div class="card-header">
                                
                                 <ion-icon class="icon-yel" name="compass" md="md-compass"></ion-icon>
@@ -47,7 +47,7 @@
                           
                     </div>
                   
-                    <div class="card">
+                    <div class="cad">
                         <div class="card-header">
                                 <span><a><i class="fas fa-map-marker-alt"></i></a></span>
                                 <h3>Award</h3>
@@ -61,7 +61,7 @@
                             
                     </div>
                    
-                    <div class="card">
+                    <div class="cad">
                         <div class="card-header">
                                 <span><a><i class="fas fa-map-marker-alt"></i></a></span>
                                 <h3>creteria</h3>
@@ -242,7 +242,7 @@
         <h2>Let's see what your Team got!</h2>
         <div class="row">
             <div class="">
-              <div class="card card-login" >
+              <div class="cad card-login" >
                 <div class="content">
                   @if ($errors->any())
                   <div class="alert alert-danger">
@@ -261,7 +261,12 @@
                 </div>
                 <form method="POST" action="{{ route('reg') }}" enctype="multipart/form-data">
                               @csrf
-                  <div class="card-header card-header-primary text-center">
+                  <div class="card-header card-header-primary text-center" style="
+                                                            padding-left: 20px;
+                                                            padding-right: 5px;
+                                                            width: 240px;
+                                                            height: 80px;
+                                                            margin-left: 20px;">
                     <h4 class="card-title">Register your Team</h4>
                     
                   </div>
@@ -336,8 +341,8 @@
                             @endif
                         </div>              
                       </div>
-                      <div class="footer text-center">
-                        <button class="btn  btn-round">Register</button>
+                      <div class="input-group">
+                        <button class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Register</button>
                       </div>
                   </div>
                 </form>

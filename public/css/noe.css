@@ -107,6 +107,18 @@ a{
             left:15%; 
             color:#faf73f !important;
         }
+        .cad{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            border: .0625rem solid rgba(0,0,0,.05);
+            border-radius: .25rem;
+            background-color: #fff;
+            background-clip: border-box;
+            
+        }
         .card{
             position: relative;
             display: flex;
