@@ -18,7 +18,7 @@
                
             </p>
 
-            <p> NOE started in Imo State as Chior competition between  TLCCF schools in Imo state, but has since grown to the South East region <br/> and in time to come to the whole country and beyound.
+            <p> NOE started in Imo State as Choir competition between  TLCCF schools in Imo state, but has since grown to the South East region <br/> and in time to come to the whole country and beyound.
             </p>
         </article>
     </section>
@@ -66,7 +66,7 @@
                     <div class="cad">
                         <div class="card-header">
                                 <span><a><i class="fas fa-map-marker-alt"></i></a></span>
-                                <h3>creteria</h3>
+                                <h3>Creteria</h3>
                         </div>
                         <div class="card-body">
                             <strong>The choirs must be campus choir of TLCCF</strong>
@@ -190,7 +190,7 @@
                 </div>
             </section>
             <section class="lorem">
-            <img src="/img/chior.jpg" alt="City of Prague at night">
+            <img src="/img/Choir.jpg" alt="City of Prague at night">
                 <div data-index="7">
                     <p>Lorem Ipsum</p>
                 </div>
@@ -213,7 +213,7 @@
                 <img src="/img/12.jpg" alt="Island">
                 <img src="/img/bg3.jpg" alt="Flowers on a table">
                 <img src="/img/bg7.jpg" alt="Village during the day">
-                <img src="/img/chior.jpg" alt="City of Prague at night">
+                <img src="/img/Choir.jpg" alt="City of Prague at night">
                 <img src="/img/ven4.jpg" alt="Ducks in a pond">
                 <img src="/img/ven3.jpg" alt="Squirrel in the snow">
                 <img src="/img/ven2.jpg" alt="Lemon slice">
@@ -231,7 +231,7 @@
         <section class="info">
             <article>
                 <h4>8</h4>
-                <p>Chiors</p>
+                <p>Choirs</p>
             </article>
             <article>
                 <h4>1</h4>
