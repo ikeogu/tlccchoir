@@ -40,7 +40,7 @@ a{
         position:fixed;
         z-index:10;
         width:100%;
-        transition:background-color .5s ease;
+        transition:background-color .5s ;
         color:#faf73f;
     }
     .nav-menu .menu-visible{
@@ -99,7 +99,7 @@ a{
             align-items:center !important;
             background:linear-gradient(rgba(191, 219, 99, 0.5),#4d4b04),url(../img/classical.jpg) center no-repeat;
             background-size:cover;
-            height:70vh
+            height:105vh
         }
         .header-info article{
             width:40% !important;
