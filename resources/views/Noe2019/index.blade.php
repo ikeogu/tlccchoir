@@ -8,7 +8,7 @@
       <section id="about-us" class="about-us-layout">
         <h1 class="title">About NOE</h1>
         <figure>
-            <img src="/img/caption.jpg" alt="Laptop">
+            <img src="/img/caption.jpg" alt="Laptop" height="350" width="400">
         </figure>
         <article>
             <h2>NOTES OF ENHAKKORE </h2>
