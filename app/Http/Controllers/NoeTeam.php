@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Noe_Team;
 use Session;
+use View;
 use App\Http\Resources\NoeResource;
 
 class NoeTeam extends Controller
@@ -47,8 +48,9 @@ class NoeTeam extends Controller
         $team->number = $request->input('number');
         $team->state= $request->input('state');
         if($team->save()){
-            
-            return redirect(route('noe'))->with('success', 'Welcome to NOE_2019. Team Registered Successfully.');
+            Session::flash('success', 'Welcome to NOE_2019. Team Registered Successfully.');
+            return View::make('partials/flash-messages')->route('noe');
+           
         }
 
         

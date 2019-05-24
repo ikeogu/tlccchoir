@@ -11,16 +11,14 @@
             <img src="/img/caption.jpg" alt="Laptop">
         </figure>
         <article>
-            <h2>NOTES OF ENAHKORRE </h2>
+            <h2>NOTES OF ENHAKKORE </h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti similique qui molestiae libero sunt totam
-                animi placeat dolores vero atque possimus nisi, officia quas, praesentium ex voluptate illum rem obcaecati
-                ipsam. Consequuntur.
+            <p> NOE~ stands for Notes of Enhakkore. it is a programme which was coined out in line of the No. 4 vision of TLCCF.<br/>
+                'Enhakkore' was gotten from the Bible. Its translated to mean "Fountain of the Crier" or in simplier terms "Revival".<br/>
+               
             </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti similique qui molestiae libero sunt totam
-                animi placeat dolores vero atque possimus nisi, officia quas, praesentium ex voluptate illum rem obcaecati
-                ipsam. Consequuntur.
+            <p> NOE started in Imo State as Chior competition between  TLCCF schools in Imo state, but has since grown to the South East region <br/> and in time to come to the whole country and beyound.
             </p>
         </article>
     </section>
@@ -34,15 +32,16 @@
                     <div class="cad">
                         <div class="card-header">
                                
-                                <ion-icon class="icon-yel" name="compass" md="md-compass"></ion-icon>
-                                <h3>Venue</h3>
+                            <h3>Venue</h3>
                         </div>
                         <div class="card-body">
-                                
-                            <h4>SOPS THEATRE</h4>
-                            <h4>FEDERAL UNIVERSITY OF TECHNOLOGY</h4>
-                            <h4>OWERRI (FUTO)</h4>
-                            <H5>IMO STATE</H5>
+                            <article>
+                                <img src="/img/point.png" height="120" width="80"/>
+                            </article>  
+                            <p>SOPS THEATRE</p>
+                            <p>FEDERAL UNIVERSITY OF TECHNOLOGY</p>
+                            <p>OWERRI (FUTO)</p>
+                            <p>IMO STATE</p>
                         </div>
                           
                     </div>
@@ -53,9 +52,12 @@
                                 <h3>Award</h3>
                         </div>
                         <div class="card-body">
-                            <h4>1st Prize</h4>
-                            <h4>2nd prize</h4>
-                            <h4>3rd price</h4>
+                            <article>
+                                <img src="/img/cup.png"  height="180" width="250"/>
+                            </article>
+                            <h4>Best Choir of the Night </h4>
+                            <h4>Best Keyboardist of the Night</h4>
+                            <h4>Worst Choir of the Night</h4>
                             
                         </div>
                             
@@ -67,12 +69,32 @@
                                 <h3>creteria</h3>
                         </div>
                         <div class="card-body">
-                            <h4>SOPS THEATRE</h4>
-                            <h4>FEDERAL UNIVERSITY OF TECHNOLOGY</h4>
-                            <h4>OWERRI (FUTO)</h4>
-                            <H5>IMO STATE</H5>
+                            <strong>The choirs must be campus choir of TLCCF</strong>
+                            <strong>A total Number of 30 choral groups indicated intrest this year's concert<br/> However, this will be shortlisted to either 5 or 8 finalists (depending on the choice of the music selection committee)<br/> which will participate that night.</strong>
+                            <strong>Songs to Sing </strong>
+                            <H5>African Contemporary Song</H5>
+                            <h5>Acapella (Composed From Bible Verse)</h5>
+                            <h5>African Classical Spiritual Song</h5>
+
+
                         </div>
                             
+                    </div>
+                    <div class="cad">
+                        <div class="card-header">
+                               
+                               <h3>Help Desk</h3>
+                        </div>
+                        <div class="card-body">
+                             <article>
+                                <img src="/img/phone.jpg"  height="200" width="250"/>
+                            </article> 
+
+                            <h4>07065513034</h4>
+                            <h4>07039350143</h4>
+                           
+                        </div>
+                          
                     </div>
                
            
@@ -83,11 +105,10 @@
         <h1>Judges</h1>
         <section class="profiles">
             <article class="profile-active">
-                <img src="/img/bass.jpg" alt="Profile pic of Jane Doe">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus in tempore expedita accusantium
-                    assumenda minus quaerat perferendis placeat veniam nostrum unde odio incidunt nisi?</p>
+                <img src="/img/m3.jpg" alt="Profile pic of Jane Doe">
+                <p>Chief Judge, South East and South South Regional Choirmaster of TLCCF</p>
                 <p>
-                    <span>Jane Doe</span>, CEO, company.</p>
+                    <span>Bro.</span> Solomon, Olubiyi.</p>
             </article>
             <article>
                 <img src="/img/bg3.jpg" alt="Profile pic of John Doe">
@@ -244,21 +265,10 @@
             <div class="">
               <div class="cad card-login" >
                 <div class="content">
-                  @if ($errors->any())
-                  <div class="alert alert-danger">
-                      <ul>
-                          @foreach ($errors->all() as $error)
-                              <li>{{ $error }}</li>
-                          @endforeach
-                      </ul>
-                  </div><br />
-                  @endif
-                  @if (Session::has('success'))
-                  <div class="alert alert-success">
-                      <p>{{ Session::get('success') }}</p>
-                  </div><br />
-                  @endif
+                <div class="flash-message"></div>
+                 
                 </div>
+                
                 <form method="POST" action="{{ route('reg') }}" enctype="multipart/form-data">
                               @csrf
                   <div class="card-header card-header-primary text-center" style="
@@ -270,7 +280,7 @@
                     <h4 class="card-title">Register your Team</h4>
                     
                   </div>
-                  
+                 
                   <div class="card-body">
                     <div class="input-group">
                       
@@ -358,5 +368,14 @@
         </section>
     </section>
     <!-- Swiper -->
-  
+  <script>
+ $.ajax({
+    
+    dataType: 'html', //Optional: type of data returned from server
+    success: function(data) {
+        $('div.flash-message').html(data);
+    },
+   
+});
+  </script>
 @endsection
