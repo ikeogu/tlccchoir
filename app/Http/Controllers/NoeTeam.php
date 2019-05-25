@@ -47,13 +47,15 @@ class NoeTeam extends Controller
         $team->name = $request->input('name');
         $team->number = $request->input('number');
         $team->state= $request->input('state');
-        if($team->save()){
-            Session::flash('success', 'Welcome to NOE_2019. Team Registered Successfully.');
-            return View::make('partials/flash-messages')->route('noe');
-           
-        }
+        $team->african_con = $request->input('african_con');
+        $team->african_class = $request->input('african_class');
+        $team->acappella = $request->input('acappella');
+      if( $team->save()){
+        return redirect()->route('noe')->with('success', 'Welcome to NOE_2019. Team Registered Successfully.');
 
-        
+      }
+        return back()->withInput();
+       
     }
 
     /**

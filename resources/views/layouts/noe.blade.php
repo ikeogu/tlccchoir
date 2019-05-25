@@ -56,7 +56,11 @@
         </article>
     </header>
     <main class=" container py-4">
+        @includes('partials.success')
+        @includes('partials.error')
+        <div>
             @yield('noe')
+        </div>
     </main>
     <footer class="footer-layout">
         <p>Copyright NOE 2019  Designed by DeraTech </p>

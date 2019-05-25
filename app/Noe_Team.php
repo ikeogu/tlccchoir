@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Noe_Team extends Model
 {
     protected $fillable = [
-        'name', 'number', 'state', 
+        'name', 'number', 'state', 'african_class', 'african_con', 'acappella'
     ];
 }

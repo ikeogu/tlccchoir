@@ -41,7 +41,7 @@ a{
         z-index:10;
         width:100%;
         transition:background-color .5s ;
-        color:#faf73f;
+        color:#fdc306;
     }
     .nav-menu .menu-visible{
         max-height:300px
@@ -86,7 +86,7 @@ a{
     }
     @media only screen and (min-width:780px){
         .nav-menu a:hover{
-            color:#faf73f
+            color:#fdc306
         }
     }
     @media only screen and (max-width:660px){
@@ -105,7 +105,7 @@ a{
             width:40% !important;
             position:relative !important;
             left:15%; 
-            color:#faf73f !important;
+            color:#fdc306 !important;
         }
         .cad{
             position: relative;
@@ -117,8 +117,8 @@ a{
             border-radius: .25rem;
             background-color: #fff;
             background-clip: border-box;
-            margin-left: 30px;
-            margin-top:20px;
+            margin-left: 10px;
+            margin-top:10px;
         }
         .card{
             position: relative;
@@ -138,9 +138,16 @@ a{
         }
         .card>.list-group:first-child .list-group-item:first-child{
             border-top-left-radius:.25rem;
-            border-top-right-radius:.25rem}.card>.list-group:last-child .list-group-item:last-child{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}.card-body{padding:1.5rem;flex:1 1 auto}.card-title{margin-bottom:1.25rem}.card-subtitle{margin-top:-.625rem;margin-bottom:0}.card-text:last-child{margin-bottom:0}.card-link:hover{text-decoration:none}.card-link+.card-link{margin-left:1.5rem}.card-header{margin-bottom:0;padding:1.25rem 1.5rem;border-bottom:.0625rem solid rgba(0,0,0,.05);background-color:#f6f9fc}.card-header:first-child{border-radius:calc(.25rem - .0625rem) calc(.25rem - .0625rem) 0 0}.card-header+.list-group .list-group-item:first-child{border-top:0}.card-footer{padding:1.25rem 1.5rem;border-top:.0625rem solid rgba(0,0,0,.05);background-color:#f6f9fc}.card-footer:last-child{border-radius:0 0 calc(.25rem - .0625rem) calc(.25rem - .0625rem)}.card-header-tabs{margin-right:-.75rem;margin-bottom:-1.25rem;margin-left:-.75rem;border-bottom:0}.card-header-pills{margin-right:-.75rem;margin-left:-.75rem}.card-img-overlay{position:absolute;top:0;right:0;bottom:0;left:0;padding:1.25rem}.card-img{width:100%;border-radius:calc(.25rem - .0625rem)}.card-img-top{width:100%;border-top-left-radius:calc(.25rem - .0625rem);border-top-right-radius:calc(.25rem - .0625rem)}.card-img-bottom{width:100%;border-bottom-right-radius:calc(.25rem - .0625rem);border-bottom-left-radius:calc(.25rem - .0625rem)}.card-deck{display:flex;flex-direction:column}.card-deck .card{margin-bottom:15px}@media (min-width:576px){.card-deck{margin-right:-15px;margin-left:-15px;flex-flow:row wrap}.card-deck .card{display:flex;flex-direction:column;margin-right:15px;margin-bottom:0;margin-left:15px;flex:1 0}}.card-group{display:flex;flex-direction:column}.card-group>.card{margin-bottom:15px}@media (min-width:576px){.card-group{flex-flow:row wrap}.card-group>.card{margin-bottom:0;flex:1 0}.card-group>.card+.card{margin-left:0;border-left:0}.card-group>.card:first-child{border-top-right-radius:0;border-bottom-right-radius:0}.card-group>.card:first-child .card-header,.card-group>.card:first-child .card-img-top{border-top-right-radius:0}.card-group>.card:first-child .card-footer,.card-group>.card:first-child .card-img-bottom{border-bottom-right-radius:0}.card-group>.card:last-child{border-top-left-radius:0;border-bottom-left-radius:0}.card-group>.card:last-child .card-header,.card-group>.card:last-child .card-img-top{border-top-left-radius:0}.card-group>.card:last-child .card-footer,.card-group>.card:last-child .card-img-bottom{border-bottom-left-radius:0}.card-group>.card:only-child{border-radius:.25rem}.card-group>.card:only-child .card-header,.card-group>.card:only-child .card-img-top{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.card-group>.card:only-child .card-footer,.card-group>.card:only-child .card-img-bottom{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}.card-group>.card:not(:first-child):not(:last-child):not(:only-child){border-radius:0}.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-footer,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-header,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-img-top{border-radius:0}}.card-columns .card{margin-bottom:1.25rem}@media (min-width:576px){.card-columns{column-count:3;column-gap:1.25rem;orphans:1;widows:1}.card-columns .card{display:inline-block;width:100%}}.accordion .card:not(:first-of-type):not(:last-of-type){border-bottom:0;border-radius:0}.accordion .card:not(:first-of-type) .card-header:first-child{border-radius:0}.accordion .card:first-of-type{border-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0}.accordion .card:last-of-type{border-top-left-radius:0;border-top-right-radius:0}
+            border-top-right-radius:.25rem}.card>.list-group:last-child .list-group-item:last-child{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}
+.card-body{
+    padding:1.5rem;
+    flex:1 1 auto;           
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}.card-title{margin-bottom:1.25rem}.card-subtitle{margin-top:-.625rem;margin-bottom:0}.card-text:last-child{margin-bottom:0}.card-link:hover{text-decoration:none}.card-link+.card-link{margin-left:1.5rem}.card-header{margin-bottom:0;padding:1.25rem 1.5rem;border-bottom:.0625rem solid rgba(0,0,0,.05);background-color:#f6f9fc}.card-header:first-child{border-radius:calc(.25rem - .0625rem) calc(.25rem - .0625rem) 0 0}.card-header+.list-group .list-group-item:first-child{border-top:0}.card-footer{padding:1.25rem 1.5rem;border-top:.0625rem solid rgba(0,0,0,.05);background-color:#f6f9fc}.card-footer:last-child{border-radius:0 0 calc(.25rem - .0625rem) calc(.25rem - .0625rem)}.card-header-tabs{margin-right:-.75rem;margin-bottom:-1.25rem;margin-left:-.75rem;border-bottom:0}.card-header-pills{margin-right:-.75rem;margin-left:-.75rem}.card-img-overlay{position:absolute;top:0;right:0;bottom:0;left:0;padding:1.25rem}.card-img{width:100%;border-radius:calc(.25rem - .0625rem)}.card-img-top{width:100%;border-top-left-radius:calc(.25rem - .0625rem);border-top-right-radius:calc(.25rem - .0625rem)}.card-img-bottom{width:100%;border-bottom-right-radius:calc(.25rem - .0625rem);border-bottom-left-radius:calc(.25rem - .0625rem)}.card-deck{display:flex;flex-direction:column}.card-deck .card{margin-bottom:15px}@media (min-width:576px){.card-deck{margin-right:-15px;margin-left:-15px;flex-flow:row wrap}.card-deck .card{display:flex;flex-direction:column;margin-right:15px;margin-bottom:0;margin-left:15px;flex:1 0}}.card-group{display:flex;flex-direction:column}.card-group>.card{margin-bottom:15px}@media (min-width:576px){.card-group{flex-flow:row wrap}.card-group>.card{margin-bottom:0;flex:1 0}.card-group>.card+.card{margin-left:0;border-left:0}.card-group>.card:first-child{border-top-right-radius:0;border-bottom-right-radius:0}.card-group>.card:first-child .card-header,.card-group>.card:first-child .card-img-top{border-top-right-radius:0}.card-group>.card:first-child .card-footer,.card-group>.card:first-child .card-img-bottom{border-bottom-right-radius:0}.card-group>.card:last-child{border-top-left-radius:0;border-bottom-left-radius:0}.card-group>.card:last-child .card-header,.card-group>.card:last-child .card-img-top{border-top-left-radius:0}.card-group>.card:last-child .card-footer,.card-group>.card:last-child .card-img-bottom{border-bottom-left-radius:0}.card-group>.card:only-child{border-radius:.25rem}.card-group>.card:only-child .card-header,.card-group>.card:only-child .card-img-top{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.card-group>.card:only-child .card-footer,.card-group>.card:only-child .card-img-bottom{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}.card-group>.card:not(:first-child):not(:last-child):not(:only-child){border-radius:0}.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-footer,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-header,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,.card-group>.card:not(:first-child):not(:last-child):not(:only-child) .card-img-top{border-radius:0}}.card-columns .card{margin-bottom:1.25rem}@media (min-width:576px){.card-columns{column-count:3;column-gap:1.25rem;orphans:1;widows:1}.card-columns .card{display:inline-block;width:100%}}.accordion .card:not(:first-of-type):not(:last-of-type){border-bottom:0;border-radius:0}.accordion .card:not(:first-of-type) .card-header:first-child{border-radius:0}.accordion .card:first-of-type{border-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0}.accordion .card:last-of-type{border-top-left-radius:0;border-top-right-radius:0}
 .card-header-primary{
-    background-color:#faf73f ;
+    background-color:#fdc306 ;
     border-radius: 25%;
 }
         @media only screen and (max-width:1000px){
@@ -176,7 +183,7 @@ a{
         }
         
         .btn{
-            background-color:#faf73f;
+            background-color:#fdc306;
             padding:14px 20px;
             text-transform:uppercase;
             font-size:15px;
@@ -193,7 +200,7 @@ a{
             margin-top:2rem
         }
         .btn-active{
-            background-color:#faf73f
+            background-color:#fdc306
         }
         .gallery--btns{
             display:flex;
@@ -202,21 +209,21 @@ a{
         }
         .gallery--btns .btn-active{
             color:#fff;
-            background-color:#faf73f
+            background-color:#fdc306
         }
         .gallery--btns button{
             cursor:pointer;
             margin:.75rem;
-            border:1px solid #faf73f;
+            border:1px solid #fdc306;
             background-color:#fff;
-            color:#faf73f;
+            color:#fdc306;
             padding:.5rem 1rem;
             transition:all 250ms ease
         }
         @media only screen and (min-width:780px){
             .gallery--btns button:hover{
                 color:#fff;
-                background:#faf73f
+                background:#fdc306
             }
         }
         .close-btn{
@@ -230,7 +237,7 @@ a{
             transition:color .5s ease
         }
         .close-btn:hover{
-            color:#faf73f
+            color:#fdc306
         }
         .modal-btns{
             display:none
@@ -336,10 +343,10 @@ a{
     left:calc(50% - 37px);
     bottom:-16px;
     width:75px;
-    border-bottom:2px solid #faf73f
+    border-bottom:2px solid #fdc306
 }
 .about-us-layout h2{
-    color:#faf73f;
+    color:#fdc306;
     font-weight:400;
     font-size:1.25rem
 }
@@ -389,7 +396,7 @@ a{
     left:calc(50% - 37px);
     bottom:-16px;
     width:75px;
-    border-bottom:2px solid #faf73f
+    border-bottom:2px solid #fdc306
 }
 #our-services h2{
     text-align:center;
@@ -412,7 +419,7 @@ a{
 }
 #our-services section h3{
     font-size:1.2rem;
-    color:#faf73f;
+    color:#fdc306;
     font-weight:600;
     text-transform:uppercase
 }
@@ -448,7 +455,7 @@ a{
     left:calc(50% - 37px);
     bottom:-16px;
     width:75px;
-    border-bottom:2px solid #faf73f
+    border-bottom:2px solid #fdc306
 }
 #gallery h2{
     text-align:center;
@@ -529,7 +536,7 @@ a{
     left:calc(50% - 37px);
     bottom:-16px;
     width:75px;
-    border-bottom:2px solid #faf73f
+    border-bottom:2px solid #fdc306
 }
 #parallax .info{
     display:grid;
@@ -628,8 +635,8 @@ a{
     border:1px solid #888;
     transition:all .5s ease
 }#testimonials .indicators .active{
-    background-color:#faf73f;
-    border:solid 1px #faf73f
+    background-color:#fdc306;
+    border:solid 1px #fdc306
 }
 #contact{
     padding:5rem 6rem 0 6rem
@@ -649,7 +656,7 @@ a{
             position:absolute;
             left:calc(50% - 37px);
             bottom:-16px;width:75px;
-            border-bottom:2px solid #faf73f}
+            border-bottom:2px solid #fdc306}
             #contact h2{
                 text-align:center;
                 margin-top:2rem;
@@ -704,7 +711,7 @@ a{
             }
             #contact ion-icon{
                 cursor:pointer;
-                color:#faf73f;
+                color:#fdc306;
                 font-size:2.25rem;
                 margin:0 auto;
                 transition:color .5s ease
@@ -717,7 +724,7 @@ a{
             .footer-layout{
                 display:flex;
                 height:12vh;
-                background:linear-gradient(#000, #faf73f);
+                background:linear-gradient(#000, #fdc306);
                 justify-content:center;
                 align-items:center;
                 color:#f6f6f6;
