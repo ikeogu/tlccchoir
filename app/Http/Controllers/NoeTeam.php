@@ -43,8 +43,8 @@ class NoeTeam extends Controller
     }
     public function admin()
     {
-        $team = Noe_Team::all();
-        return view('Noe2019/allteam',compact('team'));
+        $teams = Noe_Team::all();
+        return view('Noe2019/allteam',compact('teams'));
     }
 
     /**
