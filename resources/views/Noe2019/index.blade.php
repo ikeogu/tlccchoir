@@ -57,7 +57,7 @@
                             </article>
                             <h4>Best Choir of the Night </h4>
                             <h4>Best Keyboardist of the Night</h4>
-                            <h4>Worst Choir of the Night</h4>
+                            
                             
                         </div>
                             
@@ -73,20 +73,20 @@
                                     <img src="/img/ham.jpg"  height="180" width="250"/>
                                 </article>
                             <article>
-                            <ol>
+                            <blockquote>
 
                                
-                                <li><strong>The choirs must be campus choir of TLCCF</strong></li>
-                               <li> <strong>A total Number of 30 choral groups indicated intrest this year's concert.<br/> However, this will be shortlisted to either 5 or 8 finalists (depending on the choice of the music selection committee)<br/> which will participate that night.</strong></li>
-                            </ol>
+                                <strong>The choral groups must be Campus choir members of TLCCF.</strong><br/>
+                               <strong>A total number of 30 choral groups indicated intrest in this year's concert.<br/> However, choral groups will be shortlisted to either 5 or 8 finalists<br/> (Depending on the choice of the music selection committee) which will participate that night.</strong>
+                            </blockquote>
                                <br>
-                            <ol>
+                           
                                 <strong>Songs to Sing </strong>
                                 <hr>
-                               <li> <H5>African Contemporary Song</H5></li>
-                               <li><h5>Acapella (Composed From Bible Verse)</h5></li>
-                               <li><h5>African Classical Spiritual Song</h5></li>
-                            </ol>
+                               <H5>African Contemporary Song</H5>
+                                <h5>Acapella (Composed From Bible Verse)</h5>
+                               <h5>African Classical Spiritual Song</h5>
+                            
                             </article>
 
                         </div>
@@ -268,8 +268,160 @@
         </section>
     </section>
 
-   
+  
+   <section>
+         <div class="card card-plain">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title mt-0"> {{App\Noe_Team::count()}} Registered Choral Groups For NOE 2019 </h4>
+              <p class="card-category">From Various state</p>
+              
+            </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead class="">
+                         <th>
+                        S/NO
+                      	</th>
+                     	  <th>
+                         Group Name
+                      	</th>
+                         <th>
+                           Number
+                         </th>
+                          <th>
+                            State
+                          </th>
+                          <th>
+                             Title of Acappella Song
+                          </th>
+													<th>
+														Title of African Classical Song
 
+													</th>
+													<th>
+														Title of Acappella Contemporary Song
+
+													</th>
+                      </thead>
+                      <tbody>
+
+                        @foreach($team as $user)
+                        
+                       
+      
+                              <tr>
+                                            
+                              <td>
+                                    {{$user->id}}
+                                </td>
+                                <td>
+                                    {{$user->name}}
+                                </td>
+                                <td>
+                                {{$user->number}}
+                                </td>
+                                
+                                <td >
+                                {{ $user->state }}
+                                </td>
+                                <td >
+                                {{ $user->acappella}}
+                                </td>
+                                <td>
+																	{{ $user->african_class}}
+																</td>
+																<td>
+																	{{ $user->african_con}}
+                                </td>
+                              
+                                                         
+                              </tr>   
+                            
+                       @endforeach 
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+   </section>
+	 <section id="registered">
+		<div class="card card-plain">
+			<div class="card-header card-header-primary">
+				<h4 class="card-title mt-0"> {{App\ShortList::count()}} ShortListed Choral Groups For NOE 2019 </h4>
+				<p class="card-category">From Various state</p>
+				
+			</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead class="">
+                                    <th>
+									 S/NO
+									</th>
+									 <th>
+									 Group Name
+									</th>
+									 <th>
+										 Number
+									 </th>
+										<th>
+											State
+										</th>
+										<th>
+											 Title of Acappella Song
+										</th>
+										<th>
+											Title of African Classical Song
+
+										</th>
+										<th>
+											Title of Acappella Contemporary Song
+
+										</th>
+								</thead>
+								<tbody>
+                                    @foreach($teams as $user)
+                        
+                       
+      
+                                    <tr>
+									<td>
+                                        {{$user->id}}
+                                    </td>          
+                                    
+                                    <td>
+                                        {{$user->name}}
+                                    </td>
+                                    <td>
+                                    {{$user->number}}
+                                    </td>
+                                    
+                                    <td >
+                                    {{ $user->state }}
+                                    </td>
+                                    <td >
+                                    {{ $user->acappella}}
+                                    </td>
+                                    <td>
+                                                                        {{ $user->african_class}}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $user->african_con}}
+                                    </td>
+                                    
+                                                            
+                                    </tr>   
+                                
+                            @endforeach 
+									
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+	</section>
     <section id="contact">
         
         <h2>Let's see what your Team got!</h2>
@@ -277,7 +429,11 @@
             <div class="">
               <div class="cad card-login" >
                     <div class="content">
-                        <span class="success"></span>
+                    @if (\Session::has('success'))
+                            <div class="alert alert-success">
+                                <p>{{ \Session::get('success') }}</p>
+                            </div><br />
+                    @endif
                     </div>
                 
                     <form method="POST" action="{{route('reg')}}" enctype="multipart/form-data">
@@ -412,7 +568,7 @@
             <ion-icon class="icon-pnk" name="logo-facebook"></ion-icon>
             <ion-icon class="icon-pnk" name="logo-twitter"></ion-icon>
             <ion-icon class="icon-pnk" name="logo-googleplus"></ion-icon>
-            <ion-icon class="icon-pnk" name="logo-linkedin"></ion-icon>
+            <ion-icon class="icon-pnk" name="logo-linkedin" > </ion-icon>
         </section>
     </section>
     <!-- Swiper -->

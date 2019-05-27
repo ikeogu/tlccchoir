@@ -10,13 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Noe_Team;
+use App\ShortList;
 
 
 	Route::get('/', function () {
 		return view('index');
 	})->name('homepage');
 	Route::get('/noe_2019', function () {
-		return view('Noe2019.index');
+		$team = Noe_Team::all(); 
+		$teams = ShortList::all();       
+        return view('Noe2019/index', compact('team','teams'));
 	})->name('noe');
 
 	Auth::routes();
@@ -169,4 +173,18 @@ Route::get('/admin/deleteuploadedimages','AdminController@delup')->name('delup')
 Route::resource('image-gallery', 'ImageGalleryController');
 //for User Controller
 Route::resource('users','UsersController');
+// for noe admin
+Route::resource('short_list','ShortListController');
+Route::resource('noe_team','NoeTeam');
 
+Route::get('noe_admin','NoeTeam@admin')->name('admin');
+Route::get('all_team','NoeTeam@allteam')->name('allteam');
+
+Route::post('short_list','ShortListController@store')->name('shortlist');
+
+
+Route::get('noe_teams','NoeTeam@index');
+Route::get('noe_team/{key}','NoeTeam@show');
+Route::post('noe_team','NoeTeam@store')->name('reg');
+Route::put('noe_team','NoeTeam@store');
+Route::delete('noe_tea/{key}','NoeTeam@destroy')->name('del');

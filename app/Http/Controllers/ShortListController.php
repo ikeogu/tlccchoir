@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\ShortList;
 use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\Noe_Team;
-use Session;
-use View;
 
-
-class NoeTeam extends Controller
+class ShortListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,18 +14,8 @@ class NoeTeam extends Controller
      */
     public function index()
     {
-        //List of Teams
-        $teams = Noe_Team::all();
-        dd($teams);
-       
-        return view('Noe2019/index', compact('teams'));
-    }
-    public function allteam()
-    {
-        //List of Teams
-        $teams = Noe_Team::all();
-             
-        return view('Noe2019/allteam', compact('teams'));
+       $teams = ShortList::all();
+        return view('Noe2019/shortlist/index',compact('teams'));
     }
 
     /**
@@ -39,12 +25,7 @@ class NoeTeam extends Controller
      */
     public function create()
     {
-        //
-    }
-    public function admin()
-    {
-        $team = Noe_Team::all();
-        return view('Noe2019/allteam',compact('team'));
+      return view('Noe2019/create');
     }
 
     /**
@@ -56,7 +37,7 @@ class NoeTeam extends Controller
     public function store(Request $request)
     {
         $this->validate($request, array('name' => 'required|max:255', 'number' => 'required|max:3','state' => 'required|max:40'));
-        $team = $request->isMethod('put') ?  Noe_Team::findOrFail($request->noe_team_id) :new  Noe_Team;
+        $team = $request->isMethod('put') ?  ShortList::findOrFail($request->short_lists_id) :new  ShortList;
         
         $team->name = $request->input('name');
         $team->number = $request->input('number');
@@ -65,32 +46,30 @@ class NoeTeam extends Controller
         $team->african_class = $request->input('african_class');
         $team->acappella = $request->input('acappella');
       if( $team->save()){
-        return redirect()->route('noe')->with('success', 'Welcome to NOE_2019. Team Registered Successfully.');
+        return redirect()->route('admin')->with('success', ' Team was Successfully ShortListed.');
 
       }
         return back()->withInput();
-       
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\ShortList  $shortList
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(ShortList $shortList)
     {
-       $team = Noe_Team::findOrFail($id);
-       return view('Noe2019/show')->with('team', $team);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\ShortList  $shortList
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(ShortList $shortList)
     {
         //
     }
@@ -99,10 +78,10 @@ class NoeTeam extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\ShortList  $shortList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, ShortList $shortList)
     {
         //
     }
@@ -110,18 +89,11 @@ class NoeTeam extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\ShortList  $shortList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Noe_Team $noe_team)
+    public function destroy(ShortList $shortList)
     {
-        
-        $team = Noe_Team::find($noe_team)->first();
-        
-        if($team->delete()){
-           
-            return redirect()->route('allteam')->with('success', 'Team Removed');
-        }
-       
+        //
     }
 }

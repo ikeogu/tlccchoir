@@ -16,25 +16,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <!-- Core Js FIle-->
-    <link href="{{asset('css/material-dashboard.css')}}" rel="stylesheet" />
-    <script src="{{asset('js/core/jquery.min.js')}}"></script>
-    <script src="{{asset('js/core/popper.min.js')}}"></script>
-    <script src="{{asset('js/core/bootstrap-material-design.min.js')}}"></script>
+    <link href="{{secure_asset('css/material-dashboard.css')}}" rel="stylesheet" />
+    <script src="{{secure_asset('js/core/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('js/core/popper.min.js')}}"></script>
+    <script src="{{secure_asset('js/core/bootstrap-material-design.min.js')}}"></script>
     <script src="https://unpkg.com/default-passive-events"></script>
-    <script src="{{asset('js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+    <script src="{{secure_asset('js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
     
     
-    <script src="{{asset('js/plugins/chartist.min.js')}}"></script>
+    <script src="{{secure_asset('js/plugins/chartist.min.js')}}"></script>
     <!--  Notifications Plugin    -->
-    <script src="{{asset('js/plugins/bootstrap-notify.js')}}"></script>
+    <script src="{{secure_asset('js/plugins/bootstrap-notify.js')}}"></script>
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="{{asset('js/material-dashboard.js')}}"></script>
+    <script src="{{secure_asset('js/material-dashboard.js')}}"></script>
     
     </head>
 
     <body class="dark-edition">
       <div class="wrapper ">
-          <div class="sidebar" data-color="purple" data-background-color="black" data-image="{{asset('img/sidebar-2.jpg')}}">
+          <div class="sidebar" data-color="purple" data-background-color="black" data-image="{{secure_asset('img/sidebar-2.jpg')}}">
           <!--
               Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -186,22 +186,22 @@
           <li class="header-title">Images</li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src="{{asset('img/sidebar-1.jpg')}}" alt="">
+              <img src="{{secure_asset('img/sidebar-1.jpg')}}" alt="">
             </a>
           </li>
           <li class="active">
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src="{{asset('img/sidebar-2.jpg')}}" alt="">
+              <img src="{{secure_asset('img/sidebar-2.jpg')}}" alt="">
             </a>
           </li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src="{{ asset('img/sidebar-3.jpg') }}" alt="">
+              <img src="{{ secure_asset('img/sidebar-3.jpg') }}" alt="">
             </a>
           </li>
           <li>
             <a class="img-holder switch-trigger" href="javascript:void(0)">
-              <img src="{{asset('img/sidebar-4.jpg')}}" alt="">
+              <img src="{{secure_asset('img/sidebar-4.jpg')}}" alt="">
             </a>
           </li>
           <li class="button-container">
@@ -392,7 +392,7 @@
     </script>
     <script>
       $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
+        // Javascript method's body can be found in secure_assets/js/demos.js
         md.initDashboardPageCharts();
 
       });

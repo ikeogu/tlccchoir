@@ -56,22 +56,21 @@
         </article>
     </header>
     <main class=" container py-4">
-        @includes('partials.success')
-        @includes('partials.error')
+     @include('flash-message')   
         <div>
             @yield('noe')
         </div>
     </main>
     <footer class="footer-layout">
-        <p>Copyright NOE 2019  Designed by DeraTech </p>
+        <p>Copyright <a href="{{route('admin')}}">NOE 2019 </a> Designed by DeraTech </p>
     </footer>
       
-  <script src="{{secure_asset('js/noe.js')}}" type="text/javascript"></script>
+  <script src="{{ asset('js/noe.js')}}" type="text/javascript"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" type="text/javascript"></script>
-  <script src="{{secure_asset('js/bootstrap.js')}}" type="text/javascript"></script>
+  <script src="{{ asset('js/bootstrap.js')}}" type="text/javascript"></script>
 
-  <script src="{{secure_asset('js/swiper.min.js')}}" type="text/javascript"></script>
+  <script src="{{ asset('js/swiper.min.js')}}" type="text/javascript"></script>
   <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   
 </body>
