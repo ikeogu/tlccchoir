@@ -116,7 +116,7 @@ class NoeTeam extends Controller
     public function destroy(Noe_Team $noe_team)
     {
         
-        $team = Noe_Team::find($noe_team)->first();
+        $team = Noe_Team::find($noe_team);
         
         if($team->delete()){
            
