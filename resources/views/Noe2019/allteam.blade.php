@@ -2,9 +2,9 @@
 
 @section('noes')
 <div class="row">
-    <div class="col-2" style="padding-top:30px;;" >
+    <div class="col-1" style="padding-top:30px;;" >
     </div>
-    <div class="col-10" style="padding-top:30px;" >
+    <div class="col-11" style="padding-top:30px;" >
 
         <div class="card card-plain">
             <div class="card-header card-header-primary">

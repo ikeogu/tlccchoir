@@ -25,7 +25,7 @@ class ShortListController extends Controller
      */
     public function create()
     {
-      return view('Noe2019/create');
+      return view('Noe2019/shortlist/create');
     }
 
     /**
