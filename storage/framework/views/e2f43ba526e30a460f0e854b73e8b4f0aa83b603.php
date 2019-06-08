@@ -351,10 +351,10 @@
 
 																</td>
 																<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
-																<?php $__currentLoopData = $team->musics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mus): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+																
 																<td>
 																	<audio controls>
-																		<source src="public/acappella_songs/<?php echo e($mus->acappella_song); ?>" type="audio/mpeg"></source>
+																		<source src="public/acappella_songs/#" type="audio/mpeg"></source>
 																	</audio>
 																</td>
 																<td>
@@ -369,7 +369,7 @@
 																	</audio>
 																</td>                        
                               </tr>   
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            
                        
                       </tbody>
                     </table>
@@ -660,6 +660,10 @@
 																					<br>
 																				<div class=" ">
 																					<input type="file" name="acappella_song" class="form-control">
+																					<div class="progress">
+																						<div class="bar"></div >
+																						<div class="percent">0%</div >
+																				</div>
 																				</div>
 																				<br>
 																				<div class=" ">
@@ -804,6 +808,6 @@
             <ion-icon class="icon-pnk" name="logo-linkedin" > </ion-icon>
         </section>
     </section>
-   
+	
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.noe', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -345,26 +345,26 @@
 																<td>
 																	{{ $user->african_con}}
 																</td>
-																@endforeach 
-																@foreach($team->musics as $mus)
+															
+																
 																<td>
 																	<audio controls>
-																		<source src="public/acappella_songs/{{$mus->acappella_song}}" type="audio/mpeg"></source>
+																		<source src="public/acappella_songs/#" type="audio/mpeg"></source>
 																	</audio>
 																</td>
 																<td>
 																	<audio controls>
-																		<source src="#" type="audio/mpeg"></source>
+																		<source src="public/african_class/#" type="audio/mpeg"></source>
 																	</audio>
 																
 																</td>
 																<td>
 																	<audio controls>
-																		<source src="#" type="audio/mpeg"></source>
+																		<source src="public/african_con/#" type="audio/mpeg"></source>
 																	</audio>
 																</td>                        
                               </tr>   
-                            @endforeach
+                            	@endforeach 
                        
                       </tbody>
                     </table>
@@ -648,6 +648,10 @@
 																					<br>
 																				<div class=" ">
 																					<input type="file" name="acappella_song" class="form-control">
+																					<div class="progress">
+																						<div class="bar"></div >
+																						<div class="percent">0%</div >
+																				</div>
 																				</div>
 																				<br>
 																				<div class=" ">
@@ -792,5 +796,5 @@
             <ion-icon class="icon-pnk" name="logo-linkedin" > </ion-icon>
         </section>
     </section>
-   
+	
 @endsection

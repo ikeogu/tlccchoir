@@ -67,6 +67,7 @@ class MusicController extends Controller
        
 
       if($team->musics()->saveMany([$song])){
+       // return redirect(route('noe'))->response()->json(['success'=>'You have successfully upload file.']);
         return redirect(route('noe'))->with('success', 'Acappella Song sent  Successfully.');
 
       }

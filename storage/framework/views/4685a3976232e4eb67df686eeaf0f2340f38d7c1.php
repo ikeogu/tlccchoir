@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="css/noe.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-  
+    <style>
+        .progress { position:relative; width:100%; border: 1px solid #7F98B2; padding: 1px; border-radius: 3px; }
+        .bar { background-color: #B4F5B4; width:0%; height:25px; border-radius: 3px; }
+        .percent { position:absolute; display:inline-block; top:3px; left:48%; color: #7F98B2;}
+    </style>
 </head>
 
 <body>
@@ -65,7 +69,50 @@
     <footer class="footer-layout">
         <p>Copyright <a href="<?php echo e(route('admin')); ?>">NOE 2019 </a> Designed by DeraTech </p>
     </footer>
-      
+<script type="text/javascript">
+ 
+ function validate(formData, jqForm, options) {
+         var form = jqForm[0];
+         if (!form.file.value) {
+                 alert('File not found');
+                 return false;
+         }
+ }
+
+ (function() {
+
+ var bar = $('.bar');
+ var percent = $('.percent');
+ var status = $('#status');
+
+ $('form').ajaxForm({
+         beforeSubmit: validate,
+         beforeSend: function() {
+                 status.empty();
+                 var percentVal = '0%';
+                 var posterValue = $('input[name=file]').fieldValue();
+                 bar.width(percentVal)
+                 percent.html(percentVal);
+         },
+         uploadProgress: function(event, position, total, percentComplete) {
+                 var percentVal = percentComplete + '%';
+                 bar.width(percentVal)
+                 percent.html(percentVal);
+         },
+         success: function() {
+                 var percentVal = 'Wait, Saving';
+                 bar.width(percentVal)
+                 percent.html(percentVal);
+         },
+         complete: function(xhr) {
+                 status.html(xhr.responseText);
+                 alert('Uploaded Successfully');
+                 window.location.href = "<?php echo e(route('aca')); ?>";
+         }
+ });
+  
+ });
+</script>
   <script src="<?php echo e(asset('js/noe.js')); ?>" type="text/javascript"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" type="text/javascript"></script>
@@ -73,6 +120,8 @@
 
   <script src="<?php echo e(asset('js/swiper.min.js')); ?>" type="text/javascript"></script>
   <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+ 
 </body>
 </html>

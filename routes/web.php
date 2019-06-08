@@ -18,7 +18,7 @@ use App\ShortList;
 		return view('index');
 	})->name('homepage');
 	Route::get('/noe_2019', function () {
-		$team = Noe_Team::with('musics'); 
+		$team = Noe_Team::all(); 
 		$teams = ShortList::all();       
         return view('Noe2019/index', compact('team','teams'));
 	})->name('noe');

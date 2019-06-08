@@ -11,7 +11,7 @@ class Music extends Model
     ];
 
     public function team(){
-        return $this->belongsTo(Noe_team::class,'noe__team_id');
+        return $this->belongsTo(Noe_Team::class,'id');
     }
 
 }
