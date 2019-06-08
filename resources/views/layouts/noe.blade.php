@@ -42,6 +42,7 @@
             <a href="#gallery">Gallery</a>
             <a href="#testimonials">Judges</a>
             <a href="#contact">Add your team</a>
+            <a href="#log">Listen to Songs</a>
         </nav>
     </section>
 

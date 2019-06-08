@@ -303,6 +303,17 @@
 														Title of Acappella Contemporary Song
 
 													</th>
+													<th>
+														Listen to Acappella Song
+												 </th>
+												 <th>
+													 Lissten to African Classical Song
+
+												 </th>
+												 <th>
+													 Listen to African Contemporary Song
+
+												 </th>
                       </thead>
                       <tbody>
 
@@ -333,12 +344,28 @@
 																</td>
 																<td>
 																	{{ $user->african_con}}
-                                </td>
-                              
-                                                         
+																</td>
+																@endforeach 
+																@foreach($team->musics as $mus)
+																<td>
+																	<audio controls>
+																		<source src="public/acappella_songs/{{$mus->acappella_song}}" type="audio/mpeg"></source>
+																	</audio>
+																</td>
+																<td>
+																	<audio controls>
+																		<source src="#" type="audio/mpeg"></source>
+																	</audio>
+																
+																</td>
+																<td>
+																	<audio controls>
+																		<source src="#" type="audio/mpeg"></source>
+																	</audio>
+																</td>                        
                               </tr>   
-                            
-                       @endforeach 
+                            @endforeach
+                       
                       </tbody>
                     </table>
                   </div>
@@ -451,7 +478,7 @@
                                 <span id="error"></span>
                         </div>
                     <div class="card-body">
-                        <div class="input-group">
+                        
                         
                              <input type="text" id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus placeholder="Team Name...">
                             @if ($errors->has('name'))
@@ -459,9 +486,9 @@
                                     <strong>{{ $errors->first('name') }}</strong>
                                 </span>
                             @endif
-                        </div>
+                       
                         <br/>
-                        <div class="input-group">
+                        
                         
                             <input type="text" id="name1" class="form-control " class="form-control{{ $errors->has('number') ? ' is-invalid' : '' }}" name="number" value="{{ old('number') }}" required placeholder="Number of Choristers in your team">
         
@@ -470,9 +497,9 @@
                                     <strong>{{ $errors->first('number') }}</strong>
                                 </span>
                             @endif 
-                        </div>
+                        
                         <br/>
-                        <div class="input-group">
+                       
                             <input type="hidden"  id="name2" class="form-control{{ $errors->has('state') ? ' is-invalid' : '' }}" name="state" value="{{ old('state') }}" required autofocus>
                                 <select name="state" class='form-control'>
                                     <option value="" selected="selected">- State-</option>
@@ -520,9 +547,9 @@
                                         <strong>{{ $errors->first('state') }}</strong>
                                     </span>
                                 @endif
-                        </div> 
+                         
                         <br/>
-                        <div class="input-group">
+                        
                         
                                 <input type="text" id="name3" class="form-control" class="form-control{{ $errors->has('african_con') ? ' is-invalid' : '' }}" name="african_con" value="{{ old('african_con') }}" required placeholder="Title of Your African Contemporary Song">
     
@@ -531,10 +558,9 @@
                                         <strong>{{ $errors->first('african_con') }}</strong>
                                     </span>
                                 @endif 
-                        </div>
+                        
                         <br/>
-                        <div class="input-group">
-                    
+                        
                                     <input type="text" id="name4" class="form-control" class="form-control{{ $errors->has('acappella') ? ' is-invalid' : '' }}" name="acappella" value="{{ old('acappella') }}" required placeholder="Title of Your Acappella Song">
 
                                 @if ($errors->has('acappella'))
@@ -542,28 +568,223 @@
                                         <strong>{{ $errors->first('acappella') }}</strong>
                                     </span>
                                 @endif 
-                        </div>
+                       
                         <br/>
-                        <div class="input-group">
+                        
                     
-                            <input type="text" id="name5" class="form-control" class="form-control{{ $errors->has('african_class') ? ' is-invalid' : '' }}" name="african_class" value="{{ old('african_class') }}" required placeholder="Title of Your African Classical Spiritual Song">
+                            <input type="text" id="password" class="form-control" class="form-control{{ $errors->has('african_class') ? ' is-invalid' : '' }}" name="african_class" value="{{ old('african_class') }}" required placeholder="Title of Your African Classical Spiritual Song">
 
                             @if ($errors->has('african_class'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('african_class') }}</strong>
                                 </span>
                             @endif 
-                        </div>
+                        
+
                         <br/>
-                        <div class="input-group">
+			                      
                                 <button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Register</button>
-                        </div>
+                        
                         </div>                 
                      </form>
                 </div>
             </div>
         </div>
+				<br>
+        <section id="testimonials">
+            <h2>Submit Songs with Lyrics</h2>
+            <div class="row">
+							<div class="">
+								<div class="cad card-login" >
+									<div class="content">
+									@if (\Session::has('success'))
+													<div class="alert alert-success">
+															<p>{{ \Session::get('success') }}</p>
+													</div><br />
+									@endif
+									</div>
+									<div class="col-md-12">
+									<div class="panel with-nav-tabs panel-yellow justify">
+											<div class="panel-heading">
+												<ul class="nav nav-tabs">
+														<li class="active"><a href="#Acappella" data-toggle="tab">Acapella</a></li>
+														<li class=""><a href="#classical" data-toggle="tab">Classical </a></li>
+														<li><a href="#contem" data-toggle="tab">Contemporary</a></li>
+														
+												</ul>
+											</div>
+											<div class="panel-body">
+													<div class="tab-content">
+															<div class="tab-pane fade active in" id="Acappella">
+																<form method="POST" action="{{route('aca')}}" enctype="multipart/form-data">
+																				@csrf
+																		<div class="card-header card-header-primary text-center" style="
+																																				padding-left: 20px;
+																																				padding-right: 5px;
+																																				width: 240px;
+																																				height: 80px;
+																																				margin-left: 20px;">
+																				<h4 class="card-title">Submit Acappella Song</h4>
+																		</div>
+																
+																		<div class="card-body">
+																			<select class="form-control" name="neo_team_id">
+   
+																				<option>Select Your Team</option>
+																					
+																				@foreach ($team as $key)
+																					<option value="{{ $key->id }}" > 
+																							{{ $key->name }} 
+																					</option>
+																				@endforeach    
+																			</select>
+																			<br>
+																				<div class=" ">
+																						<select class="form-control"name="category">
+																								<option value="Acappella_Song">Acappella Song</option>
+																							
+																						</select>
+																				</div>
+																					<br>
+																				<div class=" ">
+																					<input type="file" name="acappella_song" class="form-control">
+																				</div>
+																				<br>
+																				<div class=" ">
+																				
+																				<textarea type="text"  class="form-control" name="acappella_lyrics" value="" required="" autofocus="" placeholder="Acappella Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																						@if ($errors->has('acappella_lyrics'))
+																								<span class="invalid-feedback" role="alert">
+																										<strong>{{ $errors->first('acappella_lyrics') }}</strong>
+																								</span>
+																						@endif
+																				</div>
+																				<br/>
+																				<div class=" ">
+																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
+																				</div>
 
+																		</div>
+																</form>
+															</div>
+															<div class="tab-pane fade " id="classical">
+																<form method="POST" action="{{route('cla')}}" enctype="multipart/form-data">
+																				@csrf
+																		<div class="card-header card-header-primary text-center" style="
+																																				padding-left: 20px;
+																																				padding-right: 5px;
+																																				width: 240px;
+																																				height: 80px;
+																																				margin-left: 20px;">
+																				<h4 class="card-title">Submit Classical Song</h4>
+																		</div>
+																
+																		<div class="card-body">
+																				
+																				<select class="form-control" name="neo_team_id">
+   
+																					<option>Select Your Team</option>
+																						
+																					@foreach ($team as $key)
+																						<option value="{{ $key->id }}" > 
+																								{{ $key->name }} 
+																						</option>
+																					@endforeach    
+																				</select>
+																				<br>
+																				<select class="form-control"name="category1">
+																						
+																						<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
+																						
+																				</select>
+																			
+																				<br>
+																				<div class=" ">
+																					<input type="file" class="form-control" name="african_class_song">
+																				</div>
+																				<br>
+																				<div class=" ">
+																				
+																						<textarea type="text" id="name" class="form-control{{ $errors->has('african_class_lyrics') ? ' is-invalid' : '' }}" name="african_class_lyrics" value="{{ old('african_class_lyrics') }}" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																						@if ($errors->has('african_class_lyrics'))
+																								<span class="invalid-feedback" role="alert">
+																										<strong>{{ $errors->first('african_class_lyrics') }}</strong>
+																								</span>
+																						@endif
+																				</div>
+																				<br/>
+																			<div class=" ">
+																							<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
+																			</div>	
+																		</div>
+																	
+																</form>
+															</div>
+
+															<div class="tab-pane fade" id="contem">
+																<form method="POST" action="{{route('con')}}" enctype="multipart/form-data">
+																				@csrf
+																		<div class="card-header card-header-primary text-center" style="
+																																				padding-left: 20px;
+																																				padding-right: 5px;
+																																				width: 240px;
+																																				height: 80px;
+																																				margin-left: 20px;">
+																				<h4 class="card-title">Submit Contemporary Song</h4>
+																		</div>
+																
+																		<div class="card-body">
+
+																		<select class="form-control" name="neo_team_id">
+   
+																			<option>Select Your Team</option>
+																				
+																			@foreach ($team as $key)
+																				<option value="{{ $key->id }}" > 
+																						{{ $key->name }} 
+																				</option>
+																			@endforeach    
+																		</select>
+																		<br>
+																				<div class=" ">
+																						<select class="form-control"name="category2">
+																								<option value="African_Contemporary_Song">African Contemporary Song</option>
+																						</select>
+																				</div>
+																				<br>
+																				<div class=" ">
+																					<input type="file" class="form-control" name="african_con_song">
+
+																				</div>
+																				<br>
+																				<div class=" ">
+																				
+																						<textarea type="text"  class="form-control{{ $errors->has('african_con_lyrics') ? ' is-invalid' : '' }}" name="african_con_lyrics" value="{{ old('african_con_lyrics') }}" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																						@if ($errors->has('african_con_lyrics'))
+																								<span class="invalid-feedback" role="alert">
+																										<strong>{{ $errors->first('african_con_lyrics') }}</strong>
+																								</span>
+																						@endif
+																				</div>
+																				<br/>
+																			
+																				<div class=" ">
+																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
+																				</div>
+																		</div>
+																</form>
+															</div>
+														
+													</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+                   
+                       
+        </section>
+       
         <section class="media-icons">
             <ion-icon class="icon-pnk" name="logo-facebook"></ion-icon>
             <ion-icon class="icon-pnk" name="logo-twitter"></ion-icon>
@@ -571,35 +792,5 @@
             <ion-icon class="icon-pnk" name="logo-linkedin" > </ion-icon>
         </section>
     </section>
-    <!-- Swiper -->
-  <script>
-    // $(document).ready(function(){
-    //      var token = '{{ Session::token() }}';
-    //     var url = "{{ route('reg') }}";
-
-    //      $('#submit').click(function(){
-    //          var name = $('#name').val();
-    //          var name1 = $('#name1').val();
-    //          var name2 = $('#name2').val();
-    //          var name3 = $('#name3').val();
-    //          var name4 = $('#name4').val();
-    //          var name5 = $('#name5').val();
-    //          if(name == ''){
-    //              $('#error').html("All Fields Are Required");
-    //          }else{
-    //             $('#error').html('');
-    //             $.ajax({
-    //                 url:url,
-    //                 method:'Post',
-    //                 data: { name:name, _token: token,name1:name1, name2:name2,name3:name3,name4:name4,name5:name5},
-    //                 success:function(data){
-    //                     $("form").trigger('reset');
-    //                     $("#success").fadeIn().html('data'); 
-    //                 }
-    //             });
-    //          }
-    //      });
-
-    // });
-  </script>
+   
 @endsection

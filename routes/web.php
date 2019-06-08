@@ -18,7 +18,7 @@ use App\ShortList;
 		return view('index');
 	})->name('homepage');
 	Route::get('/noe_2019', function () {
-		$team = Noe_Team::all(); 
+		$team = Noe_Team::with('musics'); 
 		$teams = ShortList::all();       
         return view('Noe2019/index', compact('team','teams'));
 	})->name('noe');
@@ -186,5 +186,9 @@ Route::post('short_list','ShortListController@store')->name('shortlist');
 Route::get('noe_teams','NoeTeam@index');
 Route::get('noe_team/{key}','NoeTeam@show');
 Route::post('noe_team','NoeTeam@store')->name('reg');
+
 Route::put('noe_team','NoeTeam@store');
 Route::delete('noe_tea/{key}','NoeTeam@destroy')->name('del');
+ROute::post('acapella_music','MusicController@store')->name('aca');
+ROute::post('african_con_music','MusicController@store_con')->name('con');
+ROute::post('african_class_music','MusicController@store_class')->name('cla');

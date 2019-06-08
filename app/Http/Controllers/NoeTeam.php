@@ -8,6 +8,12 @@ use App\Noe_Team;
 use Session;
 use View;
 
+use Hash;
+use Auth;
+use Redirect;
+
+use Illuminate\Support\Facades\Input;
+use Validator;
 
 class NoeTeam extends Controller
 {
@@ -18,16 +24,15 @@ class NoeTeam extends Controller
      */
     public function index()
     {
-        //List of Teams
-        $teams = Noe_Team::all();
-        dd($teams);
+        // //List of Teams
+        // $teams = Noe_Team::->with('musics');
        
-        return view('Noe2019/index', compact('teams'));
+        // return view('Noe2019/index', compact('teams'));
     }
     public function allteam()
     {
         //List of Teams
-        $teams = Noe_Team::all();
+        $teams = Noe_Team::with('musics')->get();
              
         return view('Noe2019/allteam', compact('teams'));
     }
@@ -65,7 +70,7 @@ class NoeTeam extends Controller
         $team->african_class = $request->input('african_class');
         $team->acappella = $request->input('acappella');
       if( $team->save()){
-        return redirect()->route('noe')->with('success', 'Welcome to NOE_2019. Team Registered Successfully.');
+        return redirect(route('noe'))->with('success', 'Welcome to NOE_2019! '.$team->name.' was Registered Successfully.');
 
       }
         return back()->withInput();
@@ -120,8 +125,65 @@ class NoeTeam extends Controller
         
         if($team->delete()){
            
-            return redirect()->route('allteam')->with('success', 'Team Removed');
+            return redirect(route('allteam'))->with('success', 'Team Removed');
         }
        
     }
+
+
+    // public function login(Request $request) {
+	// 	$rules = array (
+				
+	// 			'name' => 'required',
+				
+	// 	);
+	// 	$validator = Validator::make ( Input::all (), $rules );
+	// 	if ($validator->fails ()) {
+	// 		return Redirect::back ()->withErrors ( $validator, 'login' )->withInput ();
+	// 	} else {
+	// 		if (Auth::attempt ( array (
+					
+	// 				'name' => $request->get ( 'name' ),
+					
+	// 		) )) {
+	// 			session ( [ 
+						
+	// 					'name' => $request->get ( 'name' ) 
+	// 			] );
+	// 			return Session::flash ( 'message', "Login Successfully." );
+	// 		} else {
+	// 			Session::flash ( 'message', "Invalid Credentials , Please try again." );
+	// 			return Redirect::back ();
+	// 		}
+	// 	}
+    // }
+    
+    // public function register(Request $request) {
+	// 	$rules = array (
+				
+	// 			'name' => 'required|unique:users|alpha_num|min:4',
+				 
+	// 	);
+	// 	$validator = Validator::make ( Input::all (), $rules );
+	// 	if ($validator->fails ()) {
+	// 		return Redirect::back ()->withErrors ( $validator, 'register' )->withInput ();
+	// 	} else {
+	// 		$team = new Noe_Team ();
+
+    //         $team->name = $request->input('name');
+    //         $team->number = $request->input('number');
+    //         $team->state= $request->input('state');
+    //         $team->african_con = $request->input('african_con');
+    //         $team->african_class = $request->input('african_class');
+    //         $team->acappella = $request->input('acappella');
+			
+	// 		$team->save ();
+	// 		return Redirect::back ();
+	// 	}
+	// }
+	// public function logout() {
+	// 	Session::flush ();
+	// 	Auth::logout ();
+	// 	return Redirect::back ();
+	// }
 }

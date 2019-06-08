@@ -898,3 +898,47 @@ a{
     -webkit-align-items: center;
     align-items: center;
 }
+
+/********************************************************************/
+/*** PANEL PRIMARY ***/
+.with-nav-tabs.panel-yellow .nav-tabs > li > a,
+.with-nav-tabs.panel-yellow .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-yellow .nav-tabs > li > a:focus {
+    color: #fff;
+}
+.with-nav-tabs.panel-yellow .nav-tabs > .open > a,
+.with-nav-tabs.panel-yellow .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-yellow .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-yellow .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-yellow .nav-tabs > li > a:focus {
+	color: #fff;
+	background-color: #000;;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-yellow .nav-tabs > li.active > a,
+.with-nav-tabs.panel-yellow .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-yellow .nav-tabs > li.active > a:focus {
+	color: #fdc306;
+	background-color: #000;
+	border-color: #fdc306;
+	border-bottom-color: transparent;
+}
+
+  .panel-yellow > .panel-heading {
+    color: #fff;
+    background-color: #fdc306;
+    border-color: #000;
+  }
+  .panel-yellow > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #337ab7;
+  }
+  .panel-yellow > .panel-heading .badge {
+    color: #337ab7;
+    background-color: #fff;
+  }
+  .panel-yellow > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #337ab7;
+  }
+  form>[input]{
+      padding-bottom:20px;
+  }
