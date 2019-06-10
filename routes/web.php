@@ -17,6 +17,8 @@ use App\ShortList;
 	Route::get('/', function () {
 		return view('index');
 	})->name('homepage');
+	Route::get('/noe_2019', 'NoeTeam@index')->name('noe');
+
 	Auth::routes();
 	Route::get('/home','HomeController@index');
 	
