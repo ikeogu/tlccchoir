@@ -316,10 +316,7 @@
                       <tbody>
 
                         <?php $__currentLoopData = $team; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        
-                       
-      
-                              <tr>
+                         <tr>
                                             
                               <td>
                                     <?php echo e($user->id); ?>
@@ -343,34 +340,34 @@
 
                                 </td>
                                 <td>
-																	<?php echo e($user->african_class); ?>
+                                    <?php echo e($user->african_class); ?>
 
-																</td>
-																<td>
-																	<?php echo e($user->african_con); ?>
+                                </td>
+                                <td>
+                                    <?php echo e($user->african_con); ?>
 
-																</td>
-																<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
-																
-																<td>
-																	<audio controls>
-																		<source src="public/acappella_songs/#" type="audio/mpeg"></source>
-																	</audio>
-																</td>
-																<td>
-																	<audio controls>
-																		<source src="#" type="audio/mpeg"></source>
-																	</audio>
-																
-																</td>
-																<td>
-																	<audio controls>
-																		<source src="#" type="audio/mpeg"></source>
-																	</audio>
-																</td>                        
-                              </tr>   
+                                </td>
                             
-                       
+                                 <?php $__currentLoopData = $user->musics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $music): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>    
+                                <td>
+                                    <audio controls>
+                                        <source src="<?php echo e($music->acappella_url); ?>" type="audio/mpeg"></source>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="public/african_class/<?php echo e($music->african_class_song); ?>" type="audio/mpeg"></source>
+                                    </audio>
+                                
+                                </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="public/african_con/<?php echo e($music->african_con_song); ?> type="audio/mpeg"></source>
+                                    </audio>
+                                </td>                        
+                            </tr>   
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
                       </tbody>
                     </table>
                   </div>
@@ -441,21 +438,17 @@
 
                                     </td>
                                     <td>
-                                                                        <?php echo e($user->african_class); ?>
-
-                                                                    </td>
-                                                                    <td>
-                                                                        <?php echo e($user->african_con); ?>
+                                        <?php echo e($user->african_class); ?>
 
                                     </td>
-                                    
-                                                            
-                                    </tr>   
+                                    <td>
+                                        <?php echo e($user->african_con); ?>
+
+                                    </td>
+                                </tr>   
                                 
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
-									
-									
-								</tbody>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+						        </tbody>
 							</table>
 						</div>
 					</div>

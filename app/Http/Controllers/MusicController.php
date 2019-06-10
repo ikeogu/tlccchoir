@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Music;
 use App\Noe_Team;
+use Cloudder;
 use Illuminate\Http\Request;
 
 class MusicController extends Controller
@@ -43,18 +44,15 @@ class MusicController extends Controller
         $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
 
         if($request->hasFile( 'acappella_song' )){
-            //get file name with extension
-            $fileNameWithExt = $request->file('acappella_song')->getClientOriginalName();
-            //get just file name
-            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
-            //get just extension
-            $extension =  $request->file('acappella_song')->getClientOriginalExtension();
-            //file name to store
-            $fileNameToSave = $filename.'_'.time().'.'.$extension;
-            //upload image
-            $path =  $request->file('acappella_song')->storeAs('public/acappella_songs', $fileNameToSave);
+
+            $acappella = $request->file('acappella_song')->getRealPath();
+
+            Cloudder::uploadVideo($acappella , null);
+
+            $acappella_url = Cloudder::show(Cloudder::getPublicId());
+            
         }else{
-            $fileNameToSave = 'nosong.mp3';
+            $acappella_url = 'nosong.mp3';
         }
          
         $tea_id = $request->input('neo_team_id');
@@ -63,7 +61,7 @@ class MusicController extends Controller
         $song->team()->associate($team);
         $song->category = $request->input('category');
         $song->acappella_lyrics = $request->input('acappella_lyrics');
-        $song->acappella_song = $fileNameToSave;
+        $song->acappella_song = $acappella_url;
        
 
       if($team->musics()->saveMany([$song])){
@@ -84,18 +82,13 @@ class MusicController extends Controller
         $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
 
         if($request->hasFile( 'african_class_song' )){
-            //get file name with extension
-            $fileNameWithExt = $request->file('african_class_song')->getClientOriginalName();
-            //get just file name
-            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
-            //get just extension
-            $extension =  $request->file('african_class_song')->getClientOriginalExtension();
-            //file name to store
-            $fileNameToSave = $filename.'_'.time().'.'.$extension;
-            //upload image
-            $path =  $request->file('african_class_song')->storeAs('public/african_class_songs', $fileNameToSave);
+            $african_class_song = $request->file('african_class_song')->getRealPath();
+
+            Cloudder::uploadVideo($african_class_song , null);
+
+            $african_class_song_url = Cloudder::show(Cloudder::getPublicId());
         }else{
-            $fileNameToSave = 'nosong.mp3';
+            $african_class_song = 'nosong.mp3';
         }
         
         $tea_id = $request->input('neo_team_id');
@@ -103,7 +96,7 @@ class MusicController extends Controller
         $song->noe_team = $team->id;
         $song->category = $request->input('category1');
         $song->african_class_lyrics = $request->input('african_class_lyrics');
-        $song->african_class_song = $fileNameToSave;
+        $song->african_class_song = $african_class_song;
 
       if($team->musics()->save($song)){
         return redirect(route('noe'))->with('success', 'African Classical Song sent  Successfully.');
@@ -122,18 +115,13 @@ class MusicController extends Controller
         $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
 
         if($request->hasFile( 'african_con_song' )){
-            //get file name with extension
-            $fileNameWithExt = $request->file('african_con_song')->getClientOriginalName();
-            //get just file name
-            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
-            //get just extension
-            $extension =  $request->file('african_con_song')->getClientOriginalExtension();
-            //file name to store
-            $fileNameToSave = $filename.'_'.time().'.'.$extension;
-            //upload image
-            $path =  $request->file('african_con_song')->storeAs('public/african_con_songs', $fileNameToSave);
+            $african_class_song = $request->file('african_con_song')->getRealPath();
+
+            Cloudder::uploadVideo($african_con_song , null);
+
+            $african_con_song_url = Cloudder::show(Cloudder::getPublicId());
         }else{
-            $fileNameToSave = 'nosong.mp3';
+            $african_con_song_url = 'nosong.mp3';
         }
         
         $tea_id = $request->input('neo_team_id');
@@ -141,7 +129,7 @@ class MusicController extends Controller
         $song->noe_team = $team->id;
         $song->category = $request->input('category2');
         $song->african_con_lyrics = $request->input('african_con_lyrics');
-        $song->african_con_song = $fileNameToSave;
+        $song->african_con_song = $african_con_song_url;
 
       if($team->musics()->save($song)){
         return redirect(route('noe'))->with('success', 'African Contemporary Song sent  Successfully.');

@@ -318,10 +318,7 @@
                       <tbody>
 
                         @foreach($team as $user)
-                        
-                       
-      
-                              <tr>
+                         <tr>
                                             
                               <td>
                                     {{$user->id}}
@@ -340,32 +337,32 @@
                                 {{ $user->acappella}}
                                 </td>
                                 <td>
-																	{{ $user->african_class}}
-																</td>
-																<td>
-																	{{ $user->african_con}}
-																</td>
-															
-																
-																<td>
-																	<audio controls>
-																		<source src="public/acappella_songs/#" type="audio/mpeg"></source>
-																	</audio>
-																</td>
-																<td>
-																	<audio controls>
-																		<source src="public/african_class/#" type="audio/mpeg"></source>
-																	</audio>
-																
-																</td>
-																<td>
-																	<audio controls>
-																		<source src="public/african_con/#" type="audio/mpeg"></source>
-																	</audio>
-																</td>                        
-                              </tr>   
-                            	@endforeach 
-                       
+                                    {{ $user->african_class}}
+                                </td>
+                                <td>
+                                    {{ $user->african_con}}
+                                </td>
+                            
+                                 @foreach($user->musics as $music)    
+                                <td>
+                                    <audio controls>
+                                        <source src="{{$music->acappella_url}}" type="audio/mpeg"></source>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="public/african_class/{{$music->african_class_song}}" type="audio/mpeg"></source>
+                                    </audio>
+                                
+                                </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="public/african_con/{{$music->african_con_song}} type="audio/mpeg"></source>
+                                    </audio>
+                                </td>                        
+                            </tr>   
+                            @endforeach 
+                       @endforeach 
                       </tbody>
                     </table>
                   </div>
@@ -431,19 +428,15 @@
                                     {{ $user->acappella}}
                                     </td>
                                     <td>
-                                                                        {{ $user->african_class}}
-                                                                    </td>
-                                                                    <td>
-                                                                        {{ $user->african_con}}
+                                        {{ $user->african_class}}
                                     </td>
-                                    
-                                                            
-                                    </tr>   
+                                    <td>
+                                        {{ $user->african_con}}
+                                    </td>
+                                </tr>   
                                 
-                            @endforeach 
-									
-									
-								</tbody>
+                                @endforeach 
+						        </tbody>
 							</table>
 						</div>
 					</div>

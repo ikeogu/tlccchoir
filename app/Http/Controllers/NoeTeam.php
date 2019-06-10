@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Noe_Team;
+use App\ShortList;
 use Session;
 use View;
 
@@ -25,17 +26,14 @@ class NoeTeam extends Controller
     public function index()
     {
         // //List of Teams
-        // $teams = Noe_Team::->with('musics');
-       
-        // return view('Noe2019/index', compact('teams'));
+        $team = Noe_Team::all(); 
+		// foreach($team as $musics){
+        //     dd($musics->musics);
+        // }
+		$teams = ShortList::all();       
+        return view('Noe2019/index', ['team'=>$team,'teams'=>$teams]);
     }
-    public function allteam()
-    {
-        //List of Teams
-        $teams = Noe_Team::with('musics')->get();
-             
-        return view('Noe2019/allteam', compact('teams'));
-    }
+    
 
     /**
      * Show the form for creating a new resource.

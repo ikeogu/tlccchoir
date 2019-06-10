@@ -169,7 +169,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
        
         willvincent\Feeds\FeedsServiceProvider::class,
-
+        
 
         /*
         
@@ -178,7 +178,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        JD\Cloudder\CloudderServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -245,7 +245,7 @@ return [
         
         'Feeds'    => willvincent\Feeds\Facades\FeedsFacade::class,
 
-       
+       'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
 
 
     ],
