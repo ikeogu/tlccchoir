@@ -14,9 +14,9 @@ use App\Noe_Team;
 use App\ShortList;
 
 
-	
-	Route::get('/noe_2019', 'NoeTeam@index')->name('noe');
-
+	Route::get('/', function () {
+		return view('index');
+	})->name('homepage');
 	Auth::routes();
 	Route::get('/home','HomeController@index');
 	
@@ -177,7 +177,7 @@ Route::get('all_team','NoeTeam@allteam')->name('allteam');
 Route::post('short_list','ShortListController@store')->name('shortlist');
 
 
-
+Route::get('noe_teams','NoeTeam@index');
 Route::get('noe_team/{key}','NoeTeam@show');
 Route::post('noe_team','NoeTeam@store')->name('reg');
 
