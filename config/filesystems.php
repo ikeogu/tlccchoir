@@ -1,5 +1,11 @@
 <?php
 
+$url = parse_url(getenv("CLOUDINARY_URL"));
+
+$api_key = $url["api_key"] ?? null;
+$api_secret = $url["api_secret"] ?? null;
+$cloudinary_name = $url["cloud_name"] ?? null;
+$cloudinary_url = substr($url["path"], 1) ?? null;
 return [
 
     /*
@@ -27,7 +33,7 @@ return [
     |
     */
 
-    'cloud' => env('FILESYSTEM_CLOUD', 's3'),
+    'cloud' => env('FILESYSTEM_CLOUD', 'cloudinary'),
 
     /*
     |--------------------------------------------------------------------------
@@ -63,6 +69,15 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
+        ],
+
+        'cloudinary' => [
+            'driver' => 'cloudinary',
+            'api_key' => env('CLOUDINARY_API_KEY'),
+            'api_secret' => env('CLOUDINARY_API_SECRET'),
+            
+            'clodinary_name' => env('CLOUDINARY_CLOUD_NAME'),
+            'cloudinary_url' => env('CLOUDINARY_URL'),
         ],
 
     ],

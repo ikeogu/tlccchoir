@@ -85,7 +85,7 @@ class SongPresentationCOntroller extends Controller
      * @param  \App\SongPresentation  $songPresentation
      * @return \Illuminate\Http\Response
      */
-    public function show( $id)
+    public function show($id)
     {
     
         $songPresentation = SongPresentation::find($id);

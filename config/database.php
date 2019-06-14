@@ -7,6 +7,8 @@ $username = $url["user"] ?? null;
 $password = $url["pass"] ?? null;
 $database = substr($url["path"], 1) ?? null;
 
+
+
 return [
 
     /*

@@ -161,7 +161,7 @@ class MgbidiController extends Controller
         //
     }
 
-     public function downloadPDF($id){
+    public function downloadPDF($id){
       $user = Mgbidi::find($id);
         
         
