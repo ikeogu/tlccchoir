@@ -634,17 +634,14 @@
 																			<br>
 																				<div class=" ">
 																						<select class="form-control"name="category">
-																								<option value="Acappella_Song">Acappella Song</option>
+																								<option value="acappella_Song">Acappella Song</option>
 																							
 																						</select>
 																				</div>
 																					<br>
 																				<div class=" ">
 																					<input type="file" name="acappella_song" class="form-control">
-																					<div class="progress">
-																						<div class="bar"></div >
-																						<div class="percent">0%</div >
-																				</div>
+																					
 																				</div>
 																				<br>
 																				<div class=" ">
