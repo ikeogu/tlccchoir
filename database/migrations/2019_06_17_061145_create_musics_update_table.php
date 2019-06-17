@@ -13,7 +13,7 @@ class CreateMusicsUpdateTable extends Migration
      */
     public function up()
     {
-        Schema::table('musics_', function (Blueprint $table) {
+        Schema::table('musics', function (Blueprint $table) {
             $table->integer('team_id')->nullable();
            
         });
