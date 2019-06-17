@@ -57,7 +57,7 @@ class MusicController extends Controller
          
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
-        dd($team);
+        
         $song->noe__team_id = $team->id;
         $song->team()->associate($team);
         $song->category = $request->input('category');

@@ -1,11 +1,5 @@
 <?php
 
-$url = parse_url(getenv("CLOUDINARY_URL"));
-
-$api_key = $url["api_key"] ?? null;
-$api_secret = $url["api_secret"] ?? null;
-$cloudinary_name = $url["cloud_name"] ?? null;
-$cloudinary_url = substr($url["path"], 1) ?? null;
 return [
 
     /*
