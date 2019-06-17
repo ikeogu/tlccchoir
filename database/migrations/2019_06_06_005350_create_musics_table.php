@@ -16,7 +16,7 @@ class CreateMusicsTable extends Migration
         Schema::create('musics', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('noe__team_id');
-            $table->integer('team_id');
+            $table->integer('team_id')->nullable();
             $table->text('african_class_lyrics')->nullable();
             $table->text('african_con_lyrics')->nullable();
             $table->text('acappella_lyrics')->nullable();
