@@ -626,7 +626,7 @@
 																				<option>Select Your Team</option>
 																					
 																				@foreach ($team as $key)
-																					<option value="{{ $key->id }}" > 
+																					<option value="{{$key->id}}" > 
 																							{{ $key->name }} 
 																					</option>
 																				@endforeach    
