@@ -43,7 +43,7 @@ class MusicController extends Controller
         ]);
         $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
 
-        if($request->hasFile( 'acappella_song' )){
+        if($request->hasFile('acappella_song')){
 
             $acappella = $request->file('acappella_song')->getRealPath();
 
@@ -93,7 +93,7 @@ class MusicController extends Controller
         
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
-        $song->noe_team = $team->id;
+       
         $song->category = $request->input('category1');
         $song->african_class_lyrics = $request->input('african_class_lyrics');
         $song->african_class_song = $african_class_song;
@@ -126,7 +126,7 @@ class MusicController extends Controller
         
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
-        $song->noe_team = $team->id;
+       
         $song->category = $request->input('category2');
         $song->african_con_lyrics = $request->input('african_con_lyrics');
         $song->african_con_song = $african_con_song_url;

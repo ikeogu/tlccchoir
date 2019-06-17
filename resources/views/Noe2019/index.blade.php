@@ -634,7 +634,7 @@
 																			<br>
 																				<div class=" ">
 																						<select class="form-control"name="category">
-																								<option value="acappella_Song">Acappella Song</option>
+																								<option value="acappella_song">Acappella Song</option>
 																							
 																						</select>
 																				</div>
@@ -664,12 +664,7 @@
 															<div class="tab-pane fade " id="classical">
 																<form method="POST" action="{{route('cla')}}" enctype="multipart/form-data">
 																				@csrf
-																		<div class="card-header card-header-primary text-center" style="
-																																				padding-left: 20px;
-																																				padding-right: 5px;
-																																				width: 240px;
-																																				height: 80px;
-																																				margin-left: 20px;">
+																		<div class="card-header card-header-primary text-center" style="padding-left: 20px;padding-right: 5px;width: 240px;height: 80px;	margin-left: 20px;">
 																				<h4 class="card-title">Submit Classical Song</h4>
 																		</div>
 																
@@ -718,12 +713,7 @@
 															<div class="tab-pane fade" id="contem">
 																<form method="POST" action="{{route('con')}}" enctype="multipart/form-data">
 																				@csrf
-																		<div class="card-header card-header-primary text-center" style="
-																																				padding-left: 20px;
-																																				padding-right: 5px;
-																																				width: 240px;
-																																				height: 80px;
-																																				margin-left: 20px;">
+																		<div class="card-header card-header-primary text-center" style="padding-left: 20px;padding-right: 5px;width: 240px;height: 80px;argin-left: 20px;">
 																				<h4 class="card-title">Submit Contemporary Song</h4>
 																		</div>
 																
@@ -742,7 +732,7 @@
 																		<br>
 																				<div class=" ">
 																						<select class="form-control"name="category2">
-																								<option value="African_Contemporary_Song">African Contemporary Song</option>
+																								<option value="african_Contemporary_Song">African Contemporary Song</option>
 																						</select>
 																				</div>
 																				<br>
