@@ -50,7 +50,7 @@ class MusicController extends Controller
 
             $acappella = $request->file('acappella_song')->getRealPath();
 
-            Cloudinary\Uploader::upload($acappella, array("resource_type" => "video"));
+            Cloudinary\Uploader::upload($acappella,  array("folder" => "Noe_songs" ,"resource_type" => "auto"));
             
             $acappella_url = Cloudinary::cloudinary_url($acappella);
             dd($acappella_url);
