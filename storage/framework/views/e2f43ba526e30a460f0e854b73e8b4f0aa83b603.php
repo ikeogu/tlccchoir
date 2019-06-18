@@ -351,18 +351,18 @@
                                  <?php $__currentLoopData = $user->musics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $music): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>    
                                 <td>
                                     <audio controls>
-                                        <source src="<?php echo e($music->acappella_url); ?>" type="audio/mpeg"></source>
+                                        <source src="<?php echo e($music->acappella_song); ?>" type="audio/mpeg"></source>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls>
-                                        <source src="public/african_class/<?php echo e($music->african_class_song); ?>" type="audio/mpeg"></source>
+                                        <source src="<?php echo e($music->african_class_song); ?>" type="audio/mpeg"></source>
                                     </audio>
                                 
                                 </td>
                                 <td>
                                     <audio controls>
-                                        <source src="public/african_con/<?php echo e($music->african_con_song); ?> type="audio/mpeg"></source>
+                                        <source src="<?php echo e($music->african_con_song); ?>" type="audio/mpeg"></source>
                                     </audio>
                                 </td>                        
                             </tr>   

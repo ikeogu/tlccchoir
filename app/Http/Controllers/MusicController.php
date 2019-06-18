@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Music;
 use App\Noe_Team;
 use Cloudder;
+use Cloudinary;
 use Illuminate\Http\Request;
 
 class MusicController extends Controller
@@ -49,9 +50,10 @@ class MusicController extends Controller
 
             $acappella = $request->file('acappella_song')->getRealPath();
 
-            Cloudder::uploadVideo($acappella , null);
-
-            $acappella_url = Cloudder::show(Cloudder::getPublicId());
+            Cloudinary\Uploader::upload($acappella, array("resource_type" => "video"));
+            
+            $acappella_url = Cloudinary::cloudinary_url($acappella);
+            dd($acappella_url);
             
         }else{
             $acappella_url = 'nosong.mp3';
@@ -61,7 +63,7 @@ class MusicController extends Controller
 
             Cloudder::uploadVideo($african_class_song , null);
 
-            $african_class_song_url = Cloudder::show(Cloudder::getPublicId());
+            $african_class_song_url =cl_video_tag($african_class_song );
         }else{
             $african_class_song = 'nosong.mp3';
         }
@@ -71,7 +73,7 @@ class MusicController extends Controller
 
             Cloudder::uploadVideo($african_con_song , null);
 
-            $african_con_song_url = Cloudder::show(Cloudder::getPublicId());
+            $african_con_song_url = cl_video_tag($african_con_song);
         }else{
             $african_con_song_url = 'nosong.mp3';
         }
