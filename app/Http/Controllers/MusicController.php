@@ -67,7 +67,7 @@ class MusicController extends Controller
         }
 
         if($request->hasFile( 'african_con_song' )){
-            $african_class_song = $request->file('african_con_song')->getRealPath();
+            $african_con_song = $request->file('african_con_song')->getRealPath();
 
             Cloudder::uploadVideo($african_con_song , null);
 
