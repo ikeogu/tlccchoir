@@ -47,7 +47,7 @@ class MusicController extends Controller
 
             $acappella = $request->file('acappella_song')->getRealPath();
 
-            Cloudder::uploadVideo($acappella , null);
+            Cloudder::uploadVideo($acappella , null, null);
 
             $acappella_url = Cloudder::show(Cloudder::getPublicId());
             
@@ -95,7 +95,9 @@ class MusicController extends Controller
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
         $song->noe__team_id = $team->id;
-        $song->category = $request->input('category1');
+        $song->team()->associate($team);
+
+        $song->category1 = $request->input('category1');
         $song->african_class_lyrics = $request->input('african_class_lyrics');
         $song->african_class_song = $african_class_song;
 
@@ -127,8 +129,10 @@ class MusicController extends Controller
         
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
-        $song->noe__team = $team->id;
-        $song->category = $request->input('category2');
+        $song->noe__team_id = $team->id;
+        $song->team()->associate($team);
+
+        $song->category2 = $request->input('category2');
         $song->african_con_lyrics = $request->input('african_con_lyrics');
         $song->african_con_song = $african_con_song_url;
 
