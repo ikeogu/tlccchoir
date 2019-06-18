@@ -646,17 +646,14 @@
 																			<br>
 																				<div class=" ">
 																						<select class="form-control"name="category">
-																								<option value="Acappella_Song">Acappella Song</option>
+																								<option value="acappella_song">Acappella Song</option>
 																							
 																						</select>
 																				</div>
 																					<br>
 																				<div class=" ">
 																					<input type="file" name="acappella_song" class="form-control">
-																					<div class="progress">
-																						<div class="bar"></div >
-																						<div class="percent">0%</div >
-																				</div>
+																					
 																				</div>
 																				<br>
 																				<div class=" ">
@@ -669,122 +666,59 @@
 																						<?php endif; ?>
 																				</div>
 																				<br/>
-																				<div class=" ">
-																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
-																				</div>
-
-																		</div>
-																</form>
-															</div>
-															<div class="tab-pane fade " id="classical">
-																<form method="POST" action="<?php echo e(route('cla')); ?>" enctype="multipart/form-data">
-																				<?php echo csrf_field(); ?>
-																		<div class="card-header card-header-primary text-center" style="
-																																				padding-left: 20px;
-																																				padding-right: 5px;
-																																				width: 240px;
-																																				height: 80px;
-																																				margin-left: 20px;">
-																				<h4 class="card-title">Submit Classical Song</h4>
-																		</div>
-																
-																		<div class="card-body">
-																				
-																				<select class="form-control" name="neo_team_id">
-   
-																					<option>Select Your Team</option>
-																						
-																					<?php $__currentLoopData = $team; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-																						<option value="<?php echo e($key->id); ?>" > 
-																								<?php echo e($key->name); ?> 
-																						</option>
-																					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
-																				</select>
-																				<br>
 																				<select class="form-control"name="category1">
 																						
-																						<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
-																						
-																				</select>
-																			
-																				<br>
-																				<div class=" ">
-																					<input type="file" class="form-control" name="african_class_song">
-																				</div>
-																				<br>
-																				<div class=" ">
-																				
-																						<textarea type="text" id="name" class="form-control<?php echo e($errors->has('african_class_lyrics') ? ' is-invalid' : ''); ?>" name="african_class_lyrics" value="<?php echo e(old('african_class_lyrics')); ?>" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
-																						<?php if($errors->has('african_class_lyrics')): ?>
-																								<span class="invalid-feedback" role="alert">
-																										<strong><?php echo e($errors->first('african_class_lyrics')); ?></strong>
-																								</span>
-																						<?php endif; ?>
-																				</div>
-																				<br/>
+																					<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
+																					
+																			</select>
+																		
+																			<br>
 																			<div class=" ">
-																							<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
-																			</div>	
-																		</div>
-																	
-																</form>
-															</div>
-
-															<div class="tab-pane fade" id="contem">
-																<form method="POST" action="<?php echo e(route('con')); ?>" enctype="multipart/form-data">
-																				<?php echo csrf_field(); ?>
-																		<div class="card-header card-header-primary text-center" style="
-																																				padding-left: 20px;
-																																				padding-right: 5px;
-																																				width: 240px;
-																																				height: 80px;
-																																				margin-left: 20px;">
-																				<h4 class="card-title">Submit Contemporary Song</h4>
-																		</div>
-																
-																		<div class="card-body">
-
-																		<select class="form-control" name="neo_team_id">
-   
-																			<option>Select Your Team</option>
-																				
-																			<?php $__currentLoopData = $team; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-																				<option value="<?php echo e($key->id); ?>" > 
-																						<?php echo e($key->name); ?> 
-																				</option>
-																			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
-																		</select>
-																		<br>
-																				<div class=" ">
-																						<select class="form-control"name="category2">
-																								<option value="African_Contemporary_Song">African Contemporary Song</option>
-																						</select>
-																				</div>
-																				<br>
-																				<div class=" ">
-																					<input type="file" class="form-control" name="african_con_song">
-
-																				</div>
-																				<br>
-																				<div class=" ">
-																				
-																						<textarea type="text"  class="form-control<?php echo e($errors->has('african_con_lyrics') ? ' is-invalid' : ''); ?>" name="african_con_lyrics" value="<?php echo e(old('african_con_lyrics')); ?>" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
-																						<?php if($errors->has('african_con_lyrics')): ?>
-																								<span class="invalid-feedback" role="alert">
-																										<strong><?php echo e($errors->first('african_con_lyrics')); ?></strong>
-																								</span>
-																						<?php endif; ?>
-																				</div>
-																				<br/>
+																				<input type="file" class="form-control" name="african_class_song">
+																			</div>
+																			<br>
+																			<div class=" ">
 																			
+																					<textarea type="text" id="name" class="form-control<?php echo e($errors->has('african_class_lyrics') ? ' is-invalid' : ''); ?>" name="african_class_lyrics" value="<?php echo e(old('african_class_lyrics')); ?>" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																					<?php if($errors->has('african_class_lyrics')): ?>
+																							<span class="invalid-feedback" role="alert">
+																									<strong><?php echo e($errors->first('african_class_lyrics')); ?></strong>
+																							</span>
+																					<?php endif; ?>
+																			</div>
+																			<br/>
+																			<br>
+																			<div class=" ">
+																					<select class="form-control"name="category2">
+																							<option value="african_Contemporary_Song">African Contemporary Song</option>
+																					</select>
+																			</div>
+																			<br>
+																			<div class=" ">
+																				<input type="file" class="form-control" name="african_con_song">
+
+																			</div>
+																			<br>
+																			<div class=" ">
+																			
+																					<textarea type="text"  class="form-control<?php echo e($errors->has('african_con_lyrics') ? ' is-invalid' : ''); ?>" name="african_con_lyrics" value="<?php echo e(old('african_con_lyrics')); ?>" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																					<?php if($errors->has('african_con_lyrics')): ?>
+																							<span class="invalid-feedback" role="alert">
+																									<strong><?php echo e($errors->first('african_con_lyrics')); ?></strong>
+																							</span>
+																					<?php endif; ?>
+																			</div>
+																			<br/>
+
+
 																				<div class=" ">
 																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
 																				</div>
+
 																		</div>
 																</form>
 															</div>
-														
-													</div>
+														</div>
 											</div>
 									</div>
 								</div>

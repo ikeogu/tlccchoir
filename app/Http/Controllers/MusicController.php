@@ -40,48 +40,22 @@ class MusicController extends Controller
         $request->validate([
             
             'acappella_lyrics' => 'required|string|max:100000',
+            'african_class_lyrics' => 'required|string|max:100000',
+            'african_con_lyrics' => 'required|string|max:100000',
         ]);
-        $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
+       
 
         if($request->hasFile('acappella_song')){
 
             $acappella = $request->file('acappella_song')->getRealPath();
 
-            Cloudder::uploadVideo($acappella , null, null);
+            Cloudder::uploadVideo($acappella , null);
 
             $acappella_url = Cloudder::show(Cloudder::getPublicId());
             
         }else{
             $acappella_url = 'nosong.mp3';
         }
-         
-        $tea_id = $request->input('neo_team_id');
-        $team = Noe_Team::find($tea_id);
-        
-        $song->noe__team_id = $team->id;
-        $song->team()->associate($team);
-        $song->category = $request->input('category');
-        $song->acappella_lyrics = $request->input('acappella_lyrics');
-        $song->acappella_song = $acappella_url;
-       
-
-      if($team->musics()->saveMany([$song])){
-       // return redirect(route('noe'))->response()->json(['success'=>'You have successfully upload file.']);
-        return redirect(route('noe'))->with('success', 'Acappella Song sent  Successfully.');
-
-      }
-        return back()->withInput();
-       
-    }
-
-    public function store_class(Request $request)
-    {
-        $request->validate([
-            
-            'african_class_lyrics' => 'required|string|max:100000',
-        ]);
-        $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
-
         if($request->hasFile( 'african_class_song' )){
             $african_class_song = $request->file('african_class_song')->getRealPath();
 
@@ -91,31 +65,6 @@ class MusicController extends Controller
         }else{
             $african_class_song = 'nosong.mp3';
         }
-        
-        $tea_id = $request->input('neo_team_id');
-        $team = Noe_Team::find($tea_id);
-        $song->noe__team_id = $team->id;
-        $song->team()->associate($team);
-
-        $song->category1 = $request->input('category1');
-        $song->african_class_lyrics = $request->input('african_class_lyrics');
-        $song->african_class_song = $african_class_song;
-
-      if($team->musics()->save($song)){
-        return redirect(route('noe'))->with('success', 'African Classical Song sent  Successfully.');
-
-      }
-        return back()->withInput();
-       
-    }
-
-    public function store_con(Request $request)
-    {
-        $request->validate([
-           
-            'african_con_lyrics' => 'required|string|max:100000',
-        ]);
-        $song = $request->isMethod('put') ?  Music::findOrFail($request->music_id) :new Music();
 
         if($request->hasFile( 'african_con_song' )){
             $african_class_song = $request->file('african_con_song')->getRealPath();
@@ -126,24 +75,39 @@ class MusicController extends Controller
         }else{
             $african_con_song_url = 'nosong.mp3';
         }
-        
+
+        $song = new Music();
         $tea_id = $request->input('neo_team_id');
         $team = Noe_Team::find($tea_id);
+        
         $song->noe__team_id = $team->id;
         $song->team()->associate($team);
+        $song->category = $request->input('category');
+        $song->acappella_lyrics = $request->input('acappella_lyrics');
+        $song->acappella_song = $acappella_url;
+       
+        $song->category1 = $request->input('category1');
+        $song->african_class_lyrics = $request->input('african_class_lyrics');
+        $song->african_class_song = $african_class_song_url;
+
 
         $song->category2 = $request->input('category2');
         $song->african_con_lyrics = $request->input('african_con_lyrics');
         $song->african_con_song = $african_con_song_url;
 
-      if($team->musics()->save($song)){
-        return redirect(route('noe'))->with('success', 'African Contemporary Song sent  Successfully.');
+        
+      if($team->musics()->saveMany([$song])){
+       // return redirect(route('noe'))->response()->json(['success'=>'You have successfully upload file.']);
+        return redirect(route('noe'))->with('success', ' Songs sent  Successfully.');
 
       }
         return back()->withInput();
        
     }
 
+   
+
+   
     /**
      * Display the specified resource.
      *

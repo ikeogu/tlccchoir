@@ -346,18 +346,18 @@
                                  @foreach($user->musics as $music)    
                                 <td>
                                     <audio controls>
-                                        <source src="{{$music->acappella_url}}" type="audio/mpeg"></source>
+                                        <source src="{{$music->acappella_song}}" type="audio/mpeg"></source>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls>
-                                        <source src="public/african_class/{{$music->african_class_song}}" type="audio/mpeg"></source>
+                                        <source src="{{$music->african_class_song}}" type="audio/mpeg"></source>
                                     </audio>
                                 
                                 </td>
                                 <td>
                                     <audio controls>
-                                        <source src="public/african_con/{{$music->african_con_song}} type="audio/mpeg"></source>
+                                        <source src="{{$music->african_con_song}}" type="audio/mpeg"></source>
                                     </audio>
                                 </td>                        
                             </tr>   
@@ -654,112 +654,59 @@
 																						@endif
 																				</div>
 																				<br/>
-																				<div class=" ">
-																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
-																				</div>
-
-																		</div>
-																</form>
-															</div>
-															<div class="tab-pane fade " id="classical">
-																<form method="POST" action="{{route('cla')}}" enctype="multipart/form-data">
-																				@csrf
-																		<div class="card-header card-header-primary text-center" style="padding-left: 20px;padding-right: 5px;width: 240px;height: 80px;	margin-left: 20px;">
-																				<h4 class="card-title">Submit Classical Song</h4>
-																		</div>
-																
-																		<div class="card-body">
-																				
-																				<select class="form-control" name="neo_team_id">
-   
-																					<option>Select Your Team</option>
-																						
-																					@foreach ($team as $key)
-																						<option value="{{ $key->id }}" > 
-																								{{ $key->name }} 
-																						</option>
-																					@endforeach    
-																				</select>
-																				<br>
 																				<select class="form-control"name="category1">
 																						
-																						<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
-																						
-																				</select>
-																			
-																				<br>
-																				<div class=" ">
-																					<input type="file" class="form-control" name="african_class_song">
-																				</div>
-																				<br>
-																				<div class=" ">
-																				
-																						<textarea type="text" id="name" class="form-control{{ $errors->has('african_class_lyrics') ? ' is-invalid' : '' }}" name="african_class_lyrics" value="{{ old('african_class_lyrics') }}" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
-																						@if ($errors->has('african_class_lyrics'))
-																								<span class="invalid-feedback" role="alert">
-																										<strong>{{ $errors->first('african_class_lyrics') }}</strong>
-																								</span>
-																						@endif
-																				</div>
-																				<br/>
+																					<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
+																					
+																			</select>
+																		
+																			<br>
 																			<div class=" ">
-																							<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
-																			</div>	
-																		</div>
-																	
-																</form>
-															</div>
-
-															<div class="tab-pane fade" id="contem">
-																<form method="POST" action="{{route('con')}}" enctype="multipart/form-data">
-																				@csrf
-																		<div class="card-header card-header-primary text-center" style="padding-left: 20px;padding-right: 5px;width: 240px;height: 80px;argin-left: 20px;">
-																				<h4 class="card-title">Submit Contemporary Song</h4>
-																		</div>
-																
-																		<div class="card-body">
-
-																		<select class="form-control" name="neo_team_id">
-   
-																			<option>Select Your Team</option>
-																				
-																			@foreach ($team as $key)
-																				<option value="{{ $key->id }}" > 
-																						{{ $key->name }} 
-																				</option>
-																			@endforeach    
-																		</select>
-																		<br>
-																				<div class=" ">
-																						<select class="form-control"name="category2">
-																								<option value="african_Contemporary_Song">African Contemporary Song</option>
-																						</select>
-																				</div>
-																				<br>
-																				<div class=" ">
-																					<input type="file" class="form-control" name="african_con_song">
-
-																				</div>
-																				<br>
-																				<div class=" ">
-																				
-																						<textarea type="text"  class="form-control{{ $errors->has('african_con_lyrics') ? ' is-invalid' : '' }}" name="african_con_lyrics" value="{{ old('african_con_lyrics') }}" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
-																						@if ($errors->has('african_con_lyrics'))
-																								<span class="invalid-feedback" role="alert">
-																										<strong>{{ $errors->first('african_con_lyrics') }}</strong>
-																								</span>
-																						@endif
-																				</div>
-																				<br/>
+																				<input type="file" class="form-control" name="african_class_song">
+																			</div>
+																			<br>
+																			<div class=" ">
 																			
+																					<textarea type="text" id="name" class="form-control{{ $errors->has('african_class_lyrics') ? ' is-invalid' : '' }}" name="african_class_lyrics" value="{{ old('african_class_lyrics') }}" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																					@if ($errors->has('african_class_lyrics'))
+																							<span class="invalid-feedback" role="alert">
+																									<strong>{{ $errors->first('african_class_lyrics') }}</strong>
+																							</span>
+																					@endif
+																			</div>
+																			<br/>
+																			<br>
+																			<div class=" ">
+																					<select class="form-control"name="category2">
+																							<option value="african_Contemporary_Song">African Contemporary Song</option>
+																					</select>
+																			</div>
+																			<br>
+																			<div class=" ">
+																				<input type="file" class="form-control" name="african_con_song">
+
+																			</div>
+																			<br>
+																			<div class=" ">
+																			
+																					<textarea type="text"  class="form-control{{ $errors->has('african_con_lyrics') ? ' is-invalid' : '' }}" name="african_con_lyrics" value="{{ old('african_con_lyrics') }}" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
+																					@if ($errors->has('african_con_lyrics'))
+																							<span class="invalid-feedback" role="alert">
+																									<strong>{{ $errors->first('african_con_lyrics') }}</strong>
+																							</span>
+																					@endif
+																			</div>
+																			<br/>
+
+
 																				<div class=" ">
 																								<button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Submit</button>
 																				</div>
+
 																		</div>
 																</form>
 															</div>
-														
-													</div>
+														</div>
 											</div>
 									</div>
 								</div>
