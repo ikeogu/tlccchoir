@@ -39,7 +39,7 @@ class MusicController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            
+           
             'acappella_lyrics' => 'required|string|max:100000',
             'african_class_lyrics' => 'required|string|max:100000',
             'african_con_lyrics' => 'required|string|max:100000',
@@ -48,32 +48,58 @@ class MusicController extends Controller
 
         if($request->hasFile('acappella_song')){
 
-            $acappella = $request->file('acappella_song')->getRealPath();
+            $fileNameWithExt = $request->file('acappella_song')->getClientOriginalName();
+            //get just file name
+            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
+            //get just extension
+            $extension = $request->file('acappella_song')->getClientOriginalExtension();
+            //file name to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            //upload image
+            $acappella = $request->file('acappella_song')->storeAs('audio', $fileNameToStore);
 
-            Cloudinary\Uploader::upload($acappella,  array("folder" => "Noe_songs" ,"resource_type" => "auto"));
-            
-            $acappella_url = Cloudinary::cloudinary_url($acappella);
-            dd($acappella_url);
+    
+           
+           $ace = Cloudinary\Uploader::upload($acappella,  array("resource_type" => "auto"));
+              
+            $acappella_url = data_get($ace,'url');
+          
             
         }else{
             $acappella_url = 'nosong.mp3';
         }
         if($request->hasFile( 'african_class_song' )){
-            $african_class_song = $request->file('african_class_song')->getRealPath();
+            $fileNameWithExt = $request->file('african_class_song')->getClientOriginalName();
+            //get just file name
+            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
+            //get just extension
+            $extension = $request->file('african_class_song')->getClientOriginalExtension();
+            //file name to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            //upload image
+            $acappella = $request->file('african_class_song')->storeAs('audio', $fileNameToStore);
 
-            Cloudder::uploadVideo($african_class_song , null);
-
-            $african_class_song_url =cl_video_tag($african_class_song );
+           $ace = Cloudinary\Uploader::upload($acappella,  array("resource_type" => "auto"));
+              
+           $african_class_song_url = data_get($ace,'url');
         }else{
-            $african_class_song = 'nosong.mp3';
+            $african_class_song_url = 'nosong.mp3';
         }
 
         if($request->hasFile( 'african_con_song' )){
-            $african_con_song = $request->file('african_con_song')->getRealPath();
+            $fileNameWithExt = $request->file('african_con_song')->getClientOriginalName();
+            //get just file name
+            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
+            //get just extension
+            $extension = $request->file('african_con_song')->getClientOriginalExtension();
+            //file name to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            //upload image
+            $acappella = $request->file('african_con_song')->storeAs('audio', $fileNameToStore);
 
-            Cloudder::uploadVideo($african_con_song , null);
-
-            $african_con_song_url = cl_video_tag($african_con_song);
+           $ace = Cloudinary\Uploader::upload($acappella,  array("resource_type" => "auto"));
+              
+           $african_con_song_url = data_get($ace,'url');
         }else{
             $african_con_song_url = 'nosong.mp3';
         }
