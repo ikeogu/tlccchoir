@@ -1,8 +1,8 @@
 <?php $__env->startSection('noe'); ?>
-    
 
-   
-          
+
+
+
       <section id="about-us" class="about-us-layout">
         <h1 class="title">About NOE</h1>
         <figure>
@@ -13,7 +13,7 @@
 
             <p> NOE~ stands for Notes of Enhakkore. it is a programme which was coined out in line of the No. 4 vision of TLCCF.<br/>
                 'Enhakkore' was gotten from the Bible. Its translated to mean "Fountain of the Crier" or in simplier terms "Revival".<br/>
-               
+
             </p>
 
             <p> NOE started in Imo State as Choir competition between  TLCCF schools in Imo state, but has since grown to the South East region <br/> and in time to come to the whole country and beyound.
@@ -21,29 +21,29 @@
         </article>
     </section>
 
-   
+
     <section id="our-services" >
         <h1>Info</h1>
-       
+
         <section>
-            
+
                     <div class="cad">
                         <div class="card-header">
-                               
+
                             <h3>Venue</h3>
                         </div>
                         <div class="card-body">
                             <article>
                                 <img src="/img/point.png" height="120" width="80"/>
-                            </article>  
+                            </article>
                             <p>SOPS THEATRE</p>
                             <p>FEDERAL UNIVERSITY OF TECHNOLOGY</p>
                             <p>OWERRI (FUTO)</p>
                             <p>IMO STATE</p>
                         </div>
-                          
+
                     </div>
-                  
+
                     <div class="cad">
                         <div class="card-header">
                                 <span><a><i class="fas fa-map-marker-alt"></i></a></span>
@@ -55,15 +55,15 @@
                             </article>
                             <h4>Best Choir of the Night </h4>
                             <h4>Best Keyboardist of the Night</h4>
-                            
-                            
+
+
                         </div>
-                            
+
                     </div>
-                   
+
                     <div class="cad">
                         <div class="card-header">
-                                
+
                                 <h3>Creteria</h3>
                         </div>
                         <div class="card-body">
@@ -73,69 +73,66 @@
                             <article>
                             <blockquote>
 
-                               
+
                                 <strong>The choral groups must be Campus choir members of TLCCF.</strong><br/>
                                <strong>A total number of 30 choral groups indicated intrest in this year's concert.<br/> However, choral groups will be shortlisted to either 5 or 8 finalists<br/> (Depending on the choice of the music selection committee) which will participate that night.</strong>
                             </blockquote>
                                <br>
-                           
+
                                 <strong>Songs to Sing </strong>
                                 <hr>
                                <H5>African Contemporary Song</H5>
                                 <h5>Acapella (Composed From Bible Verse)</h5>
                                <h5>African Classical Spiritual Song</h5>
-                            
+
                             </article>
 
                         </div>
-                            
+
                     </div>
                     <div class="cad">
                         <div class="card-header">
-                               
+
                                <h3>Help Desk</h3>
                         </div>
                         <div class="card-body">
                              <article>
                                 <img src="/img/phone.jpg"  height="200" width="250"/>
-                            </article> 
+                            </article>
 
                             <h4>07065513034</h4>
                             <h4>07039350143</h4>
-                           
+
                         </div>
-                          
+
                     </div>
-               
-           
+
+
         </section>
     </section>
-    
+
     <section id="testimonials">
         <h1>Judges</h1>
         <section class="profiles">
             <article class="profile-active">
-                <img src="/img/m3.jpg" alt="Profile pic of Jane Doe">
-                <p>Chief Judge, South East and South South Regional Choirmaster of TLCCF</p>
+                <img src="/img/samson.jpg" alt="Profile pic of Jane Doe">
+
                 <p>
-                    <span>Bro.</span> Solomon, Olubiyi.</p>
+                    <span>Engn</span> Samson, Olubiyi.</p>
             </article>
             <article>
-                <img src="/img/bg3.jpg" alt="Profile pic of John Doe">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, expedita accusantium assumenda veniam nostrum
-                    unde odio incidunt nisi?
-                </p>
+                <img src="/img/mercy.jpg" alt="Profile pic of John Doe">
+
                 <p>
-                    <span>John Doe</span>, CEO, company.</p>
+                    <span>Sis.</span>Iheoma Mercy Iwumba</p>
             </article>
             <article>
-                <img src="/img/bass.jpg" alt="Profile pic of Jack Doe">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit totam nemo quo. Itaque,
-                    repudiandae. Assumenda sit vitae veniam? Numquam iste culpa maiores. Excepturi, alias quae et perferendis
-                    voluptatem inventore.</p>
+                <img src="/img/pascal.jpg" alt="Profile pic of John Doe">
+                
                 <p>
-                    <span>Jack Doe</span>, CEO, company.</p>
+                    <span>Pst</span>Pascal Nwachukwu Chigozie</p>
             </article>
+
         </section>
 
         <section class="indicators">
@@ -143,8 +140,8 @@
             <div onclick="changeInfo(1)"></div>
             <div onclick="changeInfo(2)"></div>
         </section>
-    </section>  
-    
+    </section>
+
     <section id="gallery">
         <h1>Gallery</h1>
         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem ipsum dolor.</h2>
@@ -158,7 +155,7 @@
 
         <section class="imgs">
             <section class="lorem">
-                 <img src="/img/1.jpg" alt="Bird on a tree"> 
+                 <img src="/img/1.jpg" alt="Bird on a tree">
                 <div data-index="0">
                     <p>Lorem Ipsum</p>
                 </div>
@@ -205,7 +202,7 @@
                     <p>Lorem Ipsum</p>
                 </div>
             </section>
-            
+
         </section>
     </section>
 
@@ -237,7 +234,7 @@
     </section>
 
     <section id="parallax">
-        
+
         <section class="info">
             <article>
                 <h4>8</h4>
@@ -266,13 +263,13 @@
         </section>
     </section>
 
-  
+
    <section>
          <div class="card card-plain">
             <div class="card-header card-header-primary">
               <h4 class="card-title mt-0"> <?php echo e(App\Noe_Team::count()); ?> Registered Choral Groups For NOE 2019 </h4>
               <p class="card-category">From Various state</p>
-              
+
             </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -317,7 +314,7 @@
 
                         <?php $__currentLoopData = $team; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                          <tr>
-                                            
+
                               <td>
                                     <?php echo e($user->id); ?>
 
@@ -330,7 +327,7 @@
                                 <?php echo e($user->number); ?>
 
                                 </td>
-                                
+
                                 <td >
                                 <?php echo e($user->state); ?>
 
@@ -347,8 +344,8 @@
                                     <?php echo e($user->african_con); ?>
 
                                 </td>
-                            
-                                 <?php $__currentLoopData = $user->musics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $music): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>    
+
+                                 <?php $__currentLoopData = $user->musics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $music): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <td>
                                     <audio controls>
                                         <source src="<?php echo e($music->acappella_song); ?>" type="audio/mpeg"></source>
@@ -358,16 +355,16 @@
                                     <audio controls>
                                         <source src="<?php echo e($music->african_class_song); ?>" type="audio/mpeg"></source>
                                     </audio>
-                                
+
                                 </td>
                                 <td>
                                     <audio controls>
                                         <source src="<?php echo e($music->african_con_song); ?>" type="audio/mpeg"></source>
                                     </audio>
-                                </td>                        
-                            </tr>   
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
-                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+                                </td>
+                            </tr>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                       </tbody>
                     </table>
                   </div>
@@ -379,7 +376,7 @@
 			<div class="card-header card-header-primary">
 				<h4 class="card-title mt-0"> <?php echo e(App\ShortList::count()); ?> ShortListed Choral Groups For NOE 2019 </h4>
 				<p class="card-category">From Various state</p>
-				
+
 			</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -411,15 +408,15 @@
 								</thead>
 								<tbody>
                                     <?php $__currentLoopData = $teams; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        
-                       
-      
+
+
+
                                     <tr>
 									<td>
                                         <?php echo e($user->id); ?>
 
-                                    </td>          
-                                    
+                                    </td>
+
                                     <td>
                                         <?php echo e($user->name); ?>
 
@@ -428,7 +425,7 @@
                                     <?php echo e($user->number); ?>
 
                                     </td>
-                                    
+
                                     <td >
                                     <?php echo e($user->state); ?>
 
@@ -445,9 +442,9 @@
                                         <?php echo e($user->african_con); ?>
 
                                     </td>
-                                </tr>   
-                                
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+                                </tr>
+
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 						        </tbody>
 							</table>
 						</div>
@@ -455,7 +452,7 @@
 				</div>
 	</section>
     <section id="contact">
-        
+
         <h2>Let's see what your Team got!</h2>
         <div class="row">
             <div class="">
@@ -467,7 +464,7 @@
                             </div><br />
                     <?php endif; ?>
                     </div>
-                
+
                     <form method="POST" action="<?php echo e(route('reg')); ?>" enctype="multipart/form-data">
                               <?php echo csrf_field(); ?>
                         <div class="card-header card-header-primary text-center" style="
@@ -483,28 +480,28 @@
                                 <span id="error"></span>
                         </div>
                     <div class="card-body">
-                        
-                        
+
+
                              <input type="text" id="name" class="form-control<?php echo e($errors->has('name') ? ' is-invalid' : ''); ?>" name="name" value="<?php echo e(old('name')); ?>" required autofocus placeholder="Team Name...">
                             <?php if($errors->has('name')): ?>
                                 <span class="invalid-feedback" role="alert">
                                     <strong><?php echo e($errors->first('name')); ?></strong>
                                 </span>
                             <?php endif; ?>
-                       
+
                         <br/>
-                        
-                        
+
+
                             <input type="text" id="name1" class="form-control " class="form-control<?php echo e($errors->has('number') ? ' is-invalid' : ''); ?>" name="number" value="<?php echo e(old('number')); ?>" required placeholder="Number of Choristers in your team">
-        
+
                             <?php if($errors->has('number')): ?>
                                 <span class="invalid-feedback" role="alert">
                                     <strong><?php echo e($errors->first('number')); ?></strong>
                                 </span>
-                            <?php endif; ?> 
-                        
+                            <?php endif; ?>
+
                         <br/>
-                       
+
                             <input type="hidden"  id="name2" class="form-control<?php echo e($errors->has('state') ? ' is-invalid' : ''); ?>" name="state" value="<?php echo e(old('state')); ?>" required autofocus>
                                 <select name="state" class='form-control'>
                                     <option value="" selected="selected">- State-</option>
@@ -552,45 +549,45 @@
                                         <strong><?php echo e($errors->first('state')); ?></strong>
                                     </span>
                                 <?php endif; ?>
-                         
+
                         <br/>
-                        
-                        
+
+
                                 <input type="text" id="name3" class="form-control" class="form-control<?php echo e($errors->has('african_con') ? ' is-invalid' : ''); ?>" name="african_con" value="<?php echo e(old('african_con')); ?>" required placeholder="Title of Your African Contemporary Song">
-    
+
                                 <?php if($errors->has('african_con')): ?>
                                     <span class="invalid-feedback" role="alert">
                                         <strong><?php echo e($errors->first('african_con')); ?></strong>
                                     </span>
-                                <?php endif; ?> 
-                        
+                                <?php endif; ?>
+
                         <br/>
-                        
+
                                     <input type="text" id="name4" class="form-control" class="form-control<?php echo e($errors->has('acappella') ? ' is-invalid' : ''); ?>" name="acappella" value="<?php echo e(old('acappella')); ?>" required placeholder="Title of Your Acappella Song">
 
                                 <?php if($errors->has('acappella')): ?>
                                     <span class="invalid-feedback" role="alert">
                                         <strong><?php echo e($errors->first('acappella')); ?></strong>
                                     </span>
-                                <?php endif; ?> 
-                       
+                                <?php endif; ?>
+
                         <br/>
-                        
-                    
+
+
                             <input type="text" id="password" class="form-control" class="form-control<?php echo e($errors->has('african_class') ? ' is-invalid' : ''); ?>" name="african_class" value="<?php echo e(old('african_class')); ?>" required placeholder="Title of Your African Classical Spiritual Song">
 
                             <?php if($errors->has('african_class')): ?>
                                 <span class="invalid-feedback" role="alert">
                                     <strong><?php echo e($errors->first('african_class')); ?></strong>
                                 </span>
-                            <?php endif; ?> 
-                        
+                            <?php endif; ?>
+
 
                         <br/>
-			                      
+
                                 <button id="submit" class="btn  btn-round btn-md " style="float:left;margin-left: 10px;">Register</button>
-                        
-                        </div>                 
+
+                        </div>
                      </form>
                 </div>
             </div>
@@ -615,7 +612,7 @@
 														<li class="active"><a href="#Acappella" data-toggle="tab">Acapella</a></li>
 														<li class=""><a href="#classical" data-toggle="tab">Classical </a></li>
 														<li><a href="#contem" data-toggle="tab">Contemporary</a></li>
-														
+
 												</ul>
 											</div>
 											<div class="panel-body">
@@ -631,33 +628,34 @@
 																																				margin-left: 20px;">
 																				<h4 class="card-title">Submit Acappella Song</h4>
 																		</div>
-																
+
 																		<div class="card-body">
 																			<select class="form-control" name="neo_team_id">
-   
+
 																				<option>Select Your Team</option>
-																					
+
 																				<?php $__currentLoopData = $team; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-																					<option value="<?php echo e($key->id); ?>" > 
-																							<?php echo e($key->name); ?> 
+																					<option value="<?php echo e($key->id); ?>" >
+																							<?php echo e($key->name); ?>
+
 																					</option>
-																				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
+																				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 																			</select>
 																			<br>
 																				<div class=" ">
 																						<select class="form-control"name="category">
 																								<option value="acappella_song">Acappella Song</option>
-																							
+
 																						</select>
 																				</div>
 																					<br>
 																				<div class=" ">
 																					<input type="file" name="acappella_song" class="form-control">
-																					
+
 																				</div>
 																				<br>
 																				<div class=" ">
-																				
+
 																				<textarea type="text"  class="form-control" name="acappella_lyrics" value="" required="" autofocus="" placeholder="Acappella Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
 																						<?php if($errors->has('acappella_lyrics')): ?>
 																								<span class="invalid-feedback" role="alert">
@@ -667,18 +665,18 @@
 																				</div>
 																				<br/>
 																				<select class="form-control"name="category1">
-																						
-																					<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option> 
-																					
+
+																					<option value="African_Classical_Spiritual_Song">African Classical Spiritual Song</option>
+
 																			</select>
-																		
+
 																			<br>
 																			<div class=" ">
 																				<input type="file" class="form-control" name="african_class_song">
 																			</div>
 																			<br>
 																			<div class=" ">
-																			
+
 																					<textarea type="text" id="name" class="form-control<?php echo e($errors->has('african_class_lyrics') ? ' is-invalid' : ''); ?>" name="african_class_lyrics" value="<?php echo e(old('african_class_lyrics')); ?>" required autofocus placeholder="African Classical Song Lyrics" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
 																					<?php if($errors->has('african_class_lyrics')): ?>
 																							<span class="invalid-feedback" role="alert">
@@ -700,7 +698,7 @@
 																			</div>
 																			<br>
 																			<div class=" ">
-																			
+
 																					<textarea type="text"  class="form-control<?php echo e($errors->has('african_con_lyrics') ? ' is-invalid' : ''); ?>" name="african_con_lyrics" value="<?php echo e(old('african_con_lyrics')); ?>" required autofocus placeholder=" African Contemporary Song Lyric" style="margin: 0px; width: 277px; height: 207px;"> </textarea>
 																					<?php if($errors->has('african_con_lyrics')): ?>
 																							<span class="invalid-feedback" role="alert">
@@ -723,11 +721,11 @@
 									</div>
 								</div>
 							</div>
-						</div>	
-                   
-                       
+						</div>
+
+
         </section>
-       
+
         <section class="media-icons">
             <ion-icon class="icon-pnk" name="logo-facebook"></ion-icon>
             <ion-icon class="icon-pnk" name="logo-twitter"></ion-icon>
@@ -735,6 +733,7 @@
             <ion-icon class="icon-pnk" name="logo-linkedin" > </ion-icon>
         </section>
     </section>
-	
+
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.noe', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
