@@ -53,6 +53,12 @@ class AdminController extends Controller
        
 
     }
+    public function mgbidi2020(){
+        $mgbidi = Mgbidi2020::all();
+        return view('admin/mgbidi2020',['mgbidi'=>$mgbidi]);
+       
+
+    }
 
     public function delup(){
         $images = ImageGallery::get();

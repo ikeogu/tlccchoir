@@ -169,4 +169,12 @@ class MgbidiController extends Controller
       return $pdf->download('mgbidi_2019_registration.pdf');
 
     }
+    public function prev($id){
+        $user = Mgbidi::find($id);
+          
+          
+        $pdf = PDF::loadView('pdf', compact('user'));
+        return $pdf->response('mgbidi_2019_registration.pdf');
+  
+      }
 }

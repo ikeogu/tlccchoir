@@ -6,7 +6,7 @@
     <div class="container" >
     
       <div class="row">
-        <div class="col-lg-4 col-md-6 ml-auto mr-auto" style="padding-top:123px; padding-bottom:100px;">
+        <div class="col-lg-10 col-md-10 ml-auto mr-auto" style="padding-top:123px; padding-bottom:100px;">
           <div class="card card-login" >
             <div class="content">
               @if ($errors->any())
@@ -31,7 +31,7 @@
                 
               </div>
               
-              <div class="card-body">
+              <div class="card-body p-5">
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
@@ -51,7 +51,7 @@
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required placeholder="Email...">
+                  <input type="email"  class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required placeholder="Email...">
 
                     @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
@@ -106,7 +106,7 @@
                       <option value="Taraba">Taraba</option>
                       <option value="Yobe">Yobe</option>
                       <option value="Zamfara">Zamfara</option>
-            <option value="Outside Nigeria">Outside Nigeria</option>
+                      <option value="Outside Nigeria">Outside Nigeria</option>
                     </select>
                       @if ($errors->has('state'))
                           <span class="invalid-feedback" role="alert">
@@ -115,7 +115,7 @@
                       @endif
                   </div>              
                 </div>
-                <div class="input-group">
+                <div class="input-group ">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="material-icons">book</i>
@@ -174,37 +174,34 @@
                         </span>
                       @endif       
                 </div> 
-                
-                
-                  
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                        <i class="material-icons">lock</i>
-                      </span>
-                      </div>
-                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password" >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                    <i class="material-icons">lock</i>
+                  </span>
+                  </div>
+                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required placeHolder=" Password" >
 
-                          @if ($errors->has('password'))
-                              <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $errors->first('password') }}</strong>
-                              </span>
-                          @endif
-                      
-                    </div>  
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">lock</i>
-                        </span>
-                      </div>
-                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
-                    
-                    </div>
-                    <div class="footer text-center">
-                      <button class="btn btn-primary btn-round">Register</button>
-                    </div>
+                      @if ($errors->has('password'))
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $errors->first('password') }}</strong>
+                          </span>
+                      @endif
+                  
+                </div>  
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">lock</i>
+                    </span>
+                  </div>
+                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeHolder="Confirm Password">
+                
                 </div>
+                <div class="input-group text-center justify-content-center">
+                  <button class="btn btn-primary btn-round">Register</button>
+                </div>
+              </div>
                
               
             </form>

@@ -27,6 +27,7 @@ use App\ShortList;
 
 Route::resource('mgbidi-2019', 'MgbidiController');
 Route::get('/mgbidi-registration','MgbidiController@index')->name('regmem');
+Route::get('/mgbidi2020-registration','Mgbidi2020Controller@index')->name('regmem2');
 Route::get('/downloadPDF/{id}','MgbidiController@downloadPDF')->name('download');
 Route::resource('songs', 'SongPresentationCOntroller');
 Route::get('/write_song', 'SongPresentationCOntroller@create')->name('create');
@@ -47,6 +48,7 @@ Route::get('/dashboard','AdminController@index')->name('adminhome');
 Route::get('/admin/allmembers','AdminController@allmembers')->name('allmembers');
 Route::get('/admin/allsongs','AdminController@allsongs')->name('allsongs');
 Route::get('/admin/mgbidi2019','AdminController@mgbidi2019')->name('mgbidi2019');
+Route::get('/admin/mgbidi2020','AdminController@mgbidi2020')->name('mgbidi2020');
 //For Geopolitical REgion
 Route::get('/admin/allzone','AdminController@geopoliticalzone')->name('gzone');
 Route::get('/admin/northstate','AdminController@north')->name('northern_zone');
@@ -185,6 +187,11 @@ Route::post('noe_team','NoeTeam@store')->name('reg');
 
 Route::put('noe_team','NoeTeam@store');
 Route::delete('noe_tea/{key}','NoeTeam@destroy')->name('del');
-ROute::post('acapella_music','MusicController@store')->name('aca');
-ROute::post('african_con_music','MusicController@store_con')->name('con');
-ROute::post('african_class_music','MusicController@store_class')->name('cla');
+Route::post('acapella_music','MusicController@store')->name('aca');
+Route::post('african_con_music','MusicController@store_con')->name('con');
+Route::post('african_class_music','MusicController@store_class')->name('cla');
+//
+Route::resource('mgbidi2020','Mgbidi2020Controller');
+Route::get('/downloadPDFs/{id}','Mgbidi2020Controller@downloadPDF')->name('downloads');
+
+Route::get('/readPDFs/{id}','Mgbidi2020Controller@prev')->name('reads');

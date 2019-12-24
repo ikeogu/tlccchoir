@@ -7,19 +7,15 @@
   <div class="white-bg">
 		    <div class="container">
 		      <div class="section-top-border">
-
-
-		       
-              <div class="row">
                  
                   <div class="content">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
                           <div class="card">
                             <div class="card-header card-header-primary">
-                              <h4 class="card-title ">song Details</h4>
-                              <p class="card-category"> All songs so far</p>
+                              <h4 class="card-title ">All Songs</h4>
+                              <p class="card-category"> </p>
                             </div>
                             <div class="card-body">
                               <div class="table-responsive">
@@ -90,7 +86,7 @@
                
                 </div>
             </div>
-        </div>
+        
     </div>  
 </section>
          

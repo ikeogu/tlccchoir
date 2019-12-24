@@ -9,10 +9,10 @@
 
          <div class="col-md-10">
               <h3>
-                <small>sONG dETAILS</small>
+                <small>Song Details</small>
               </h3>
               <!-- Tabs with icons on Card -->
-              <div class="card card-nav-tabs">
+              <div class="card card-nav-tabs col-lg-12 col-sm-12 col-md-12">
                 <div class="card-header card-header-primary">
                   <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
                   <div class="nav-tabs-navigation">
@@ -54,7 +54,7 @@
                       <p> This song is classified under {{$songs->type}} songs</p>
                     </div>
                     <div class="tab-pane" id="created_at">
-                      <p> This song was written {{$songs->created_at->diffForHumans()}}</p>
+                      <p> This song was written by {{$songs->created_at->diffForHumans()}}</p>
                     </div>
                   </div>
                 </div>

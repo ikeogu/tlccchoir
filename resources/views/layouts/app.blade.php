@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="{{ secure_asset('css/material-kit.css')}}" rel="stylesheet" />
+  <link href="{{ asset('css/material-kit.css')}}" rel="stylesheet" />
   
   
   
@@ -42,16 +42,22 @@
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
                     <a href="{{ route('register')}}" class="dropdown-item">
-                        <i class="material-icons">layers</i> Be A Member
+                        <i class="material-icons">layers</i> Register
                     </a>
-                    <a href="mgbidi-2019/create" class="dropdown-item">
-                        <i class="material-icons">content_paste</i> Mgbidi Registration
+                    <a href="{{route('mgbidi2020.create')}}" class="dropdown-item">
+                        <i class="material-icons">content_paste</i> Register for Mgbidi 2020
                     </a>
                     <a href="{{route('regmem')}}" class="dropdown-item">
-                        <i class="material-icons">content_paste</i> Mgbidi Reg Choristers 2019
+                        <i class="material-icons">content_paste</i> Mgbidi 2019 Attendance
                     </a>
+                    <a href="{{route('regmem2')}}" class="dropdown-item">
+                      <i class="material-icons">content_paste</i> Mgbidi 2020 Attendance
+                  </a>
+                  <a href="/write_song" class="dropdown-item">
+                    <i class="material-icons">music_note</i>Present  a Song
+                  </a>
                     <a href="songs" class="dropdown-item">
-                      <i class="material-icons">music_note</i>View Songs
+                      <i class="material-icons">music_note</i> View songs
                     </a>
                     <a href="{{ route('login') }}" class="dropdown-item">
                         <i class="material-icons">arrow_right</i> Login
@@ -123,7 +129,8 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer class="footer footer-default">
+
+    <footer class="footer footer-default">
     <div class="container">
       <nav class="float-left">
         <ul>
@@ -149,25 +156,25 @@
           </li>
         </ul>
       </nav>
-      <div class="copyright float-right">
+      {{-- <div class="copyright float-right">
         Campus Choir &copy;
         <script>
            document.write(new Date().getFullYear())
         </script>, made with <i class="material-icons">favorite</i> by
         <a href="#" target="_blank">Creative Tim</a> 
-      </div>
+      </div> --}}
     </div>
   </footer>
-    </div>    
-  <script src="{{secure_asset('js/jquery.min.js')}}" type="text/javascript"></script>
-  <script src="{{secure_asset('js/popper.min.js')}}" type="text/javascript"></script>
-  <script src="{{secure_asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
-  <script src="{{secure_asset('js/moment.min.js')}}"></script>
+     
+  <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/moment.min.js')}}"></script>
  
   
-  <script src="{{secure_asset('js/nouislider.min.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/nouislider.min.js')}}" type="text/javascript"></script>
   
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="{{secure_asset('js/material-kit.js')}}" type="text/javascript"></script>      
+  <script src="{{asset('js/material-kit.js')}}" type="text/javascript"></script>      
 </body>
 </html>

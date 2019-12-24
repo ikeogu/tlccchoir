@@ -3,7 +3,7 @@
 @section('content')
 
 
-  <div class="page-header header-filter clear-filter purple-filter" style="background-image: url('img/1.jpg');" >
+  <div class="page-header header-filter clear-filter purple-filter" style="background-image: url('img/c3.jpg');" >
     <div class="container">
       <div class="row">
       
@@ -93,7 +93,7 @@
       <div class="section" id="carousel">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 mr-auto ml-auto">
+          <div class="col-md-12  col-lg-12 mr-auto ml-auto">
             <!-- Carousel Card -->
             <div class="card card-raised card-carousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -101,18 +101,21 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5" class=""></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/9.jpg" alt="First slide">
+                    <img class="d-block w-100" src="img/wgd.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
-                        <i class="material-icons">location_on</i>salvation song on stage
-                      </h4>
+                        <i class="material-icons">location_on</i>mgbidi 2020
+                      </h4> 
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="img/1.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="img/c1.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
                         <i class="material-icons">location_on</i> Rivival Song
@@ -120,10 +123,34 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="img/11.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="img/c2.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
                         <i class="material-icons">location_on</i> The Grace 
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/c3.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>
+                        <i class="material-icons">location_on</i> The Grace 
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/c4.jpg" alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>
+                        <i class="material-icons">location_on</i> I felt Like dancing 
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/cc.jpg" alt="Sixth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>
+                        <i class="material-icons">location_on</i> Campus Choir
                       </h4>
                     </div>
                   </div>
@@ -599,7 +626,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center title">Work with us</h2>
-            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+            <h4 class="text-center description">you can reach us via this medium. for advise, consel, or more. thanks!</h4>
             <form class="contact-form" method="POST" action="{{route('postmessage')}}">
 			            {{ csrf_field() }} 
               <div class="row">

@@ -1,0 +1,98 @@
+[2019-01-21 08:09:07] local.ERROR: Class 'App\Providers\Schema' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\Schema' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 [internal function]: App\\Providers\\AppServiceProvider->boot()
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(795): Illuminate\\Container\\Container->call(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\AppServiceProvider))
+#7 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\AppServiceProvider), 20)
+#8 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(779): array_walk(Array, Object(Closure))
+#9 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#10 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#13 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2019-01-21 08:18:42] local.ERROR: Class 'App\Providers\Schema' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\Schema' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\app\\Providers\\AppServiceProvider.php:16)
+[stacktrace]
+#0 [internal function]: App\\Providers\\AppServiceProvider->boot()
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(572): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(795): Illuminate\\Container\\Container->call(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\AppServiceProvider))
+#7 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\AppServiceProvider), 20)
+#8 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(779): array_walk(Array, Object(Closure))
+#9 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#10 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#13 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2019-01-21 09:58:38] local.ERROR: Class 'Mews\Captcha\CaptchaServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Mews\\Captcha\\CaptchaServiceProvider' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Mews\\\\Captcha\\\\Ca...')
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(550): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-01-21 10:10:56] local.ERROR: Class 'Mews\Captcha\CaptchaServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Mews\\Captcha\\CaptchaServiceProvider' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Mews\\\\Captcha\\\\Ca...')
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(550): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-01-21 10:49:49] local.ERROR: Class 'Toplan\PhpSms\PhpSmsServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Toplan\\PhpSms\\PhpSmsServiceProvider' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Toplan\\\\PhpSms\\\\P...')
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(550): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-01-21 13:14:23] local.ERROR: Class 'Toplan\Sms\SmsManagerServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Toplan\\Sms\\SmsManagerServiceProvider' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Toplan\\\\Sms\\\\SmsM...')
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(550): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-01-21 19:57:32] local.ERROR: Class 'Toplan\Sms\SmsManagerServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Toplan\\Sms\\SmsManagerServiceProvider' not found at C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Toplan\\\\Sms\\\\SmsM...')
+#1 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(550): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(204): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 C:\\Bitnami\\wampp\\apache2\\htdocs\\laravelprojects\\tlccchoir\\server.php(21): require_once('C:\\\\Bitnami\\\\wamp...')
+#10 {main}
+"} 
