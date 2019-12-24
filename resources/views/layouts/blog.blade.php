@@ -13,8 +13,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico"> 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link href="{{asset('css/material-kit.css')}}" rel="stylesheet" />
-  <link href="{{asset('css/clean-blog.min.css')}}" rel="stylesheet">
+  <link href="{{secure_asset('css/material-kit.css')}}" rel="stylesheet" />
+  <link href="{{secure_asset('css/clean-blog.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   
 </head>
@@ -49,7 +49,7 @@
         
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('{{asset('img/post-bg.jpg')}}'); ">
+    <header class="masthead" style="background-image: url('{{secure_asset('img/post-bg.jpg')}}'); ">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -139,17 +139,17 @@
     </div>
   </footer>
 
-   <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/moment.min.js')}}"></script>
+   <script src="{{secure_asset('js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/moment.min.js')}}"></script>
  
   
-  <script src="{{asset('js/nouislider.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/nouislider.min.js')}}" type="text/javascript"></script>
   
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('js/material-kit.js')}}" type="text/javascript"></script>    
-    <script src="{{asset('js/clean-blog.min.js')}}"></script>
+  <script src="{{secure_asset('js/material-kit.js')}}" type="text/javascript"></script>    
+    <script src="{{secure_asset('js/clean-blog.min.js')}}"></script>
 
   </body>
 

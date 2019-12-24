@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="{{ asset('css/material-kit.css')}}" rel="stylesheet" />
+  <link href="{{ secure_asset('css/material-kit.css')}}" rel="stylesheet" />
   
   
   
@@ -166,15 +166,15 @@
     </div>
   </footer>
      
-  <script src="{{asset('js/jquery.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('js/moment.min.js')}}"></script>
+  <script src="{{secure_asset('js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/moment.min.js')}}"></script>
  
   
-  <script src="{{asset('js/nouislider.min.js')}}" type="text/javascript"></script>
+  <script src="{{secure_asset('js/nouislider.min.js')}}" type="text/javascript"></script>
   
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('js/material-kit.js')}}" type="text/javascript"></script>      
+  <script src="{{secure_asset('js/material-kit.js')}}" type="text/javascript"></script>      
 </body>
 </html>
